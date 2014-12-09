@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'VOKMultiImagePicker-iOS', :exclusive => true do
+  pod "VOKMultiImagePicker-iOS", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "VOKMultiImagePicker-iOS", :path => "../"
+
+  
+end
