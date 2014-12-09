@@ -12,10 +12,6 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A multiple image picker using PhotoKit."
   s.description      = <<-DESC
-                       An optional longer description of VOKMultiImagePicker-iOS
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS"
   s.license          = 'MIT'
