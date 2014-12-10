@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bJt-pl-Ydk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bJt-pl-Ydk">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--VOKMultiImagePickerExample-->
@@ -17,27 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVG-F5-CS6">
-                                <rect key="frame" x="210" y="263" width="181" height="73"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="Blz-ZO-32y"/>
-                                    <constraint firstAttribute="width" constant="181" id="btF-pp-Oeb"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showImagePicker" destination="BYZ-38-t0r" eventType="touchUpInside" id="NhX-4g-jVc"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YQR-ou-mZi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="UVG-F5-CS6" secondAttribute="centerX" constant="-0.5" id="NAi-7z-Oxa"/>
-                            <constraint firstAttribute="centerY" secondItem="UVG-F5-CS6" secondAttribute="centerY" constant="0.5" id="Q0W-hf-Hxp"/>
+                            <constraint firstItem="YQR-ou-mZi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5hs-ro-7HH"/>
+                            <constraint firstAttribute="trailing" secondItem="YQR-ou-mZi" secondAttribute="trailing" id="6im-CC-Ymr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YQR-ou-mZi" secondAttribute="bottom" id="m5k-nz-BGa"/>
+                            <constraint firstItem="YQR-ou-mZi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="pZa-ku-ktr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="VOKMultiImagePickerExample" id="Eip-20-5gO"/>
+                    <connections>
+                        <outlet property="tableView" destination="YQR-ou-mZi" id="MvJ-wF-Abm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

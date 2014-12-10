@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VOKMultiImagePicker-iOS: 44f2edd47ca11fdf2645c5b6c20c56c552c12abd
+  VOKMultiImagePicker-iOS: 5e312f37d43ea0e468b95645d85e124e9b727fe4
 
 COCOAPODS: 0.35.0
