@@ -10,133 +10,7 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>0002FB1090DE0750FAD62783</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0086CB161F30D10F5649A819</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE1A9C8E054043AD75B0DBB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>011926F2E1D59055F406D7E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EBC6D95A92F6D7BB957DCB45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>024AD9CDACED2E79F9460133</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1855DF7D84C180649C305CD7</string>
-				<string>4C79D71BEE69BBA25D35996B</string>
-				<string>CEB52FFDDA459B2B6C6B53F9</string>
-				<string>E495A92E24639C96DC35273C</string>
-				<string>213010597435B5DCC8AD213E</string>
-				<string>2BF16C5549D97EB079CF2AA5</string>
-				<string>8761E10216D5289367AFC1E7</string>
-				<string>96A7F11152BC52789D96D35D</string>
-				<string>0CCC6B34D775B7E40A478A51</string>
-				<string>9815EC327489AF3B52EE64EC</string>
-				<string>E452916FD4302819DA39B834</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0639EC4010134C28F63DF70A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C623DF92483E019520A944EA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS/Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>069C8A983FACEBB10219DDD0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0902DE53979B22DEAA1935E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AF53F964C31C97A36BC3B35</key>
+		<key>00963FC77318110171D4A7E6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -149,7 +23,70 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0B7E24AF6D1C56478FE7D0E9</key>
+		<key>01540FCB929FF9EFF0C8D40B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D16A227B879E18A8B05E26BE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>025A4A51A98F23C0662064BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>VOKAssetsDataSource.h</string>
+			<key>path</key>
+			<string>Pod/Classes/DataSources/VOKAssetsDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02EE04C56D333F7CDE79E0F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F0B16EFD6FEA42C5BC6E9C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0543F792ABC55E267BDBE882</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EA5725F5E0E5BC544876DB1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0ABC0C8AD57F49E97CB526C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C1527AEEB0777BE60626BCBA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0BE7A45090FC9A2DA9E7F64B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>178F531F92A99346AEF09235</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0D913F46C5F86878D1CEFB2B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7EAE4BEA7EA0021ED91B7489</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0E3DF3F3E6B85B5ECF0A3D68</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -157,12 +94,527 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKCollectionViewGridLayout.m</string>
 			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS-dummy.m</string>
+			<string>Pod/Classes/DataSources/Layouts/VOKCollectionViewGridLayout.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0CC6E0DF0C9AA0974791D8AB</key>
+		<key>0F3AF659C458F89A6C0070EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-VOKMultiImagePicker-iOS-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>109E462C67FCEFE28FF309A7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>711FBD230F9CDD27A3255520</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS/Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1192AD06CFF171700B47FCF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11ACC5FC68A4B3A2BEF5DBC9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>690BCC247CA0D39E98A9E2E7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B6045395C6C1AB73E6EBAF69</string>
+			<key>remoteInfo</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
+		</dict>
+		<key>122FAC145E0AADA278F533DF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DD930FD413CF10F616EFB0F1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>12842BC9F330E6BCF1AD7070</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>30E15A9337983C6DE1987C08</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>12C35EBA357E42DE7A1C483C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D6F40A93E725981F1AA11CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>167AE3F78E2A342E1F1CD210</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7E82C19449A52F97C4A28D31</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0BE7A45090FC9A2DA9E7F64B</string>
+				<string>122FAC145E0AADA278F533DF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3003FDD99941921559998D18</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS</string>
+			<key>productName</key>
+			<string>Pods-VOKMultiImagePicker-iOS</string>
+			<key>productReference</key>
+			<string>D051F53C5802DA9DE63F7BFE</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>16F007565F2273783CAB6AD0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FDACA8B08612779087B3490D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>12842BC9F330E6BCF1AD7070</string>
+				<string>92C501BEC22F3FE0EBBF2CB7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>240686F102961BCDD1D5F296</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>productName</key>
+			<string>Pods-Tests</string>
+			<key>productReference</key>
+			<string>59B370FECAA86B5789A1B56F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>178F531F92A99346AEF09235</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93A7D1304E3F8631E141B0FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>183AC8C848F26C2879C7F74F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>30766E084981065B3BC4C352</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1BDAFAB027439E32CB9B325E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Tests-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CBEF99D36F487070F475403</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>690BCC247CA0D39E98A9E2E7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7599C7B6962D53368B264ADA</string>
+			<key>remoteInfo</key>
+			<string>VOKMultiImagePicker-iOS</string>
+		</dict>
+		<key>1F0B16EFD6FEA42C5BC6E9C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKMultiImagePicker.m</string>
+			<key>path</key>
+			<string>Pod/Classes/VOKMultiImagePicker.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>240686F102961BCDD1D5F296</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
+			<key>target</key>
+			<string>7253C4CEC2EA52FD00C78DAE</string>
+			<key>targetProxy</key>
+			<string>315F4E575013557C6C6252B1</string>
+		</dict>
+		<key>25B549DA389DA826807133A9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5D6F40A93E725981F1AA11CE</string>
+				<string>A7110DB77371C7C81A236159</string>
+				<string>D359D566D2F0098359CDDE1F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2607BA70217E84EEC8ECF9E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests-VOKMultiImagePicker-iOS.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2664D1BF4FAD4FC7A5B8C194</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>274118749BEAEC400D48D971</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C0ED2F0270DE1A7C742C654A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>299A3586970D7225416CDC98</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FB35096880336BD4B106A415</string>
+				<string>E15EF355F7B87EE7D7E59B9F</string>
+				<string>378365D097909FEB7B8DE228</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>29F3716CE003E31875B497DC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>55F03D21EC222519216EB7C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2C4D40ED09AAB99767EABBBF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>VOKMultiImagePicker-iOS</string>
+			<key>target</key>
+			<string>7599C7B6962D53368B264ADA</string>
+			<key>targetProxy</key>
+			<string>7C483D079341D355A029E9A5</string>
+		</dict>
+		<key>2DFAD7DD78B3B4D0C244D59E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7EAE4BEA7EA0021ED91B7489</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F5185E3CBB14EEC106EB5FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKAssetsDataSource.m</string>
+			<key>path</key>
+			<string>Pod/Classes/DataSources/VOKAssetsDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F5B229EE1DBE0458BC8D612</key>
+		<dict>
+			<key>fileRef</key>
+			<string>560FA4C8CE09B7FC51228390</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F74C1231A9A6DD90CD47590</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D9B13B37C2BD0C1BD622F628</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3003FDD99941921559998D18</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
+			<key>target</key>
+			<string>B6045395C6C1AB73E6EBAF69</string>
+			<key>targetProxy</key>
+			<string>11ACC5FC68A4B3A2BEF5DBC9</string>
+		</dict>
+		<key>30766E084981065B3BC4C352</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKAssetCollectionsDataSource.m</string>
+			<key>path</key>
+			<string>Pod/Classes/DataSources/VOKAssetCollectionsDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>308D3109D0E352ACB726B084</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F5185E3CBB14EEC106EB5FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>30E15A9337983C6DE1987C08</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7D27FDBC3BDFD23B59760AF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>315F4E575013557C6C6252B1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>690BCC247CA0D39E98A9E2E7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7253C4CEC2EA52FD00C78DAE</string>
+			<key>remoteInfo</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
+		</dict>
+		<key>3716B5B16694629CCD2691A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F5185E3CBB14EEC106EB5FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>378365D097909FEB7B8DE228</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D359D566D2F0098359CDDE1F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3A6C3A931884F932CB50C830</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE2B4433EB404FD7A6E135F9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3D202C63A88795D9243ED550</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>VOKAssetCollectionViewCell.h</string>
+			<key>path</key>
+			<string>Pod/Classes/Views/VOKAssetCollectionViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E9142CAE03D425203720BED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60F2B5FD2B9DD1851FC2921</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F3A479AE0DC12F4BE51D73B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>VOKCollectionViewGridLayout.h</string>
+			<key>path</key>
+			<string>Pod/Classes/DataSources/Layouts/VOKCollectionViewGridLayout.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>40855BAFBDB247679E4E6106</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -229,252 +681,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>0CCC6B34D775B7E40A478A51</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04FCCE2816F8FF287F50521</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0ED6DD1257ED647A722741BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKAssetsDataSource.h</string>
-			<key>path</key>
-			<string>Pod/Classes/DataSources/VOKAssetsDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0EDADCB2AB2577E3B8F70EC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AAEA05C5B6E0CB624E357E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0EDC32C172ED13543D3E38E5</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>9070C7BB5C80553E99CAC358</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B5C40CC5130B27D77C9E5567</string>
-			<key>remoteInfo</key>
-			<string>VOKMultiImagePicker-iOS</string>
-		</dict>
-		<key>0F21F1BCD4F94FCB492476C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>123DDA6953CCCEE21877024B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>247DD3AB8A55B2159AC288F8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6BB3E98BEC0E9DF227B1716E</string>
-				<string>71CA2B96E92E765629741AF4</string>
-				<string>912E0BC2A0C3CAB5EA37390E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FDE107CE4E95944C974AD253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
-			<key>productName</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
-			<key>productReference</key>
-			<string>27D65F7F8360AB83F546B9A6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>14F8757B8DF0C52EA333B208</key>
-		<dict>
-			<key>fileRef</key>
-			<string>44E1F58C06C7D3297D6E7E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>158F565DD218FB9154357EFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1A3FA2DAA9CA60A44A25F5BD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>164569629E73E909522B54F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF2040ABB116A8233A7B0AD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1855DF7D84C180649C305CD7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E24591FBC7815B48A404C34E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1A3FA2DAA9CA60A44A25F5BD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0B7E24AF6D1C56478FE7D0E9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1A5642F73ABD99DDBABDBEFF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VOKCollectionViewGridLayout.m</string>
-			<key>path</key>
-			<string>Pod/Classes/DataSources/Layouts/VOKCollectionViewGridLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DC5407D1A64AA6DE29ADCE7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>VOKAssetsViewController.xib</string>
-			<key>path</key>
-			<string>Pod/Assets/VOKAssetsViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DD24DB869844FA5E66DE01D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VOKBaseViewController.m</string>
-			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKBaseViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1EC2ACB446539B41058FCAD3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>213010597435B5DCC8AD213E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>43EB2E11B8966712472D58F3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>23C89FD3249787132A4A56E1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5DCB25307458EDC145C1A138</string>
-				<string>569A91F834174F2B84314CF4</string>
-				<string>AC9EF0BE661F52FBA8E97DFF</string>
-				<string>C523431AE502EB8D7A4B4997</string>
-				<string>59F8DC100F3AD8E8430340BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241417FCC6FD30F3DF823DA1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
-			<key>path</key>
-			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2437BD69A2F8B5100F0905BD</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>9070C7BB5C80553E99CAC358</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B5C40CC5130B27D77C9E5567</string>
-			<key>remoteInfo</key>
-			<string>VOKMultiImagePicker-iOS</string>
-		</dict>
-		<key>247DD3AB8A55B2159AC288F8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>86216E9FC95C62AA777B1557</string>
-				<string>CAE8F770188BA026AFCCD8AB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2533AA14F0B31F9A21F114D9</key>
+		<key>411BDEB586A823F5C9E30162</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -487,22 +694,92 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>26260DE7D0D7224CA1B37761</key>
+		<key>41D939AEF7DE76B8B9BB11A6</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>44E1F58C06C7D3297D6E7E7B</string>
-				<string>49A0C7E9103B613712589FDA</string>
-				<string>DD403C37703A5A91A60D8747</string>
+				<string>CC3D26927715A4821387B1E7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>Development Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>27D65F7F8360AB83F546B9A6</key>
+		<key>442BDE9B04A3AB614F3812C8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>711FBD230F9CDD27A3255520</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS/Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>44CEFF704516B5CE459494BF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>411BDEB586A823F5C9E30162</string>
+				<string>711FBD230F9CDD27A3255520</string>
+				<string>C60F2B5FD2B9DD1851FC2921</string>
+				<string>1192AD06CFF171700B47FCF2</string>
+				<string>794D1BD7C4FE9D9EC1784156</string>
+				<string>F71C545F9FAC9499825F2502</string>
+				<string>D752FBA403A500FB70F59B0C</string>
+				<string>5E2E6CFBFB3A9955DC88D53B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47A220CC7E19183293F6D203</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -515,79 +792,51 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>287284D5750D72494CF58424</key>
+		<key>498FF51E3AC3F7F5D4B0474E</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>94DEE431422A009AC7609105</string>
-			<key>buildPhases</key>
-			<array>
-				<string>158F565DD218FB9154357EFE</string>
-				<string>D488DB095AAD8738600CB300</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C17B1BE3FA0396FFEB269930</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS</string>
-			<key>productName</key>
-			<string>Pods-VOKMultiImagePicker-iOS</string>
-			<key>productReference</key>
-			<string>8DA17481E1A2AF1674A6C4A8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>VOKAssetCollectionsDataSource.h</string>
+			<key>path</key>
+			<string>Pod/Classes/DataSources/VOKAssetCollectionsDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>29366BBA52C38A15C929B795</key>
+		<key>4A34642D28E5B5D9204E11F3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>44E1F58C06C7D3297D6E7E7B</string>
+			<string>5D6F40A93E725981F1AA11CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2A69B4ED43E9C6391DFEC1EC</key>
+		<key>4BB3BE861A1B13ADA4CB458D</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
-			<key>target</key>
-			<string>4D5BDCE91CF2F81543E9D7D6</string>
-			<key>targetProxy</key>
-			<string>7AE0E8A5303A87D1F7007D45</string>
+			<string>VOKMultiImagePicker.h</string>
+			<key>path</key>
+			<string>Pod/Classes/VOKMultiImagePicker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2BF16C5549D97EB079CF2AA5</key>
+		<key>5000BA2B1D1F9E94C113D322</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F18EFF09DC455C3FD50A08BC</string>
+			<string>4BB3BE861A1B13ADA4CB458D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2D012E3F7DA5177D19907042</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9CFADD480EEA939A925703C5</string>
-				<string>7641D64600CD69E6F6AB0C9C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2D5693E9A03770EFDCE29BB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1DD24DB869844FA5E66DE01D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2E92F701630AD7D17D1D487F</key>
+		<key>537EFD8FF887723E1FBDFFDD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -602,24 +851,450 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>312CF45689552BD6E29B8649</key>
+		<key>53D135F48CE6F66FE50D7181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>12C35EBA357E42DE7A1C483C</string>
+				<string>CEADA846E4F154D983DF62E8</string>
+				<string>587BF6104752438A14340903</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>55E5DF2791D126CE68D6D3B3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D870C2A379F9DFFD5E720A17</string>
+			<string>0E3DF3F3E6B85B5ECF0A3D68</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>32DEEEF390801B5236164B12</key>
+		<key>55F03D21EC222519216EB7C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSBundle+VOK.m</string>
+			<key>path</key>
+			<string>Pod/Classes/Categories/NSBundle+VOK.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>560FA4C8CE09B7FC51228390</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKAssetsViewController.m</string>
+			<key>path</key>
+			<string>Pod/Classes/ViewControllers/VOKAssetsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5692E4237DDE4084884A5930</key>
 		<dict>
 			<key>fileRef</key>
-			<string>49A0C7E9103B613712589FDA</string>
+			<string>537EFD8FF887723E1FBDFFDD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>370B74C622449B5AB6E53644</key>
+		<key>56984AFA302FF1F2AEF4C8AA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FFA667EE0E0C77958D89BADA</string>
+				<string>A3611DFDE103E0FD52AFD6B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>57F674A8E2D4F1CE7C836D17</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C1527AEEB0777BE60626BCBA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5866CBCCF89B17D000AC383C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB84600908E16AAF4426DCB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>587BF6104752438A14340903</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D359D566D2F0098359CDDE1F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>59B370FECAA86B5789A1B56F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5AC88246DE7390E1CC740A4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB84600908E16AAF4426DCB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5C6589CD359C9F21870C36F3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7645492B1F78A6E8FFEAB8CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5D6F40A93E725981F1AA11CE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>5E2E6CFBFB3A9955DC88D53B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
+			<key>path</key>
+			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>629AD1AC78AAB6927449436C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CF7F310D3CD7F77E407656</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F0B16EFD6FEA42C5BC6E9C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>647E9C0D458093AEB3AFA20F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FCACC8BBA3EEA18BFC62C13A</string>
+				<string>01540FCB929FF9EFF0C8D40B</string>
+				<string>B6738D3DE0DF8BE1953D409B</string>
+				<string>F6FC8A93E8B846B2F98FA6D5</string>
+				<string>C949C0C9BC81AC80A14E8BAE</string>
+				<string>96A32037746034BFC68805D5</string>
+				<string>6D21D8D53FDF08385C369B7D</string>
+				<string>FF821D5C41B5F6127382AB9E</string>
+				<string>71F26346E4619E091B5F8184</string>
+				<string>9FA632364924F02C9B49A17A</string>
+				<string>9D6C4FDBA1E2B3D81604411B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68844AB9FDDC3328A9980692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A05112A8AA5C4E11CAF99C56</string>
+				<string>93DE1F65E5E1B5C1CA424462</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>690BCC247CA0D39E98A9E2E7</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>BECAB5668A8D60F3746CDC3A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E4A2D6F777F0A84A1C4B7287</string>
+			<key>productRefGroup</key>
+			<string>D28837359A07C862E19A54B1</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>16F007565F2273783CAB6AD0</string>
+				<string>7253C4CEC2EA52FD00C78DAE</string>
+				<string>167AE3F78E2A342E1F1CD210</string>
+				<string>B6045395C6C1AB73E6EBAF69</string>
+				<string>7599C7B6962D53368B264ADA</string>
+			</array>
+		</dict>
+		<key>6AA2272CD92AB9AE3901DE93</key>
+		<dict>
+			<key>fileRef</key>
+			<string>537EFD8FF887723E1FBDFFDD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6AD167294F107F0DB95B71BF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>29F3716CE003E31875B497DC</string>
+				<string>57F674A8E2D4F1CE7C836D17</string>
+				<string>6AA2272CD92AB9AE3901DE93</string>
+				<string>3E9142CAE03D425203720BED</string>
+				<string>0543F792ABC55E267BDBE882</string>
+				<string>B3E10AABB25C2222D623C7E3</string>
+				<string>DE5CB4B4C478F5365F820495</string>
+				<string>3716B5B16694629CCD2691A1</string>
+				<string>86A0AE32C5F2E496342C5FFC</string>
+				<string>5866CBCCF89B17D000AC383C</string>
+				<string>55E5DF2791D126CE68D6D3B3</string>
+				<string>02EE04C56D333F7CDE79E0F2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6B4ACFA883A58A60562AAAEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6D21D8D53FDF08385C369B7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>025A4A51A98F23C0662064BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6D4A64C49321FE8D9CCE5396</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B1A6A686A97BCF49C765C83D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6E85DA2124B262EB4B0F43D6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DAC7CFB48BE07BF76FA6AC03</string>
+				<string>0ABC0C8AD57F49E97CB526C2</string>
+				<string>5692E4237DDE4084884A5930</string>
+				<string>ED809D8A8B954718171DA4E0</string>
+				<string>DB9CC5A65014CE4627706125</string>
+				<string>183AC8C848F26C2879C7F74F</string>
+				<string>274118749BEAEC400D48D971</string>
+				<string>308D3109D0E352ACB726B084</string>
+				<string>2F5B229EE1DBE0458BC8D612</string>
+				<string>5AC88246DE7390E1CC740A4F</string>
+				<string>EED08DB5E2C56DE14EA8CB1D</string>
+				<string>62CF7F310D3CD7F77E407656</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>711FBD230F9CDD27A3255520</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71F26346E4619E091B5F8184</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B1A6A686A97BCF49C765C83D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7253C4CEC2EA52FD00C78DAE</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>75AA27F417844C0FE71EF9E6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6AD167294F107F0DB95B71BF</string>
+				<string>53D135F48CE6F66FE50D7181</string>
+				<string>647E9C0D458093AEB3AFA20F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2C4D40ED09AAB99767EABBBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
+			<key>productName</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
+			<key>productReference</key>
+			<string>2607BA70217E84EEC8ECF9E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>7599C7B6962D53368B264ADA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C5EF787D4FFEC99E016EFC40</string>
+			<key>buildPhases</key>
+			<array>
+				<string>629AD1AC78AAB6927449436C</string>
+				<string>6B4ACFA883A58A60562AAAEC</string>
+				<string>EF85627E38B04039474AF78A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>VOKMultiImagePicker-iOS</string>
+			<key>productName</key>
+			<string>VOKMultiImagePicker-iOS</string>
+			<key>productReference</key>
+			<string>B1A0635383C5207037AD78D1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>75AA27F417844C0FE71EF9E6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>109E462C67FCEFE28FF309A7</string>
+				<string>442BDE9B04A3AB614F3812C8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7645492B1F78A6E8FFEAB8CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSBundle+VOK.h</string>
+			<key>path</key>
+			<string>Pod/Classes/Categories/NSBundle+VOK.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>794D1BD7C4FE9D9EC1784156</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A308BABFF6EB2F26E805BBB</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D53B45495450E3DAE9D0A098</string>
+			<string>F685040F456EDFFC7113553D</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -664,326 +1339,133 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>37EDBEBA3AD17A7BFA0C7174</key>
+		<key>7C483D079341D355A029E9A5</key>
 		<dict>
-			<key>fileRef</key>
-			<string>DD403C37703A5A91A60D8747</string>
+			<key>containerPortal</key>
+			<string>690BCC247CA0D39E98A9E2E7</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3994D189A31247F6027BE0A9</key>
-		<dict>
-			<key>includeInIndex</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
 			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSBundle+VOK.m</string>
-			<key>path</key>
-			<string>Pod/Classes/Categories/NSBundle+VOK.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<key>remoteGlobalIDString</key>
+			<string>7599C7B6962D53368B264ADA</string>
+			<key>remoteInfo</key>
+			<string>VOKMultiImagePicker-iOS</string>
 		</dict>
-		<key>3BEDF2A46E21F3476366E2FA</key>
+		<key>7E82C19449A52F97C4A28D31</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>731D229FA73B72180B94E472</string>
-				<string>069C8A983FACEBB10219DDD0</string>
-				<string>0002FB1090DE0750FAD62783</string>
-				<string>8B322CC5BBA4AAD89029DA14</string>
-				<string>0F21F1BCD4F94FCB492476C9</string>
-				<string>0AF53F964C31C97A36BC3B35</string>
-				<string>83B188A59DB34B15742F68F3</string>
+				<string>3A6C3A931884F932CB50C830</string>
+				<string>7A308BABFF6EB2F26E805BBB</string>
 			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3CFEFF91F298FDF42556424D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKAssetCollectionViewCell.h</string>
-			<key>path</key>
-			<string>Pod/Classes/Views/VOKAssetCollectionViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DA39BAF6C475979587F7E6C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F87B05E54F068B622913E2B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3EC3A50D3F8AF315F64A5A6A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AAA286F9AEA9397A7CA8214</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F109967D942D44472D88CEF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>312CF45689552BD6E29B8649</string>
-				<string>597CF1DD156EAAF235C8871E</string>
-				<string>5080D1CD2E6B470E4404D034</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>40F45A3605B974CA5AF587C6</key>
+		<key>7EAE4BEA7EA0021ED91B7489</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Storyboard.storyboard</string>
+			<key>path</key>
+			<string>Pod/Assets/Storyboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>818A9CC10A56DAABF65674F7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>86A0AE32C5F2E496342C5FFC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>560FA4C8CE09B7FC51228390</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>87267D3EE9DB943FED9C9215</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C7116B787DEECBB12CFE24FD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F58CB88ABAA4435AF2D5F9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VOKAssetsDataSource.m</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Pod/Classes/DataSources/VOKAssetsDataSource.m</string>
+			<string>Pods-VOKMultiImagePicker-iOS-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>43EB2E11B8966712472D58F3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKAssetCollectionsDataSource.h</string>
-			<key>path</key>
-			<string>Pod/Classes/DataSources/VOKAssetCollectionsDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44E1F58C06C7D3297D6E7E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>456A2DCA8B7B0C6E1EE8B720</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C350322AF67AB720F02D0023</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>48A776A1859BFCA2E5AF3203</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F18EFF09DC455C3FD50A08BC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49A0C7E9103B613712589FDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Photos.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Photos.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>4C79D71BEE69BBA25D35996B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E96A3B128C931F5395A1927</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4D5BDCE91CF2F81543E9D7D6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8C0E7F2541B42DC25BAA1E86</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EC595828A3E386CADB178727</string>
-				<string>576E0D41A3C3AE837F31545A</string>
-				<string>024AD9CDACED2E79F9460133</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>96BD9479EF70C55CEBED2CF0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
-			<key>productName</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
-			<key>productReference</key>
-			<string>DA1942DDF92F8AE86DEE11DC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>5080D1CD2E6B470E4404D034</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1DC5407D1A64AA6DE29ADCE7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5194915C6BD98B2BF8E51314</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B67C5DD7527969308F8C4E21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>569A91F834174F2B84314CF4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C22566097A09534A6A44943E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>576E0D41A3C3AE837F31545A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>29366BBA52C38A15C929B795</string>
-				<string>912C04764A77464D82FF545F</string>
-				<string>97D96A0E2241C1736637BD41</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>57ACB2BB9E2A504C82756F97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>597CF1DD156EAAF235C8871E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99D13A702CC45C8B58851C14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>59F8DC100F3AD8E8430340BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3BEDF2A46E21F3476366E2FA</string>
-				<string>BE1761727225DAEB6958EB3F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5AF1898724E95F979CDE02F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B4A50A5000A171EDBD776E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A04FCCE2816F8FF287F50521</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5CA7B12CA49BC334879D99D2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2D012E3F7DA5177D19907042</string>
-			<key>buildPhases</key>
-			<array>
-				<string>87923C64D781DB3DB43E7A6B</string>
-				<string>456A2DCA8B7B0C6E1EE8B720</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>2A69B4ED43E9C6391DFEC1EC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>productName</key>
-			<string>Pods-Tests</string>
-			<key>productReference</key>
-			<string>1EC2ACB446539B41058FCAD3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>5DCB25307458EDC145C1A138</key>
+		<key>898694DECC3BA5343F22EECD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1000,150 +1482,165 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>6099124B58EDD5356DBA662F</key>
+		<key>89CAD1CE14DF002C8409CDA3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E24591FBC7815B48A404C34E</string>
+			<string>D16A227B879E18A8B05E26BE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>612E7469F6704AB7F70B63DB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF2040ABB116A8233A7B0AD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>648E449A155102D15018080E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2E92F701630AD7D17D1D487F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>67C4915276921CEAE362252B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6B2145530CDC093065677722</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6C5E85FB66F8B83EC97FE98B</string>
-				<string>B80B3A1D374E997D16A34EA3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6BB3E98BEC0E9DF227B1716E</key>
+		<key>9275ADDA33D721CBE899DDA2</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>A46433125DBF5A2B755DBEDC</string>
-				<string>164569629E73E909522B54F6</string>
-				<string>76BFCCF246B0B280471BDF0B</string>
-				<string>3DA39BAF6C475979587F7E6C</string>
-				<string>9E5E8208FCBA56FD1823FB42</string>
-				<string>0086CB161F30D10F5649A819</string>
-				<string>011926F2E1D59055F406D7E1</string>
-				<string>ACCCEDEA56707B3DEF54F100</string>
-				<string>3EC3A50D3F8AF315F64A5A6A</string>
-				<string>CE430F23B0D1DC979EC280A5</string>
-				<string>BFB0158E19AA7FB9B0BB113B</string>
-				<string>B000F8E66D5A8307E8482EE7</string>
+				<string>5C6589CD359C9F21870C36F3</string>
+				<string>89CAD1CE14DF002C8409CDA3</string>
+				<string>9501C831E9F57498ADEE45CF</string>
+				<string>DB8D01E0FB30695205FE48ED</string>
+				<string>9285DD510C3B77A8D57F5B45</string>
+				<string>2F74C1231A9A6DD90CD47590</string>
+				<string>D2D758139A76DD298517E465</string>
+				<string>9CBEA12E7FBE5C6C41E368D1</string>
+				<string>6D4A64C49321FE8D9CCE5396</string>
+				<string>FA9F788FD5AD5976F78C898F</string>
+				<string>5000BA2B1D1F9E94C113D322</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
+			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>6C5E85FB66F8B83EC97FE98B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6E96A3B128C931F5395A1927</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+VOK.h</string>
-			<key>path</key>
-			<string>Pod/Classes/Categories/NSString+VOK.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7065E17BC4F01DA3A4CFCA84</key>
+		<key>9285DD510C3B77A8D57F5B45</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6E96A3B128C931F5395A1927</string>
+			<string>498FF51E3AC3F7F5D4B0474E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>71CA2B96E92E765629741AF4</key>
+		<key>92C501BEC22F3FE0EBBF2CB7</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>14F8757B8DF0C52EA333B208</string>
-				<string>32DEEEF390801B5236164B12</string>
-				<string>37EDBEBA3AD17A7BFA0C7174</string>
+				<string>4A34642D28E5B5D9204E11F3</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>731D229FA73B72180B94E472</key>
+		<key>93A7D1304E3F8631E141B0FB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-Tests-acknowledgements.markdown</string>
+			<string>Pods-VOKMultiImagePicker-iOS-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7641D64600CD69E6F6AB0C9C</key>
+		<key>93DE1F65E5E1B5C1CA424462</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BAB9933E58709CE4F6DD3898</string>
+				<string>88F58CB88ABAA4435AF2D5F9</string>
+				<string>93A7D1304E3F8631E141B0FB</string>
+				<string>F5DBF08CB53FB1056ED307AF</string>
+				<string>0F3AF659C458F89A6C0070EA</string>
+				<string>AE2B4433EB404FD7A6E135F9</string>
+				<string>F685040F456EDFFC7113553D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-VOKMultiImagePicker-iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9501C831E9F57498ADEE45CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D49634C0D7039F718ACD2BE6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96A32037746034BFC68805D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D9B13B37C2BD0C1BD622F628</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9CBEA12E7FBE5C6C41E368D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F58B2B1B051D0D05751D719A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9D6C4FDBA1E2B3D81604411B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4BB3BE861A1B13ADA4CB458D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EA5725F5E0E5BC544876DB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>VOKAssetCollectionViewCell.m</string>
+			<key>path</key>
+			<string>Pod/Classes/Views/VOKAssetCollectionViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FA632364924F02C9B49A17A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F3A479AE0DC12F4BE51D73B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A05112A8AA5C4E11CAF99C56</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E4B3BF5EE49EDF030338DBD5</string>
+				<string>FFC7F4596122840526E2FAEF</string>
+				<string>C7D27FDBC3BDFD23B59760AF</string>
+				<string>1BDAFAB027439E32CB9B325E</string>
+				<string>2664D1BF4FAD4FC7A5B8C194</string>
+				<string>00963FC77318110171D4A7E6</string>
+				<string>C7116B787DEECBB12CFE24FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3611DFDE103E0FD52AFD6B3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>83B188A59DB34B15742F68F3</string>
+			<string>F71C545F9FAC9499825F2502</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1154,6 +1651,8 @@
 				<string>/tmp/xcodeproj.dst</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
 				<key>INSTALL_PATH</key>
 				<string>$(BUILT_PRODUCTS_DIR)</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
@@ -1188,25 +1687,162 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>76BFCCF246B0B280471BDF0B</key>
+		<key>A7110DB77371C7C81A236159</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Photos.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Photos.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>A907339D5D6EBEFCE4502B2B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>25B549DA389DA826807133A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE2B4433EB404FD7A6E135F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-VOKMultiImagePicker-iOS.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1A0635383C5207037AD78D1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>VOKMultiImagePicker-iOS.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B1A6A686A97BCF49C765C83D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>VOKBaseViewController.h</string>
+			<key>path</key>
+			<string>Pod/Classes/ViewControllers/VOKBaseViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B326356455F6DCAAF8778196</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>00963FC77318110171D4A7E6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B3E10AABB25C2222D623C7E3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2E92F701630AD7D17D1D487F</string>
+			<string>30766E084981065B3BC4C352</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>795F972C69E5C240AE683954</key>
+		<key>B6045395C6C1AB73E6EBAF69</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurationList</key>
+			<string>56984AFA302FF1F2AEF4C8AA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6E85DA2124B262EB4B0F43D6</string>
+				<string>299A3586970D7225416CDC98</string>
+				<string>9275ADDA33D721CBE899DDA2</string>
+			</array>
+			<key>buildRules</key>
 			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C112600DFB777E582DEE5AD1</string>
+			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
+			<key>productName</key>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
+			<key>productReference</key>
+			<string>47A220CC7E19183293F6D203</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>79C9E625884427C449A5C67B</key>
+		<key>B6738D3DE0DF8BE1953D409B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D49634C0D7039F718ACD2BE6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B71A69B5C02825167A3CA731</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -1268,21 +1904,34 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>79D332E58969744183D89871</key>
+		<key>BAB9933E58709CE4F6DD3898</key>
 		<dict>
-			<key>fileRef</key>
-			<string>44E1F58C06C7D3297D6E7E7B</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-VOKMultiImagePicker-iOS-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7AA121E3EBCFCE2212AB5A97</key>
+		<key>BECAB5668A8D60F3746CDC3A</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A1B965D744EDAAC6BF2EAED8</string>
+			<key>buildConfigurations</key>
+			<array>
+				<string>40855BAFBDB247679E4E6106</string>
+				<string>B71A69B5C02825167A3CA731</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>7AAA286F9AEA9397A7CA8214</key>
+		<key>C0ED2F0270DE1A7C742C654A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1291,41 +1940,66 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>VOKAssetsViewController.m</string>
+			<string>VOKAssetCollectionsViewController.m</string>
 			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKAssetsViewController.m</string>
+			<string>Pod/Classes/ViewControllers/VOKAssetCollectionsViewController.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7AAEA05C5B6E0CB624E357E5</key>
+		<key>C112600DFB777E582DEE5AD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>VOKMultiImagePicker-iOS</string>
+			<key>target</key>
+			<string>7599C7B6962D53368B264ADA</string>
+			<key>targetProxy</key>
+			<string>1CBEF99D36F487070F475403</string>
+		</dict>
+		<key>C1527AEEB0777BE60626BCBA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>VOKAssetsViewController.h</string>
+			<string>NSString+VOK.m</string>
 			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKAssetsViewController.h</string>
+			<string>Pod/Classes/Categories/NSString+VOK.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7AE0E8A5303A87D1F7007D45</key>
+		<key>C5EF787D4FFEC99E016EFC40</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>9070C7BB5C80553E99CAC358</string>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E21213CD266047ABCDC0ACC4</string>
+				<string>818A9CC10A56DAABF65674F7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>4D5BDCE91CF2F81543E9D7D6</string>
-			<key>remoteInfo</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>83B188A59DB34B15742F68F3</key>
+		<key>C60F2B5FD2B9DD1851FC2921</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Tests-VOKMultiImagePicker-iOS-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7116B787DEECBB12CFE24FD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1338,233 +2012,72 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>843442AB3C7CD06EA80F9AB5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C623DF92483E019520A944EA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS/Pods-Tests-VOKMultiImagePicker-iOS-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>86216E9FC95C62AA777B1557</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>902775347D915DA76828DE52</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8737B092B7F86D96D2D7FA88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>40F45A3605B974CA5AF587C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8761E10216D5289367AFC1E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0ED6DD1257ED647A722741BD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>87923C64D781DB3DB43E7A6B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A903DB863B9A3C548C6CE541</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>881A0D7A407ABF6925BCD63E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DFF37582A8B0EE425685B676</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>89FAE375CDB237CBA9C03339</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0CC6E0DF0C9AA0974791D8AB</string>
-				<string>79C9E625884427C449A5C67B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8B322CC5BBA4AAD89029DA14</key>
+		<key>C7D27FDBC3BDFD23B59760AF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-Tests-environment.h</string>
+			<string>Pods-Tests-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8C0E7F2541B42DC25BAA1E86</key>
+		<key>C949C0C9BC81AC80A14E8BAE</key>
 		<dict>
-			<key>buildConfigurations</key>
+			<key>fileRef</key>
+			<string>498FF51E3AC3F7F5D4B0474E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC3D26927715A4821387B1E7</key>
+		<dict>
+			<key>children</key>
 			<array>
-				<string>843442AB3C7CD06EA80F9AB5</string>
-				<string>0639EC4010134C28F63DF70A</string>
+				<string>7645492B1F78A6E8FFEAB8CA</string>
+				<string>55F03D21EC222519216EB7C5</string>
+				<string>D16A227B879E18A8B05E26BE</string>
+				<string>C1527AEEB0777BE60626BCBA</string>
+				<string>D49634C0D7039F718ACD2BE6</string>
+				<string>537EFD8FF887723E1FBDFFDD</string>
+				<string>3D202C63A88795D9243ED550</string>
+				<string>9EA5725F5E0E5BC544876DB1</string>
+				<string>498FF51E3AC3F7F5D4B0474E</string>
+				<string>30766E084981065B3BC4C352</string>
+				<string>D9B13B37C2BD0C1BD622F628</string>
+				<string>C0ED2F0270DE1A7C742C654A</string>
+				<string>025A4A51A98F23C0662064BF</string>
+				<string>2F5185E3CBB14EEC106EB5FB</string>
+				<string>F58B2B1B051D0D05751D719A</string>
+				<string>560FA4C8CE09B7FC51228390</string>
+				<string>B1A6A686A97BCF49C765C83D</string>
+				<string>FB84600908E16AAF4426DCB3</string>
+				<string>3F3A479AE0DC12F4BE51D73B</string>
+				<string>0E3DF3F3E6B85B5ECF0A3D68</string>
+				<string>4BB3BE861A1B13ADA4CB458D</string>
+				<string>1F0B16EFD6FEA42C5BC6E9C2</string>
+				<string>2DFAD7DD78B3B4D0C244D59E</string>
+				<string>44CEFF704516B5CE459494BF</string>
 			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8D91861D9733A736A6F0113A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VOKMultiImagePicker-iOS</string>
 			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS-acknowledgements.plist</string>
+			<string>../..</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8DA17481E1A2AF1674A6C4A8</key>
+		<key>CEADA846E4F154D983DF62E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7110DB77371C7C81A236159</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D051F53C5802DA9DE63F7BFE</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1577,293 +2090,59 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>902775347D915DA76828DE52</key>
+		<key>D16A227B879E18A8B05E26BE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-Private.xcconfig</string>
+			<string>NSString+VOK.h</string>
 			<key>path</key>
-			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-Private.xcconfig</string>
+			<string>Pod/Classes/Categories/NSString+VOK.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9070C7BB5C80553E99CAC358</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>89FAE375CDB237CBA9C03339</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>23C89FD3249787132A4A56E1</string>
-			<key>productRefGroup</key>
-			<string>C523431AE502EB8D7A4B4997</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>5CA7B12CA49BC334879D99D2</string>
-				<string>4D5BDCE91CF2F81543E9D7D6</string>
-				<string>287284D5750D72494CF58424</string>
-				<string>123DDA6953CCCEE21877024B</string>
-				<string>B5C40CC5130B27D77C9E5567</string>
-			</array>
-		</dict>
-		<key>912C04764A77464D82FF545F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49A0C7E9103B613712589FDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>912E0BC2A0C3CAB5EA37390E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6099124B58EDD5356DBA662F</string>
-				<string>7065E17BC4F01DA3A4CFCA84</string>
-				<string>7AA121E3EBCFCE2212AB5A97</string>
-				<string>941AA3D9E064EE2AA9011096</string>
-				<string>9568C23913DEA9F843A3F405</string>
-				<string>48A776A1859BFCA2E5AF3203</string>
-				<string>D4F9C21EE11156E3E155C86D</string>
-				<string>0EDADCB2AB2577E3B8F70EC3</string>
-				<string>5B4A50A5000A171EDBD776E9</string>
-				<string>B037040CAC6D7E7B7FE739FC</string>
-				<string>FEE5FE5FACBA59C9B558A928</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>941AA3D9E064EE2AA9011096</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3CFEFF91F298FDF42556424D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94DEE431422A009AC7609105</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>881A0D7A407ABF6925BCD63E</string>
-				<string>370B74C622449B5AB6E53644</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9568C23913DEA9F843A3F405</key>
-		<dict>
-			<key>fileRef</key>
-			<string>43EB2E11B8966712472D58F3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>965A76086B57A07369D284F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1A5642F73ABD99DDBABDBEFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>96A7F11152BC52789D96D35D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AAEA05C5B6E0CB624E357E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>96BD9479EF70C55CEBED2CF0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>VOKMultiImagePicker-iOS</string>
-			<key>target</key>
-			<string>B5C40CC5130B27D77C9E5567</string>
-			<key>targetProxy</key>
-			<string>2437BD69A2F8B5100F0905BD</string>
-		</dict>
-		<key>96CD3D566AC1AB3EFF893F17</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>VOKMultiImagePicker-iOS.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>97CF63B62EB4EF3E61400F3D</key>
+		<key>D28837359A07C862E19A54B1</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>D870C2A379F9DFFD5E720A17</string>
-				<string>99D13A702CC45C8B58851C14</string>
-				<string>1DC5407D1A64AA6DE29ADCE7</string>
+				<string>B1A0635383C5207037AD78D1</string>
+				<string>59B370FECAA86B5789A1B56F</string>
+				<string>2607BA70217E84EEC8ECF9E8</string>
+				<string>D051F53C5802DA9DE63F7BFE</string>
+				<string>47A220CC7E19183293F6D203</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D96A0E2241C1736637BD41</key>
+		<key>D2D758139A76DD298517E465</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DD403C37703A5A91A60D8747</string>
+			<string>025A4A51A98F23C0662064BF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>9815EC327489AF3B52EE64EC</key>
+		<key>D359D566D2F0098359CDDE1F</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A00E349508D7C8DED53B083A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>99D13A702CC45C8B58851C14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>file.xib</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>VOKAssetCollectionsViewController.xib</string>
+			<string>UIKit.framework</string>
 			<key>path</key>
-			<string>Pod/Assets/VOKAssetCollectionsViewController.xib</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>9C05A519B23B3950CBAA4C4D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EBC6D95A92F6D7BB957DCB45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CFADD480EEA939A925703C5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0AF53F964C31C97A36BC3B35</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9E5E8208FCBA56FD1823FB42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AC9F12D91FF66CD3B6AB6DDE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A00E349508D7C8DED53B083A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKCollectionViewGridLayout.h</string>
-			<key>path</key>
-			<string>Pod/Classes/DataSources/Layouts/VOKCollectionViewGridLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A04FCCE2816F8FF287F50521</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKBaseViewController.h</string>
-			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKBaseViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1B965D744EDAAC6BF2EAED8</key>
+		<key>D49634C0D7039F718ACD2BE6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1878,41 +2157,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A46433125DBF5A2B755DBEDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3994D189A31247F6027BE0A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A903DB863B9A3C548C6CE541</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0002FB1090DE0750FAD62783</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9330A479BCA8D5A06DAD8CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7AAA286F9AEA9397A7CA8214</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AC9EF0BE661F52FBA8E97DFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>26260DE7D0D7224CA1B37761</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC9F12D91FF66CD3B6AB6DDE</key>
+		<key>D752FBA403A500FB70F59B0C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1921,81 +2166,70 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>VOKAssetCollectionViewCell.m</string>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-dummy.m</string>
 			<key>path</key>
-			<string>Pod/Classes/Views/VOKAssetCollectionViewCell.m</string>
+			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>ACCCEDEA56707B3DEF54F100</key>
-		<dict>
-			<key>fileRef</key>
-			<string>40F45A3605B974CA5AF587C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AE20CDFACEAE3088A407EF24</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3994D189A31247F6027BE0A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B000F8E66D5A8307E8482EE7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B67C5DD7527969308F8C4E21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B037040CAC6D7E7B7FE739FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A00E349508D7C8DED53B083A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5C40CC5130B27D77C9E5567</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6B2145530CDC093065677722</string>
-			<key>buildPhases</key>
-			<array>
-				<string>795F972C69E5C240AE683954</string>
-				<string>BD63F15F2850BB7C3CD01445</string>
-				<string>3F109967D942D44472D88CEF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>VOKMultiImagePicker-iOS</string>
-			<key>productName</key>
-			<string>VOKMultiImagePicker-iOS</string>
-			<key>productReference</key>
-			<string>96CD3D566AC1AB3EFF893F17</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>B67C5DD7527969308F8C4E21</key>
+		<key>D9B13B37C2BD0C1BD622F628</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>VOKMultiImagePicker.m</string>
+			<string>VOKAssetCollectionsViewController.h</string>
 			<key>path</key>
-			<string>Pod/Classes/VOKMultiImagePicker.m</string>
+			<string>Pod/Classes/ViewControllers/VOKAssetCollectionsViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B80B3A1D374E997D16A34EA3</key>
+		<key>DAC7CFB48BE07BF76FA6AC03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>55F03D21EC222519216EB7C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DB8D01E0FB30695205FE48ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D202C63A88795D9243ED550</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DB9CC5A65014CE4627706125</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EA5725F5E0E5BC544876DB1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DD930FD413CF10F616EFB0F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D6F40A93E725981F1AA11CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE5CB4B4C478F5365F820495</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C0ED2F0270DE1A7C742C654A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E15EF355F7B87EE7D7E59B9F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7110DB77371C7C81A236159</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E21213CD266047ABCDC0ACC4</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -2011,161 +2245,64 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
 		</dict>
-		<key>B95D7E1C68F7BD4896168AB6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>9070C7BB5C80553E99CAC358</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>123DDA6953CCCEE21877024B</string>
-			<key>remoteInfo</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
-		</dict>
-		<key>BBD514410A14A65F9BB3BC15</key>
+		<key>E4A2D6F777F0A84A1C4B7287</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2533AA14F0B31F9A21F114D9</string>
-				<string>C623DF92483E019520A944EA</string>
-				<string>C95AABF6286E900D0F308249</string>
-				<string>0902DE53979B22DEAA1935E2</string>
-				<string>D822565EFB1C4EEF6958ED2C</string>
-				<string>902775347D915DA76828DE52</string>
-				<string>F87B05E54F068B622913E2B9</string>
-				<string>241417FCC6FD30F3DF823DA1</string>
+				<string>898694DECC3BA5343F22EECD</string>
+				<string>41D939AEF7DE76B8B9BB11A6</string>
+				<string>A907339D5D6EBEFCE4502B2B</string>
+				<string>D28837359A07C862E19A54B1</string>
+				<string>68844AB9FDDC3328A9980692</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-Tests-VOKMultiImagePicker-iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD163D54968E9A51A0C56874</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AC9F12D91FF66CD3B6AB6DDE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BD63F15F2850BB7C3CD01445</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE1761727225DAEB6958EB3F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>67C4915276921CEAE362252B</string>
-				<string>8D91861D9733A736A6F0113A</string>
-				<string>0B7E24AF6D1C56478FE7D0E9</string>
-				<string>5AF1898724E95F979CDE02F4</string>
-				<string>57ACB2BB9E2A504C82756F97</string>
-				<string>DFF37582A8B0EE425685B676</string>
-				<string>D53B45495450E3DAE9D0A098</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-VOKMultiImagePicker-iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE1A9C8E054043AD75B0DBB0</key>
+		<key>E4B3BF5EE49EDF030338DBD5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VOKAssetCollectionsDataSource.m</string>
+			<string>text</string>
 			<key>path</key>
-			<string>Pod/Classes/DataSources/VOKAssetCollectionsDataSource.m</string>
+			<string>Pods-Tests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BFB0158E19AA7FB9B0BB113B</key>
+		<key>ED809D8A8B954718171DA4E0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1A5642F73ABD99DDBABDBEFF</string>
+			<string>D752FBA403A500FB70F59B0C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C17B1BE3FA0396FFEB269930</key>
+		<key>EED08DB5E2C56DE14EA8CB1D</key>
 		<dict>
+			<key>fileRef</key>
+			<string>0E3DF3F3E6B85B5ECF0A3D68</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS</string>
-			<key>target</key>
-			<string>123DDA6953CCCEE21877024B</string>
-			<key>targetProxy</key>
-			<string>B95D7E1C68F7BD4896168AB6</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>C22566097A09534A6A44943E</key>
+		<key>EF85627E38B04039474AF78A</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>E24591FBC7815B48A404C34E</string>
-				<string>3994D189A31247F6027BE0A9</string>
-				<string>6E96A3B128C931F5395A1927</string>
-				<string>EF2040ABB116A8233A7B0AD6</string>
-				<string>A1B965D744EDAAC6BF2EAED8</string>
-				<string>2E92F701630AD7D17D1D487F</string>
-				<string>3CFEFF91F298FDF42556424D</string>
-				<string>AC9F12D91FF66CD3B6AB6DDE</string>
-				<string>43EB2E11B8966712472D58F3</string>
-				<string>BE1A9C8E054043AD75B0DBB0</string>
-				<string>F18EFF09DC455C3FD50A08BC</string>
-				<string>EBC6D95A92F6D7BB957DCB45</string>
-				<string>0ED6DD1257ED647A722741BD</string>
-				<string>40F45A3605B974CA5AF587C6</string>
-				<string>7AAEA05C5B6E0CB624E357E5</string>
-				<string>7AAA286F9AEA9397A7CA8214</string>
-				<string>A04FCCE2816F8FF287F50521</string>
-				<string>1DD24DB869844FA5E66DE01D</string>
-				<string>A00E349508D7C8DED53B083A</string>
-				<string>1A5642F73ABD99DDBABDBEFF</string>
-				<string>C49AA5C101374F298424E525</string>
-				<string>B67C5DD7527969308F8C4E21</string>
-				<string>97CF63B62EB4EF3E61400F3D</string>
-				<string>BBD514410A14A65F9BB3BC15</string>
+				<string>0D913F46C5F86878D1CEFB2B</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>VOKMultiImagePicker-iOS</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>C350322AF67AB720F02D0023</key>
-		<dict>
-			<key>fileRef</key>
-			<string>44E1F58C06C7D3297D6E7E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C49AA5C101374F298424E525</key>
+		<key>F58B2B1B051D0D05751D719A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2174,147 +2311,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>VOKMultiImagePicker.h</string>
+			<string>VOKAssetsViewController.h</string>
 			<key>path</key>
-			<string>Pod/Classes/VOKMultiImagePicker.h</string>
+			<string>Pod/Classes/ViewControllers/VOKAssetsViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C523431AE502EB8D7A4B4997</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>96CD3D566AC1AB3EFF893F17</string>
-				<string>1EC2ACB446539B41058FCAD3</string>
-				<string>DA1942DDF92F8AE86DEE11DC</string>
-				<string>8DA17481E1A2AF1674A6C4A8</string>
-				<string>27D65F7F8360AB83F546B9A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C623DF92483E019520A944EA</key>
+		<key>F5DBF08CB53FB1056ED307AF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS-Private.xcconfig</string>
+			<string>Pods-VOKMultiImagePicker-iOS-environment.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C95AABF6286E900D0F308249</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-VOKMultiImagePicker-iOS-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAE8F770188BA026AFCCD8AB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>902775347D915DA76828DE52</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CD4EFD8F044B805E36142280</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE1A9C8E054043AD75B0DBB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CE430F23B0D1DC979EC280A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1DD24DB869844FA5E66DE01D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CEB52FFDDA459B2B6C6B53F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A1B965D744EDAAC6BF2EAED8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D488DB095AAD8738600CB300</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79D332E58969744183D89871</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4F9C21EE11156E3E155C86D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0ED6DD1257ED647A722741BD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D53B45495450E3DAE9D0A098</key>
+		<key>F685040F456EDFFC7113553D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2327,7 +2343,14 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D822565EFB1C4EEF6958ED2C</key>
+		<key>F6FC8A93E8B846B2F98FA6D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D202C63A88795D9243ED550</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F71C545F9FAC9499825F2502</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2336,101 +2359,27 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS.xcconfig</string>
+			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-Private.xcconfig</string>
 			<key>path</key>
-			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS.xcconfig</string>
+			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-Private.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D870C2A379F9DFFD5E720A17</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Storyboard.storyboard</string>
-			<key>path</key>
-			<string>Pod/Assets/Storyboard.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA1942DDF92F8AE86DEE11DC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests-VOKMultiImagePicker-iOS.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DC14C72458830B13DBC6A0F8</key>
+		<key>FA9F788FD5AD5976F78C898F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C95AABF6286E900D0F308249</string>
+			<string>3F3A479AE0DC12F4BE51D73B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>DD403C37703A5A91A60D8747</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>DFF37582A8B0EE425685B676</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VOKMultiImagePicker-iOS.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E24591FBC7815B48A404C34E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSBundle+VOK.h</string>
-			<key>path</key>
-			<string>Pod/Classes/Categories/NSBundle+VOK.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E452916FD4302819DA39B834</key>
+		<key>FB35096880336BD4B106A415</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C49AA5C101374F298424E525</string>
+			<string>5D6F40A93E725981F1AA11CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E495A92E24639C96DC35273C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3CFEFF91F298FDF42556424D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EBC6D95A92F6D7BB957DCB45</key>
+		<key>FB84600908E16AAF4426DCB3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2439,101 +2388,104 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>VOKAssetCollectionsViewController.m</string>
+			<string>VOKBaseViewController.m</string>
 			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKAssetCollectionsViewController.m</string>
+			<string>Pod/Classes/ViewControllers/VOKBaseViewController.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EC595828A3E386CADB178727</key>
+		<key>FCACC8BBA3EEA18BFC62C13A</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>fileRef</key>
+			<string>7645492B1F78A6E8FFEAB8CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDACA8B08612779087B3490D</key>
+		<dict>
+			<key>buildConfigurations</key>
 			<array>
-				<string>AE20CDFACEAE3088A407EF24</string>
-				<string>612E7469F6704AB7F70B63DB</string>
-				<string>648E449A155102D15018080E</string>
-				<string>DC14C72458830B13DBC6A0F8</string>
-				<string>BD163D54968E9A51A0C56874</string>
-				<string>CD4EFD8F044B805E36142280</string>
-				<string>9C05A519B23B3950CBAA4C4D</string>
-				<string>8737B092B7F86D96D2D7FA88</string>
-				<string>A9330A479BCA8D5A06DAD8CD</string>
-				<string>2D5693E9A03770EFDCE29BB9</string>
-				<string>965A76086B57A07369D284F6</string>
-				<string>5194915C6BD98B2BF8E51314</string>
+				<string>B326356455F6DCAAF8778196</string>
+				<string>87267D3EE9DB943FED9C9215</string>
 			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
-		</dict>
-		<key>EF2040ABB116A8233A7B0AD6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSString+VOK.m</string>
-			<key>path</key>
-			<string>Pod/Classes/Categories/NSString+VOK.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>F18EFF09DC455C3FD50A08BC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VOKAssetCollectionsViewController.h</string>
-			<key>path</key>
-			<string>Pod/Classes/ViewControllers/VOKAssetCollectionsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F87B05E54F068B622913E2B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-dummy.m</string>
-			<key>path</key>
-			<string>../Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FDE107CE4E95944C974AD253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>VOKMultiImagePicker-iOS</string>
-			<key>target</key>
-			<string>B5C40CC5130B27D77C9E5567</string>
-			<key>targetProxy</key>
-			<string>0EDC32C172ED13543D3E38E5</string>
-		</dict>
-		<key>FEE5FE5FACBA59C9B558A928</key>
+		<key>FF821D5C41B5F6127382AB9E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C49AA5C101374F298424E525</string>
+			<string>F58B2B1B051D0D05751D719A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFA667EE0E0C77958D89BADA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F71C545F9FAC9499825F2502</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS-VOKMultiImagePicker-iOS-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FFC7F4596122840526E2FAEF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>9070C7BB5C80553E99CAC358</string>
+	<string>690BCC247CA0D39E98A9E2E7</string>
 </dict>
 </plist>

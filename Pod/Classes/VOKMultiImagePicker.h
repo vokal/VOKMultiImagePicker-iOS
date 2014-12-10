@@ -21,9 +21,10 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition) {
 
 @end
 
-@interface VOKMultiImagePicker : UINavigationController
+@interface VOKMultiImagePicker : UIViewController
 
 @property (nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
+@property (nonatomic, weak) IBOutlet UIButton *addItemsButton;
 @property (nonatomic) PHAssetMediaType mediaType;
 @property (nonatomic) enum VOKMultiImagePickerStartPosition startPosition;
 

@@ -16,6 +16,7 @@
 @interface VOKMultiImagePicker ()
 
 @property (nonatomic) NSArray *selectedAssets;
+@property (nonatomic, weak) IBOutlet UIView *containerView;
 
 @end
 
@@ -31,22 +32,28 @@
 {
     [super viewDidLoad];
     
-    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
+    UINavigationController *containerNavigationController = [[UINavigationController alloc] init];
+    containerNavigationController.view.frame = self.containerView.bounds;
     
+    [self addChildViewController:containerNavigationController];
+    [self.containerView addSubview:containerNavigationController.view];
+    [containerNavigationController didMoveToParentViewController:self];
+    
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
     switch (self.startPosition) {
         case VOKMultiImagePickerStartPositionAlbums:
-            self.viewControllers = @[albumViewController];
+            containerNavigationController.viewControllers = @[albumViewController];
             break;
         case VOKMultiImagePickerStartPositionCameraRoll: {
             PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetsOfType:self.mediaType];
             VOKAssetsViewController *cameraRollViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
-            self.viewControllers = @[albumViewController, cameraRollViewController];
+            containerNavigationController.viewControllers = @[albumViewController, cameraRollViewController];
             break;
         }
     }
 }
 
-- (void)doneSelectingAssets
+- (IBAction)doneSelectingAssets
 {
     [self.imageDelegate multiImagePickerSelectedAssets:self.selectedAssets];
     [self dismissViewControllerAnimated:YES completion:nil];
