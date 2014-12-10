@@ -1,0 +1,14 @@
+PODS:
+  - VOKMultiImagePicker-iOS (0.1.0)
+
+DEPENDENCIES:
+  - VOKMultiImagePicker-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  VOKMultiImagePicker-iOS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VOKMultiImagePicker-iOS: 44f2edd47ca11fdf2645c5b6c20c56c552c12abd
+
+COCOAPODS: 0.35.0
