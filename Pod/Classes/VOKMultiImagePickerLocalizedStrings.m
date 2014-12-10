@@ -1,5 +1,5 @@
 //
-//  NSString+Localized.m
+//  VOKMultiImagePickerLocalizedStrings.m
 //  VOKMultiImagePicker
 //
 //  Created by Luke Quigley on 12/8/14.

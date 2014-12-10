@@ -8,6 +8,14 @@
 
 @import UIKit;
 
+@protocol VOKMultiImagePickerDelegate <NSObject>
+
+- (void)multiImagePickerSelectedImages:(NSArray *)images;
+
+@end
+
 @interface VOKMultiImagePicker : UINavigationController
+
+@property (nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
 
 @end

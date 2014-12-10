@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		96769B9A1A378079008CDD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96769B981A378079008CDD06 /* Main.storyboard */; };
+		968B2CFA1A37B21E00337276 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96769BA61A378482008CDD06 /* Photos.framework */; };
 		BCBBE583F2C6930C432133DC /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62276186041A82C3C2EB4DDD /* libPods-Tests.a */; };
 		D757D840DEBC610B32310944 /* libPods-VOKMultiImagePicker-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A9DB1D04AEABE9B75EF1D /* libPods-VOKMultiImagePicker-iOS.a */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968B2CFA1A37B21E00337276 /* Photos.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,

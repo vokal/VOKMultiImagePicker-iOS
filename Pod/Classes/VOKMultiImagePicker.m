@@ -8,7 +8,7 @@
 
 #import "VOKMultiImagePicker.h"
 
-#import "VOKAlbumViewController.h"
+#import "VOKAssetCollectionsViewController.h"
 
 @implementation VOKMultiImagePicker
 
@@ -19,7 +19,7 @@
     NSURL *bundlePath = [[NSBundle mainBundle] URLForResource:@"VOKMultiImagePicker-iOS" withExtension:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithURL:bundlePath];
     
-    VOKAlbumViewController *albumViewController = [[VOKAlbumViewController alloc] initWithNibName:NSStringFromClass([VOKAlbumViewController class]) bundle:bundle];
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithNibName:NSStringFromClass([VOKAssetCollectionsViewController class]) bundle:bundle];
     self.viewControllers = @[albumViewController];
 }
 
