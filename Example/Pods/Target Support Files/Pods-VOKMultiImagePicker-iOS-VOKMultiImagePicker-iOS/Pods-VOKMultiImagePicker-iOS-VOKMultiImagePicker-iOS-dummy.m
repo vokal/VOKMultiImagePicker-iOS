@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_VOKMultiImagePicker_iOS_VOKMultiImagePicker_iOS : NSObject
-@end
-@implementation PodsDummy_Pods_VOKMultiImagePicker_iOS_VOKMultiImagePicker_iOS
-@end
