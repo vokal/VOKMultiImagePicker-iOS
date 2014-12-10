@@ -10,8 +10,19 @@
 
 @import Photos;
 
+@class VOKAssetsDataSource;
+
+@protocol VOKAssetsDataSourceDelegate <NSObject>
+
+- (void)assetDataSource:(VOKAssetsDataSource *)dataSource selectedAsset:(PHAsset *)asset;
+- (void)assetDataSource:(VOKAssetsDataSource *)dataSource deselectedAsset:(PHAsset *)asset;
+
+@end
+
 @interface VOKAssetsDataSource : NSObject
 
-- (instancetype)initWithCollectionView:(UICollectionView *)collectionView assetCollection:(PHAssetCollection *)assetCollection;
+@property (nonatomic, weak) id<VOKAssetsDataSourceDelegate> delegate;
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView fetchResult:(PHFetchResult *)fetchResult;
 
 @end

@@ -8,6 +8,10 @@
 
 #import "VOKBaseViewController.h"
 
+@import Photos;
+
 @interface VOKAssetCollectionsViewController : VOKBaseViewController
+
+- (instancetype)initWithMediaType:(PHAssetMediaType)mediaType;
 
 @end

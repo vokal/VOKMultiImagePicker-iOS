@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface VOKAssetCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic) UIImageView *imageView;
 
 @end

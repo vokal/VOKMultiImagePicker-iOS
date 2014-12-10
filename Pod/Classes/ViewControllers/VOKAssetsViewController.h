@@ -12,6 +12,6 @@
 
 @interface VOKAssetsViewController : VOKBaseViewController
 
-- (instancetype)initWithAssetCollection:(PHAssetCollection *)assetCollection;
+- (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult;
 
 @end

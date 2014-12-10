@@ -8,14 +8,23 @@
 
 @import UIKit;
 
+@import Photos;
+
+NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition) {
+    VOKMultiImagePickerStartPositionAlbums,
+    VOKMultiImagePickerStartPositionCameraRoll,
+};
+
 @protocol VOKMultiImagePickerDelegate <NSObject>
 
-- (void)multiImagePickerSelectedImages:(NSArray *)images;
+- (void)multiImagePickerSelectedAssets:(NSArray *)assets;
 
 @end
 
 @interface VOKMultiImagePicker : UINavigationController
 
 @property (nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
+@property (nonatomic) PHAssetMediaType mediaType;
+@property (nonatomic) enum VOKMultiImagePickerStartPosition startPosition;
 
 @end

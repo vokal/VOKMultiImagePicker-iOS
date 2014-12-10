@@ -13,18 +13,17 @@
 @interface VOKAssetsViewController ()
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
-@property (nonatomic) PHAssetCollection *assetCollection;
+@property (nonatomic) PHFetchResult *fetchResult;
 @property (nonatomic) VOKAssetsDataSource *dataSource;
 
 @end
 
 @implementation VOKAssetsViewController
 
-- (instancetype)initWithAssetCollection:(PHAssetCollection *)assetCollection
+- (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult
 {
-    if (self = [super init]) {
-        _assetCollection = assetCollection;
-        self.title = _assetCollection.localizedTitle;
+    if (self = [self init]) {
+        _fetchResult = fetchResult;
     }
     return self;
 }
@@ -33,7 +32,9 @@
 {
     [super viewDidLoad];
     
-    self.dataSource = [[VOKAssetsDataSource alloc] initWithCollectionView:self.collectionView assetCollection:self.assetCollection];
+    self.collectionView.allowsMultipleSelection = YES;
+    
+    self.dataSource = [[VOKAssetsDataSource alloc] initWithCollectionView:self.collectionView fetchResult:self.fetchResult];
 }
 
 @end

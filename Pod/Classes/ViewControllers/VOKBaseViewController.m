@@ -8,14 +8,28 @@
 
 #import "VOKBaseViewController.h"
 
+#import "NSBundle+VOK.h"
+
 @implementation VOKBaseViewController
 
 - (instancetype)init
 {
-    NSURL *bundlePath = [[NSBundle mainBundle] URLForResource:@"VOKMultiImagePicker-iOS" withExtension:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithURL:bundlePath];
+    return [super initWithNibName:NSStringFromClass([self class]) bundle:[NSBundle vok_multiImageSelectBundle]];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
     
-    return [super initWithNibName:NSStringFromClass([self class]) bundle:bundle];
+    UIBarButtonItem *cancelBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                         target:self
+                                                                                         action:@selector(close)];
+    self.navigationItem.rightBarButtonItem = cancelBarButtonItem;
+}
+
+- (void)close
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

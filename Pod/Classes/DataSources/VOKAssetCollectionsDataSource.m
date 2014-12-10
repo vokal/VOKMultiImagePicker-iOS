@@ -36,13 +36,12 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
         
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
-                //Get all albums with assets.
-                PHFetchOptions *albumsWithAssetsOptions = [PHFetchOptions new];
-                albumsWithAssetsOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0"];
-                
+                PHFetchOptions *fetchOptions = [PHFetchOptions new];
+                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0"];
                 PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
-                                                                                 options:nil];
+                                                                                 options:fetchOptions];
+                
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
                 
                 _collectionFetchResults = @[albums, topLevelUserCollections];
@@ -105,11 +104,13 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VOKAlbumDataSourceCellReuseIdentifier forIndexPath:indexPath];
+    cell.imageView.image = nil;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     PHAssetCollection *collection = [self assetCollectionForIndexPath:indexPath];
     
-    //Get first image
+    //Get last image
     PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
     if (assets.lastObject) {
         PHAsset *asset = assets.lastObject;

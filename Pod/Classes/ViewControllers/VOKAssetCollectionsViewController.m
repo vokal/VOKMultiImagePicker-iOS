@@ -8,34 +8,46 @@
 
 #import "VOKAssetCollectionsViewController.h"
 
+#import "NSString+VOK.h"
+#import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsDataSource.h"
 #import "VOKAssetsViewController.h"
-#import "VOKMultiImagePickerLocalizedStrings.h"
 
 @interface VOKAssetCollectionsViewController () <VOKAssetCollectionsDataSourceDelegate>
 
-@property (nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic) VOKAssetCollectionsDataSource *dataSource;
+@property (nonatomic) PHAssetMediaType mediaType;
 
 @end
 
 @implementation VOKAssetCollectionsViewController
 
+- (instancetype)initWithMediaType:(PHAssetMediaType)mediaType
+{
+    if (self = [self init]) {
+        _mediaType = mediaType;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.title = [VOKMultiImagePickerLocalizedStrings selectAnAlbum];
-    
     self.dataSource = [[VOKAssetCollectionsDataSource alloc] initWithTableView:self.tableView];
     self.dataSource.delegate = self;
+    
+    self.title = [NSString vok_selectAnAlbum];
 }
 
 #pragma mark - VOKAssetCollectionsDataSourceDelegate
 
 - (void)assetCollectionsDataSource:(VOKAssetCollectionsDataSource *)dataSource selectedAssetCollection:(PHAssetCollection *)assetCollection
 {
-    VOKAssetsViewController *assetsViewController = [[VOKAssetsViewController alloc] initWithAssetCollection:assetCollection];
+    PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetCollection:assetCollection mediaType:self.mediaType];
+    VOKAssetsViewController *assetsViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
+    assetsViewController.title = assetCollection.localizedTitle;
     [self.navigationController pushViewController:assetsViewController animated:YES];
 }
 

@@ -8,16 +8,48 @@
 
 #import "VOKMultiImagePicker.h"
 
+#import "NSBundle+VOK.h"
+#import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
+#import "VOKAssetsViewController.h"
+
+@interface VOKMultiImagePicker ()
+
+@property (nonatomic) NSArray *selectedAssets;
+
+@end
 
 @implementation VOKMultiImagePicker
 
-- (void)viewWillAppear:(BOOL)animated
+- (instancetype)init
 {
-    [super viewWillAppear:animated];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle vok_multiImageSelectBundle]];
+    return [storyboard instantiateInitialViewController];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
     
-    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] init];
-    self.viewControllers = @[albumViewController];
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
+    
+    switch (self.startPosition) {
+        case VOKMultiImagePickerStartPositionAlbums:
+            self.viewControllers = @[albumViewController];
+            break;
+        case VOKMultiImagePickerStartPositionCameraRoll: {
+            PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetsOfType:self.mediaType];
+            VOKAssetsViewController *cameraRollViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
+            self.viewControllers = @[albumViewController, cameraRollViewController];
+            break;
+        }
+    }
+}
+
+- (void)doneSelectingAssets
+{
+    [self.imageDelegate multiImagePickerSelectedAssets:self.selectedAssets];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
