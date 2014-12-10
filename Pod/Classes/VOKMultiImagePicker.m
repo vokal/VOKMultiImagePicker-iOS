@@ -9,6 +9,7 @@
 #import "VOKMultiImagePicker.h"
 
 #import "NSBundle+VOK.h"
+#import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
 #import "VOKAssetsViewController.h"
@@ -40,6 +41,7 @@
     [containerNavigationController didMoveToParentViewController:self];
     
     VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
+    
     switch (self.startPosition) {
         case VOKMultiImagePickerStartPositionAlbums:
             containerNavigationController.viewControllers = @[albumViewController];
@@ -47,6 +49,7 @@
         case VOKMultiImagePickerStartPositionCameraRoll: {
             PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetsOfType:self.mediaType];
             VOKAssetsViewController *cameraRollViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
+            cameraRollViewController.title = [NSString vok_cameraRoll];
             containerNavigationController.viewControllers = @[albumViewController, cameraRollViewController];
             break;
         }

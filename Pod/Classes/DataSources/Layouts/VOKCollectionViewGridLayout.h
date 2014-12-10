@@ -10,6 +10,9 @@
 
 @interface VOKCollectionViewGridLayout : UICollectionViewFlowLayout
 
+/**
+ *  Set number of columns to appear in the grid view.
+ */
 @property (nonatomic) IBInspectable NSUInteger numberOfColumns;
 
 @end

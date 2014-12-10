@@ -11,5 +11,6 @@
 @interface NSString (VOK)
 
 + (instancetype)vok_selectAnAlbum;
++ (instancetype)vok_cameraRoll;
 
 @end

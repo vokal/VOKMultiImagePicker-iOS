@@ -10,6 +10,9 @@
 
 @interface VOKAssetCollectionViewCell : UICollectionViewCell
 
+/**
+ *  The image view on the cell that shows the asset.
+ */
 @property (nonatomic) UIImageView *imageView;
 
 @end

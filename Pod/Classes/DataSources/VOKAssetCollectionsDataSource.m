@@ -37,6 +37,7 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
                 PHFetchOptions *fetchOptions = [PHFetchOptions new];
+#warning TODO: Find out why this line doesn't work.
                 //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0"];
                 PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular

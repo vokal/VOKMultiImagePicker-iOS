@@ -12,7 +12,12 @@
 
 + (instancetype)vok_selectAnAlbum
 {
-    return NSLocalizedString(@"Select an album", @"Select an album");
+    return NSLocalizedString(@"Select an Album", @"Select an Album");
+}
+
++ (instancetype)vok_cameraRoll
+{
+    return NSLocalizedString(@"Camera Roll", @"Camera Roll");
 }
 
 @end

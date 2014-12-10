@@ -2,7 +2,7 @@
 //  NSBundle+VOK.h
 //  VOKMultiImagePicker
 //
-//  Created by Brock Boland on 12/10/14.
+//  Created by Luke Quigley on 12/10/14.
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
