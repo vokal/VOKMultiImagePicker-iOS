@@ -22,8 +22,9 @@
 
 - (instancetype)initWithAssetCollection:(PHAssetCollection *)assetCollection
 {
-    if (self = [super initWithNibName:<#(NSString *)#> bundle:<#(NSBundle *)#>]) {
+    if (self = [super init]) {
         _assetCollection = assetCollection;
+        self.title = _assetCollection.localizedTitle;
     }
     return self;
 }

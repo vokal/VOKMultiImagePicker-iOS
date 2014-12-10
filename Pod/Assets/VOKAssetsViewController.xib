@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOKAssetsViewController">
             <connections>
                 <outlet property="collectionView" destination="req-bQ-1bB" id="hP9-oD-u8N"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hog-XM-5jf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

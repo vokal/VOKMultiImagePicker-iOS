@@ -16,10 +16,7 @@
 {
     [super viewWillAppear:animated];
     
-    NSURL *bundlePath = [[NSBundle mainBundle] URLForResource:@"VOKMultiImagePicker-iOS" withExtension:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithURL:bundlePath];
-    
-    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithNibName:NSStringFromClass([VOKAssetCollectionsViewController class]) bundle:bundle];
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] init];
     self.viewControllers = @[albumViewController];
 }
 

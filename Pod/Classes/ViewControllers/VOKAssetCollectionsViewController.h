@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-@import UIKit;
+#import "VOKBaseViewController.h"
 
-@interface VOKAssetCollectionsViewController : UIViewController
+@interface VOKAssetCollectionsViewController : VOKBaseViewController
 
 @end

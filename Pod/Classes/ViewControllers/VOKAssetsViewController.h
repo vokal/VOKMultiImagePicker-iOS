@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-@import UIKit;
+#import "VOKBaseViewController.h"
 
 @import Photos;
 
-@interface VOKAssetsViewController : UIViewController
+@interface VOKAssetsViewController : VOKBaseViewController
 
 - (instancetype)initWithAssetCollection:(PHAssetCollection *)assetCollection;
 
