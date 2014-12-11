@@ -25,6 +25,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
     VOKMultiImagePickerStartPositionCameraRoll,
 };
 
+
 /**
  *  The protocol your code should handle to receive the assets selected
  *  within the multi image picker.
@@ -34,9 +35,12 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  When the user finishes selecting images the assets are returned in
  *  this method call.
  *
- *  @param assets An array of PHAsset objects that the user selected.
+ *  @param multiImagePicker The multi image picker that returned from presenting.
+ *  @param assets           An array of PHAsset objects that the user selected.
  */
-- (void)multiImagePickerSelectedAssets:(NSArray *)assets;
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets;
+
+//TODO: Create a multiImagePickerDidCancel: delegate call.
 @end
 
 @interface VOKMultiImagePicker : UIViewController

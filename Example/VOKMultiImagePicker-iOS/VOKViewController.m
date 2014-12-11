@@ -93,12 +93,13 @@
     
     [multiImagePicker.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
     [multiImagePicker.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
+    
     multiImagePicker.addItemsButton.titleLabel.font = [UIFont systemFontOfSize:24];
 }
 
 #pragma mark - VOKMultiImagePickerDelegate
 
-- (void)multiImagePickerSelectedAssets:(NSArray *)assets
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets
 {
     //TODO: Show the selected assets in the example instead of logging.
     NSLog(@"%@", @(assets.count));
