@@ -27,7 +27,7 @@
 
 - (instancetype)init
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle vok_multiImageSelectBundle]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:VOKMultiImagePickerStoryboardNames.storyboard bundle:[NSBundle vok_multiImageSelectBundle]];
     return [storyboard instantiateInitialViewController];
 }
 

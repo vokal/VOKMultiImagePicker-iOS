@@ -14,6 +14,10 @@ const struct VOKMultiImagePickerTypeNames VOKMultiImagePickerTypeNames = {
     .bundle = @"bundle",
 };
 
+const struct VOKMultiImagePickerStoryboardNames VOKMultiImagePickerStoryboardNames = {
+    .storyboard = @"Storyboard",
+};
+
 const struct VOKMultiImagePickerNotifications VOKMultiImagePickerNotifications = {
     .assetsChanged = @"VOKMultiImagePickerNotificationAssetsChanged",
 };
