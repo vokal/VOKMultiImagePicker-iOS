@@ -120,6 +120,8 @@
         _assetCollectionViewCellClass = assetCollectionViewCellClass;
         
         [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+    } else {
+        NSAssert(NO, @"You must use a subclass of VOKAssetCollectionViewCell.");
     }
 }
 
