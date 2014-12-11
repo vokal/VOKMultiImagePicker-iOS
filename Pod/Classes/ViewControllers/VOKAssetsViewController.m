@@ -37,4 +37,11 @@
     self.dataSource = [[VOKAssetsDataSource alloc] initWithCollectionView:self.collectionView fetchResult:self.fetchResult];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.dataSource.shouldCache = YES;
+}
+
 @end

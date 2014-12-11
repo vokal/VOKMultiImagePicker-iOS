@@ -17,4 +17,9 @@ FOUNDATION_EXPORT NSUInteger const VOKCollectionViewGridLayoutDefaultColumns;
  */
 @property (nonatomic) IBInspectable NSUInteger numberOfColumns;
 
+/**
+ *  @return The size of the asset cells.
+ */
+- (CGSize)itemSize;
+
 @end
