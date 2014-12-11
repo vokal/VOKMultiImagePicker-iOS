@@ -2,7 +2,7 @@
 //  VOKMultiImagePickerExampleLocalizedStrings.h
 //  VOKMultiImagePicker-iOS
 //
-//  Created by Luke Q on 12/10/14.
+//  Created by Luke Quigley on 12/10/14.
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
@@ -15,5 +15,6 @@
 + (NSString *)vok_selectBoth;
 + (NSString *)vok_selectPhotosInCameraRoll;
 + (NSString *)vok_selectVideosInCameraRoll;
++ (NSString *)vok_useCustomCollectionViewCell;
 
 @end

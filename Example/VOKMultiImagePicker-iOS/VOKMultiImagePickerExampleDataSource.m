@@ -2,7 +2,7 @@
 //  VOKExampleDataSource.m
 //  VOKMultiImagePicker-iOS
 //
-//  Created by Luke Q on 12/10/14.
+//  Created by Luke Quigley on 12/10/14.
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
@@ -56,6 +56,9 @@ static NSString *const VOKMultiImagePickerExampleDataSourceRowIdentifier = @"Exa
             break;
         case VOKMultiImagePickerExampleDataSourceRowVideosInCameraRoll:
             title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectVideosInCameraRoll];
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
+            title = [VOKMultiImagePickerExampleLocalizedStrings vok_useCustomCollectionViewCell];
             break;
     }
     cell.textLabel.text = title;

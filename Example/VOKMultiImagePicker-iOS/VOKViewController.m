@@ -39,9 +39,6 @@
     VOKMultiImagePicker *multiImagePicker = [[VOKMultiImagePicker alloc] init];
     multiImagePicker.imageDelegate = self;
     
-    //Put a check mark on the cell using a subclassed cell.
-    multiImagePicker.assetCollectionViewCellClass = [VOKMultiImagePickerExampleAssetCell class];
-    
     //Set options on the picker.
     switch (row) {
         case VOKMultiImagePickerExampleDataSourceRowPhotos: {
@@ -67,6 +64,10 @@
             multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
             break;
         }
+        case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.assetCollectionViewCellClass = [VOKMultiImagePickerExampleAssetCell class];
+            break;
     }
     
     [self.navigationController presentViewController:multiImagePicker

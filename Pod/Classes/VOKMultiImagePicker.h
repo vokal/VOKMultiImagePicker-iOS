@@ -64,7 +64,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 @property (nonatomic) PHAssetMediaType mediaType;
 
 /**
- *  Set the start position the user will see first once the image picker
+ *  Set the start position the user will see once the image picker
  *  is displayed on screen.
  */
 @property (nonatomic) enum VOKMultiImagePickerStartPosition startPosition;
