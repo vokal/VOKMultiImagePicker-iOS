@@ -39,9 +39,9 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
                 
-                //Only show albums with more than one asset and not found.
-                PHFetchOptions *fetchOptions = [PHFetchOptions new];
-                fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %d", NSNotFound];
+                //TODO: Only show albums with more than one asset and not found.
+                //PHFetchOptions *fetchOptions = [PHFetchOptions new];
+                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
                 
                 _collectionFetchResults = @[albums, topLevelUserCollections];
