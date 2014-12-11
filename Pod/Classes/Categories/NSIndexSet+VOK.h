@@ -10,6 +10,14 @@
 
 @interface NSIndexSet (VOK)
 
+/**
+ *  Returns an array of NSIndexPaths with each index in self as the row
+ *  and with the specified section.
+ *
+ *  @param section The section the index paths will be in.
+ *
+ *  @return An array of NSIndexPaths.
+ */
 - (NSArray *)vok_indexPathsFromIndexesWithSection:(NSUInteger)section;
 
 @end
