@@ -13,10 +13,11 @@
 #import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
 #import "VOKAssetsViewController.h"
+#import "VOKMultiImagePickerConstants.h"
 
 @interface VOKMultiImagePicker ()
 
-@property (nonatomic) NSArray *selectedAssets;
+@property (nonatomic) NSMutableArray *selectedAssets;
 @property (nonatomic, weak) IBOutlet UIView *containerView;
 
 @end
@@ -54,11 +55,66 @@
             break;
         }
     }
+    
+    [self updateAddItemsButton];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(notificationReceived:)
+                                                 name:VOKMultiImagePickerNotifications.assetSelected
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(notificationReceived:)
+                                                 name:VOKMultiImagePickerNotifications.assetDeselected
+                                               object:nil];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)notificationReceived:(NSNotification *)notification
+{
+    PHAsset *asset = notification.object;
+    if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetSelected]) {
+        if (![self.selectedAssets containsObject:asset]) {
+            [self.selectedAssets addObject:asset];
+        }
+    } else if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetDeselected]) {
+        [self.selectedAssets removeObject:asset];
+    }
+    [self updateAddItemsButton];
+}
+
+- (NSMutableArray *)selectedAssets
+{
+    if (!_selectedAssets) {
+        _selectedAssets = [NSMutableArray new];
+    }
+    return _selectedAssets;
+}
+
+- (void)updateAddItemsButton
+{
+    if (self.selectedAssets.count) {
+        self.addItemsButton.enabled = YES;
+        
+        NSString *titleString;
+        if (self.selectedAssets.count == 1) {
+            titleString = [NSString vok_addOneItem];
+        } else {
+            titleString = [NSString stringWithFormat:[NSString vok_addXItems], @(self.selectedAssets.count)];
+        }
+        [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
+    } else {
+        self.addItemsButton.enabled = NO;
+        [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
+    }
 }
 
 - (IBAction)doneSelectingAssets
 {
-    [self.imageDelegate multiImagePickerSelectedAssets:self.selectedAssets];
+    [self.imageDelegate multiImagePickerSelectedAssets:[self.selectedAssets copy]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

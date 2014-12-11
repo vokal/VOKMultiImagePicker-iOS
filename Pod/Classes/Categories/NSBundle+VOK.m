@@ -8,11 +8,15 @@
 
 #import "NSBundle+VOK.h"
 
+#import "VOKMultiImagePickerConstants.h"
+
 @implementation NSBundle (VOK)
 
 + (instancetype)vok_multiImageSelectBundle
 {
-    NSURL *bundlePath = [[NSBundle mainBundle] URLForResource:@"VOKMultiImagePicker-iOS" withExtension:@"bundle"];
+    NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+    NSString *bundleName = [info objectForKey:@"CFBundleDisplayName"];
+    NSURL *bundlePath = [[NSBundle mainBundle] URLForResource:bundleName withExtension:VOKMultiImagePickerTypeNames.bundle];
     return [NSBundle bundleWithURL:bundlePath];
 }
 

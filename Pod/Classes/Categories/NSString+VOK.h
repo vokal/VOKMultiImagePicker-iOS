@@ -12,5 +12,8 @@
 
 + (instancetype)vok_selectAnAlbum;
 + (instancetype)vok_cameraRoll;
++ (instancetype)vok_addItems;
++ (instancetype)vok_addOneItem;
++ (instancetype)vok_addXItems;
 
 @end

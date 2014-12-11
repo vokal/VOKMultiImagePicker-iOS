@@ -20,4 +20,19 @@
     return NSLocalizedString(@"Camera Roll", @"Camera Roll");
 }
 
++ (instancetype)vok_addItems
+{
+    return NSLocalizedString(@"Add Items", @"Add Items");
+}
+
++ (instancetype)vok_addOneItem
+{
+    return NSLocalizedString(@"Add 1 Item", @"Add 1 Item");
+}
+
++ (instancetype)vok_addXItems
+{
+    return NSLocalizedString(@"Add %@ Items", @"Add %@ Items");
+}
+
 @end
