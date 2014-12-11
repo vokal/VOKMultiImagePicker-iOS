@@ -11,6 +11,7 @@
 #import "NSBundle+VOK.h"
 #import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
+#import "UIImage+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
 #import "VOKAssetsViewController.h"
 #import "VOKMultiImagePickerConstants.h"
@@ -56,6 +57,13 @@
         }
     }
     
+    CGSize imageSize = CGSizeMake(CGRectGetWidth(self.addItemsButton.frame), CGRectGetHeight(self.addItemsButton.frame));
+    
+    UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor greenColor] size:imageSize];
+    UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
+    
+    [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
+    [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
     [self updateAddItemsButton];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
