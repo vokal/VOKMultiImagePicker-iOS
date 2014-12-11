@@ -26,6 +26,11 @@
 - (void)resetManager;
 
 /**
+ *  The media type that can only be added to the selected asssets list.
+ */
+@property (nonatomic) PHAssetMediaType mediaType;
+
+/**
  *  Adds an asset to the selected assets array.
  *
  *  @param asset The asset to add.

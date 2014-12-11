@@ -12,13 +12,4 @@
 
 @interface VOKAssetCollectionsViewController : VOKBaseViewController
 
-/**
- *  Initializes to show only the specific media type sent in in subsequent asset views.
- *
- *  @param mediaType The media type to show.
- *
- *  @return An instance of an asset collection view controller.
- */
-- (instancetype)initWithMediaType:(PHAssetMediaType)mediaType;
-
 @end

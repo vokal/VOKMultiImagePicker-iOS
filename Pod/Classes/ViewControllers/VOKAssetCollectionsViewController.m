@@ -12,24 +12,16 @@
 #import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsDataSource.h"
 #import "VOKAssetsViewController.h"
+#import "VOKSelectedAssetManager.h"
 
 @interface VOKAssetCollectionsViewController () <VOKAssetCollectionsDataSourceDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic) VOKAssetCollectionsDataSource *dataSource;
-@property (nonatomic) PHAssetMediaType mediaType;
 
 @end
 
 @implementation VOKAssetCollectionsViewController
-
-- (instancetype)initWithMediaType:(PHAssetMediaType)mediaType
-{
-    if (self = [self init]) {
-        _mediaType = mediaType;
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -45,7 +37,7 @@
 
 - (void)assetCollectionsDataSource:(VOKAssetCollectionsDataSource *)dataSource selectedAssetCollection:(PHAssetCollection *)assetCollection
 {
-    PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetCollection:assetCollection mediaType:self.mediaType];
+    PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetCollection:assetCollection mediaType:[VOKSelectedAssetManager sharedManager].mediaType];
     VOKAssetsViewController *assetsViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
     assetsViewController.title = assetCollection.localizedTitle;
     [self.navigationController pushViewController:assetsViewController animated:YES];

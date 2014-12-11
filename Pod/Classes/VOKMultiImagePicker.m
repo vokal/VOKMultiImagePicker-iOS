@@ -27,6 +27,8 @@
 
 - (instancetype)init
 {
+    [[VOKSelectedAssetManager sharedManager] resetManager];
+    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:VOKMultiImagePickerStoryboardNames.storyboard bundle:[NSBundle vok_multiImageSelectBundle]];
     return [storyboard instantiateInitialViewController];
 }
@@ -42,7 +44,7 @@
     [self.containerView addSubview:containerNavigationController.view];
     [containerNavigationController didMoveToParentViewController:self];
     
-    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] init];
     
     switch (self.startPosition) {
         case VOKMultiImagePickerStartPositionAlbums:
@@ -101,6 +103,15 @@
         [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
     }
 }
+
+- (void)setMediaType:(PHAssetMediaType)mediaType
+{
+    _mediaType = mediaType;
+    
+    [VOKSelectedAssetManager sharedManager].mediaType = mediaType;
+}
+
+#pragma mark - Actions
 
 - (IBAction)doneSelectingAssets
 {
