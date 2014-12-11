@@ -111,6 +111,13 @@
     [VOKSelectedAssetManager sharedManager].mediaType = mediaType;
 }
 
+- (void)setAssetCollectionViewCellClass:(Class)assetCollectionViewCellClass
+{
+    _assetCollectionViewCellClass = assetCollectionViewCellClass;
+    
+    [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+}
+
 #pragma mark - Actions
 
 - (IBAction)doneSelectingAssets

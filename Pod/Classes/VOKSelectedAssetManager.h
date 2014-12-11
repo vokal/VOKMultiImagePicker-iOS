@@ -34,11 +34,16 @@
  *  The class used to display assets with.
  *  You can subclass VOKAssetCollectionViewCell.
  */
-@property (nonatomic) Class assetCollectionViewClass;
+@property (nonatomic) Class assetCollectionViewCellClass;
+
+/**
+ *  Adds an asset to the selected assets array IF it matches the media type.
  *
  *  @param asset The asset to add.
+ *
+ *  @return YES if it was added, NO if it wasn't.
  */
-- (void)addSelectedAsset:(PHAsset *)asset;
+- (BOOL)addSelectedAsset:(PHAsset *)asset;
 
 /**
  *  Removes an asset from the selected assets array.

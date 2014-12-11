@@ -10,7 +10,6 @@
 
 @interface VOKAssetCollectionViewCell ()
 
-@property (nonatomic) UIImageView *checkmarkImageView;
 @property (nonatomic) UIView *shadeView;
 
 @end
@@ -40,20 +39,9 @@
     
     if (selected) {
         [self.contentView addSubview:self.shadeView];
-        [self.contentView addSubview:self.checkmarkImageView];
     } else {
         [self.shadeView removeFromSuperview];
-        [self.checkmarkImageView removeFromSuperview];
     }
-}
-
-- (UIImageView *)checkmarkImageView
-{
-    if (!_checkmarkImageView) {
-        _checkmarkImageView = [[UIImageView alloc] initWithFrame:self.contentView.bounds];
-        _checkmarkImageView.image = [UIImage imageNamed:@""];
-    }
-    return _checkmarkImageView;
 }
 
 - (UIView *)shadeView

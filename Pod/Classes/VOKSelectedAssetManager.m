@@ -8,6 +8,7 @@
 
 #import "VOKSelectedAssetManager.h"
 
+#import "VOKAssetCollectionViewCell.h"
 #import "VOKMultiImagePickerConstants.h"
 
 @interface VOKSelectedAssetManager ()
@@ -34,15 +35,17 @@
 {
     self.selectedAssetsMutableArray = [NSMutableArray array];
     self.mediaType = PHAssetMediaTypeUnknown;
+    self.assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
 }
 
-- (void)addSelectedAsset:(PHAsset *)asset
+- (Class)assetCollectionViewCellClass
 {
-    if (![self.selectedAssetsMutableArray containsObject:asset]) {
-        [self.selectedAssetsMutableArray addObject:asset];
+    if (!_assetCollectionViewCellClass) {
+        _assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
     }
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:VOKMultiImagePickerNotifications.assetsChanged object:asset];
+    return _assetCollectionViewCellClass;
+}
+
 - (BOOL)addSelectedAsset:(PHAsset *)asset
 {
     if ([self assetIsInMediaType:asset]) {

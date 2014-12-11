@@ -8,6 +8,7 @@
 
 #import "VOKViewController.h"
 
+#import "VOKMultiImagePickerExampleAssetCell.h"
 #import "VOKMultiImagePickerExampleDataSource.h"
 
 #import <VOKMultiImagePicker.h>
@@ -37,6 +38,9 @@
     //Create the multi image picker.
     VOKMultiImagePicker *multiImagePicker = [[VOKMultiImagePicker alloc] init];
     multiImagePicker.imageDelegate = self;
+    
+    //Put a check mark on the cell using a subclassed cell.
+    multiImagePicker.assetCollectionViewCellClass = [VOKMultiImagePickerExampleAssetCell class];
     
     //Set options on the picker.
     switch (row) {

@@ -31,7 +31,7 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
         
         _results = fetchResult;
         
-        [_collectionView registerClass:[VOKAssetCollectionViewCell class] forCellWithReuseIdentifier:VOKAssetsDataSourceCellReuseIdentifier];
+        [_collectionView registerClass:[VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass forCellWithReuseIdentifier:VOKAssetsDataSourceCellReuseIdentifier];
         [_collectionView reloadData];
     }
     return self;
