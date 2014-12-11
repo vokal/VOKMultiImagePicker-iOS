@@ -25,6 +25,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
     VOKMultiImagePickerStartPositionCameraRoll,
 };
 
+@class VOKMultiImagePicker;
 
 /**
  *  The protocol your code should handle to receive the assets selected
@@ -85,6 +86,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  The number of columns in the asset grid view.
  *  Default is three.
  */
+//TODO: Probably should have the user pass in a subclass of VOKCollectionViewGridLayout for better customization.
 @property (nonatomic) NSInteger assetCollectionViewColumnCount;
 
 @end
