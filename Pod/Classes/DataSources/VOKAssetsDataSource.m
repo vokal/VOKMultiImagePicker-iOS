@@ -52,6 +52,14 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
     
     UICollectionViewLayoutAttributes *cellAttributes = [self.collectionView.collectionViewLayout layoutAttributesForItemAtIndexPath:indexPath];
     
+    if ([[VOKSelectedAssetManager sharedManager].selectedAssets containsObject:asset]) {
+        cell.selected = YES;
+        [collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+    } else {
+        cell.selected = NO;
+        [collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    }
+    
     cell.tag = indexPath.row;
     [[PHImageManager defaultManager] requestImageForAsset:asset
                                                targetSize:cellAttributes.size
