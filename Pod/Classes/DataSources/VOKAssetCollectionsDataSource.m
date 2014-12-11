@@ -73,7 +73,7 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
 - (void)photoLibraryDidChange:(PHChange *)changeInstance
 {
     // Call might come on any background queue. Re-dispatch to the main queue to handle it.
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_block_t dispatchBlock = ^{
         NSMutableArray *updatedCollectionsFetchResults = nil;
         
         for (PHFetchResult *collectionsFetchResult in self.collectionFetchResults) {
@@ -90,8 +90,13 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
             self.collectionFetchResults = updatedCollectionsFetchResults;
             [self.tableView reloadData];
         }
-        
-    });
+    };
+    
+    if ([NSThread currentThread] != [NSThread mainThread]) {
+        dispatch_async(dispatch_get_main_queue(), dispatchBlock);
+    } else {
+        dispatchBlock();
+    }
 }
 
 #pragma mark - UITableViewDataSource
