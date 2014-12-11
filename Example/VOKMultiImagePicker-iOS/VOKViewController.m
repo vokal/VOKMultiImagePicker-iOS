@@ -89,7 +89,7 @@
 
 - (void)multiImagePickerSelectedAssets:(NSArray *)assets
 {
-#warning TODO: Show the assets.
+    //TODO: Show the selected assets in the example instead of logging.
     NSLog(@"%@", @(assets.count));
     for (PHAsset *asset in assets) {
         NSLog(@"%@", asset);

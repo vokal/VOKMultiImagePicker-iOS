@@ -56,11 +56,12 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  The media type of assets to display. All other assets will not
  *  be shown.
  *
- *  PHAssetMediaTypeUnknown - Will just display all.
+ *  PHAssetMediaTypeUnknown - Will display all.
  *  PHAssetMediaTypeImage - Will display just images.
  *  PHAssetMediaTypeVideo - Will display just videos.
  *  PHAssetMediaTypeAudio - Will display just audio items.
  */
+//TODO: Make this a bitmask.
 @property (nonatomic) PHAssetMediaType mediaType;
 
 /**
