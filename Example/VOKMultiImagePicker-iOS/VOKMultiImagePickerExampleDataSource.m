@@ -20,7 +20,7 @@ static NSString *const VOKMultiImagePickerExampleDataSourceRowIdentifier = @"Exa
 
 - (instancetype)initWithTableView:(UITableView *)tableView
 {
-    if (self = [self init]) {
+    if (self = [super init]) {
         tableView.dataSource = self;
         tableView.delegate = self;
         
