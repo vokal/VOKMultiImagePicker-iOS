@@ -183,15 +183,15 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
                 // if we have incremental diffs, tell the collection view to animate insertions and deletions
                 [collectionView performBatchUpdates:^{
                     NSIndexSet *removedIndexes = [collectionChanges removedIndexes];
-                    if ([removedIndexes count]) {
+                    if (removedIndexes.count) {
                         [collectionView deleteItemsAtIndexPaths:[removedIndexes vok_indexPathsFromIndexesWithSection:0]];
                     }
                     NSIndexSet *insertedIndexes = [collectionChanges insertedIndexes];
-                    if ([insertedIndexes count]) {
+                    if (insertedIndexes.count) {
                         [collectionView insertItemsAtIndexPaths:[insertedIndexes vok_indexPathsFromIndexesWithSection:0]];
                     }
                     NSIndexSet *changedIndexes = [collectionChanges changedIndexes];
-                    if ([changedIndexes count]) {
+                    if (changedIndexes.count) {
                         [collectionView reloadItemsAtIndexPaths:[changedIndexes vok_indexPathsFromIndexesWithSection:0]];
                     }
                 } completion:NULL];
