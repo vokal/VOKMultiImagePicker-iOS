@@ -13,7 +13,12 @@
 + (instancetype)vok_fetchResultWithAssetCollection:(PHAssetCollection *)assetCollection mediaType:(PHAssetMediaType)type
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
-    fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
+    
+    //Ignore PHAssetMediaTypeUnknown
+    if (type) {
+        fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
+    }
+    
     fetchOptions.sortDescriptors = @[[self vok_creationDateSortDescriptor]];
     return [PHAsset fetchAssetsInAssetCollection:assetCollection options:fetchOptions];
 }
