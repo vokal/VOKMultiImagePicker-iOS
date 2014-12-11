@@ -103,7 +103,7 @@
         if (self.selectedAssets.count == 1) {
             titleString = [NSString vok_addOneItem];
         } else {
-            titleString = [NSString stringWithFormat:[NSString vok_addXItems], @(self.selectedAssets.count)];
+            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(self.selectedAssets.count)];
         }
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     } else {

@@ -14,6 +14,6 @@
 + (instancetype)vok_cameraRoll;
 + (instancetype)vok_addItems;
 + (instancetype)vok_addOneItem;
-+ (instancetype)vok_addXItems;
++ (instancetype)vok_addXItemsFormat;
 
 @end

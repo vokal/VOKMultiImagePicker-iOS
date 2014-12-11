@@ -30,7 +30,7 @@
     return NSLocalizedString(@"Add 1 Item", @"Add 1 Item");
 }
 
-+ (instancetype)vok_addXItems
++ (instancetype)vok_addXItemsFormat
 {
     return NSLocalizedString(@"Add %@ Items", @"Add %@ Items");
 }
