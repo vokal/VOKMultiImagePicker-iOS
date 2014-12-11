@@ -10,6 +10,7 @@
 
 @class VOKMultiImagePickerExampleDataSource;
 
+//Enumeration for each row in the table as well as a count value.
 NS_ENUM(NSInteger, VOKMultiImagePickerExampleDataSourceRow) {
     VOKMultiImagePickerExampleDataSourceRowPhotos,
     VOKMultiImagePickerExampleDataSourceRowVideos,

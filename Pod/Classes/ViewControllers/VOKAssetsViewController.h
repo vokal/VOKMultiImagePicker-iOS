@@ -12,6 +12,13 @@
 
 @interface VOKAssetsViewController : VOKBaseViewController
 
+/**
+ *  Initializes an assets view controller with specific fetch results.
+ *
+ *  @param fetchResult The fetch result object needed to be displayed.
+ *
+ *  @return An instance of an assets view controller with specific fetch results.
+ */
 - (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult;
 
 @end
