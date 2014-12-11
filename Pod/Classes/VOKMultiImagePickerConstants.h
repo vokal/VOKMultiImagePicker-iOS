@@ -18,11 +18,8 @@ FOUNDATION_EXPORT const struct VOKMultiImagePickerTypeNames {
 
 //Names of things associated with notifications
 FOUNDATION_EXPORT const struct VOKMultiImagePickerNotifications {
-    //The string representing when an asset is selected in a notification.
-    __unsafe_unretained NSString *assetSelected;
-    
-    //The string representing when an asset is deselected in a notification.
-    __unsafe_unretained NSString *assetDeselected;
+    //The string representing when an asset has been added or removed.
+    __unsafe_unretained NSString *assetsChanged;
 } VOKMultiImagePickerNotifications;
 
 @end

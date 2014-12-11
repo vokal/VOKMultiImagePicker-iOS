@@ -9,7 +9,7 @@
 #import "VOKAssetsDataSource.h"
 
 #import "VOKAssetCollectionViewCell.h"
-#import "VOKMultiImagePickerConstants.h"
+#import "VOKSelectedAssetManager.h"
 
 @interface VOKAssetsDataSource () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -71,13 +71,13 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PHAsset *asset = self.results[indexPath.row];
-    [[NSNotificationCenter defaultCenter] postNotificationName:VOKMultiImagePickerNotifications.assetDeselected object:asset];
+    [[VOKSelectedAssetManager sharedManager] removeSelectedAsset:asset];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PHAsset *asset = self.results[indexPath.row];
-    [[NSNotificationCenter defaultCenter] postNotificationName:VOKMultiImagePickerNotifications.assetSelected object:asset];
+    [[VOKSelectedAssetManager sharedManager] addSelectedAsset:asset];
 }
 
 @end

@@ -15,8 +15,7 @@ const struct VOKMultiImagePickerTypeNames VOKMultiImagePickerTypeNames = {
 };
 
 const struct VOKMultiImagePickerNotifications VOKMultiImagePickerNotifications = {
-    .assetSelected = @"VOKMultiImagePickerNotificationSelected",
-    .assetDeselected = @"VOKMultiImagePickerNotificationDeselected",
+    .assetsChanged = @"VOKMultiImagePickerNotificationAssetsChanged",
 };
 
 @end

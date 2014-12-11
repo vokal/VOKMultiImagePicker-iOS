@@ -14,10 +14,10 @@
 #import "VOKAssetCollectionsViewController.h"
 #import "VOKAssetsViewController.h"
 #import "VOKMultiImagePickerConstants.h"
+#import "VOKSelectedAssetManager.h"
 
 @interface VOKMultiImagePicker ()
 
-@property (nonatomic) NSMutableArray *selectedAssets;
 @property (nonatomic, weak) IBOutlet UIView *containerView;
 
 @end
@@ -60,11 +60,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(notificationReceived:)
-                                                 name:VOKMultiImagePickerNotifications.assetSelected
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(notificationReceived:)
-                                                 name:VOKMultiImagePickerNotifications.assetDeselected
+                                                 name:VOKMultiImagePickerNotifications.assetsChanged
                                                object:nil];
 }
 
@@ -75,35 +71,21 @@
 
 - (void)notificationReceived:(NSNotification *)notification
 {
-    PHAsset *asset = notification.object;
-    if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetSelected]) {
-        if (![self.selectedAssets containsObject:asset]) {
-            [self.selectedAssets addObject:asset];
-        }
-    } else if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetDeselected]) {
-        [self.selectedAssets removeObject:asset];
-    }
     [self updateAddItemsButton];
-}
-
-- (NSMutableArray *)selectedAssets
-{
-    if (!_selectedAssets) {
-        _selectedAssets = [NSMutableArray new];
-    }
-    return _selectedAssets;
 }
 
 - (void)updateAddItemsButton
 {
-    if (self.selectedAssets.count) {
+    NSArray *selectedAssetsArray = [[VOKSelectedAssetManager sharedManager] selectedAssets];
+    NSInteger assetCount = selectedAssetsArray.count;
+    if (assetCount) {
         self.addItemsButton.enabled = YES;
         
         NSString *titleString;
-        if (self.selectedAssets.count == 1) {
+        if (assetCount == 1) {
             titleString = [NSString vok_addOneItem];
         } else {
-            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(self.selectedAssets.count)];
+            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(assetCount)];
         }
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     } else {
@@ -114,8 +96,10 @@
 
 - (IBAction)doneSelectingAssets
 {
-    [self.imageDelegate multiImagePickerSelectedAssets:[self.selectedAssets copy]];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.imageDelegate multiImagePickerSelectedAssets:[[VOKSelectedAssetManager sharedManager] selectedAssets]];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[VOKSelectedAssetManager sharedManager] resetManager];
+    }];
 }
 
 @end
