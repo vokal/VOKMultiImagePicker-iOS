@@ -104,6 +104,8 @@
     }
 }
 
+#pragma mark - Values passed to the manager.
+
 - (void)setMediaType:(PHAssetMediaType)mediaType
 {
     _mediaType = mediaType;
@@ -116,6 +118,13 @@
     _assetCollectionViewCellClass = assetCollectionViewCellClass;
     
     [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+}
+
+- (void)setAssetCollectionViewColumnCount:(NSInteger)assetCollectionViewColumnCount
+{
+    _assetCollectionViewColumnCount = assetCollectionViewColumnCount;
+    
+    [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount = assetCollectionViewColumnCount;
 }
 
 #pragma mark - Actions

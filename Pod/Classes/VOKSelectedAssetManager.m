@@ -9,6 +9,7 @@
 #import "VOKSelectedAssetManager.h"
 
 #import "VOKAssetCollectionViewCell.h"
+#import "VOKCollectionViewGridLayout.h"
 #import "VOKMultiImagePickerConstants.h"
 
 @interface VOKSelectedAssetManager ()
@@ -36,6 +37,7 @@
     self.selectedAssetsMutableArray = [NSMutableArray array];
     self.mediaType = PHAssetMediaTypeUnknown;
     self.assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
+    self.assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
 }
 
 - (Class)assetCollectionViewCellClass
@@ -44,6 +46,14 @@
         _assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
     }
     return _assetCollectionViewCellClass;
+}
+
+- (NSInteger)assetCollectionViewColumnCount
+{
+    if (!_assetCollectionViewColumnCount) {
+        _assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
+    }
+    return _assetCollectionViewColumnCount;
 }
 
 - (BOOL)addSelectedAsset:(PHAsset *)asset

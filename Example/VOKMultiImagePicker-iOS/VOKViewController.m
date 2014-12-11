@@ -55,8 +55,8 @@
             break;
         }
         case VOKMultiImagePickerExampleDataSourceRowPhotosInCameraRoll: {
-            multiImagePicker.mediaType = PHAssetMediaTypeImage;
             multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            multiImagePicker.mediaType = PHAssetMediaTypeImage;
             break;
         }
         case VOKMultiImagePickerExampleDataSourceRowVideosInCameraRoll: {
@@ -66,7 +66,18 @@
         }
         case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
             //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
             multiImagePicker.assetCollectionViewCellClass = [VOKMultiImagePickerExampleAssetCell class];
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowOneColumn:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            multiImagePicker.assetCollectionViewColumnCount = 1;
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowFiveColumns:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.assetCollectionViewColumnCount = 5;
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
             break;
     }
     

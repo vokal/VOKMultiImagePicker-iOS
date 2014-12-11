@@ -18,6 +18,8 @@ NS_ENUM(NSInteger, VOKMultiImagePickerExampleDataSourceRow) {
     VOKMultiImagePickerExampleDataSourceRowPhotosInCameraRoll,
     VOKMultiImagePickerExampleDataSourceRowVideosInCameraRoll,
     VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell,
+    VOKMultiImagePickerExampleDataSourceRowOneColumn,
+    VOKMultiImagePickerExampleDataSourceRowFiveColumns,
     
     VOKMultiImagePickerExampleDataSourceRowCount
 };

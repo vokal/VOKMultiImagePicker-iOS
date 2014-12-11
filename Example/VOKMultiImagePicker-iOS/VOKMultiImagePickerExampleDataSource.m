@@ -60,6 +60,12 @@ static NSString *const VOKMultiImagePickerExampleDataSourceRowIdentifier = @"Exa
         case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
             title = [VOKMultiImagePickerExampleLocalizedStrings vok_useCustomCollectionViewCell];
             break;
+        case VOKMultiImagePickerExampleDataSourceRowOneColumn:
+            title = [VOKMultiImagePickerExampleLocalizedStrings vok_oneColumn];
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowFiveColumns:
+            title = [VOKMultiImagePickerExampleLocalizedStrings vok_fiveColumns];
+            break;
     }
     cell.textLabel.text = title;
     

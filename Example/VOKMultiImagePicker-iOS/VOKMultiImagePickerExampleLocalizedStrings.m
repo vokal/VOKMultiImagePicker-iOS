@@ -40,4 +40,14 @@
     return NSLocalizedString(@"Use Custom Collection View Cell", @"Use Custom Collection View Cell");
 }
 
++ (NSString *)vok_oneColumn
+{
+    return NSLocalizedString(@"One Column", @"One Column");
+}
+
++ (NSString *)vok_fiveColumns
+{
+    return NSLocalizedString(@"Five Column", @"Five Column");
+}
+
 @end

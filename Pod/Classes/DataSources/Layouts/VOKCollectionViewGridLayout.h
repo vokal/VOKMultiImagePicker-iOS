@@ -8,6 +8,8 @@
 
 @import UIKit;
 
+FOUNDATION_EXPORT NSUInteger const VOKCollectionViewGridLayoutDefaultColumns;
+
 @interface VOKCollectionViewGridLayout : UICollectionViewFlowLayout
 
 /**

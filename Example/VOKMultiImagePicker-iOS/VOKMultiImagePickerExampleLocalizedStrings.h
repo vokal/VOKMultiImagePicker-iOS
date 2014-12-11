@@ -16,5 +16,7 @@
 + (NSString *)vok_selectPhotosInCameraRoll;
 + (NSString *)vok_selectVideosInCameraRoll;
 + (NSString *)vok_useCustomCollectionViewCell;
++ (NSString *)vok_oneColumn;
++ (NSString *)vok_fiveColumns;
 
 @end

@@ -27,7 +27,11 @@
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     fetchOptions.sortDescriptors = @[[self vok_creationDateSortDescriptor]];
-    return [PHAsset fetchAssetsWithMediaType:type options:fetchOptions];
+    
+    if (type) {
+        return [PHAsset fetchAssetsWithMediaType:type options:fetchOptions];
+    }
+    return [PHAsset fetchAssetsWithOptions:fetchOptions];
 }
 
 + (NSSortDescriptor *)vok_creationDateSortDescriptor

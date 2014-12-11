@@ -77,4 +77,10 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  */
 @property (nonatomic) Class assetCollectionViewCellClass;
 
+/**
+ *  The number of columns in the asset grid view.
+ *  Default is three.
+ */
+@property (nonatomic) NSInteger assetCollectionViewColumnCount;
+
 @end

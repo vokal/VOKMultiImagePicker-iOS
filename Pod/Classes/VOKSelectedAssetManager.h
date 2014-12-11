@@ -37,6 +37,11 @@
 @property (nonatomic) Class assetCollectionViewCellClass;
 
 /**
+ *  The number of columns in the asset collection view grid.
+ */
+@property (nonatomic) NSInteger assetCollectionViewColumnCount;
+
+/**
  *  Adds an asset to the selected assets array IF it matches the media type.
  *
  *  @param asset The asset to add.
