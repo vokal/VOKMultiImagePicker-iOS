@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOKAssetsViewController">
+            <connections>
+                <outlet property="collectionView" destination="req-bQ-1bB" id="hP9-oD-u8N"/>
+                <outlet property="view" destination="iN0-l3-epB" id="PH4-Ag-L55"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="req-bQ-1bB">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewLayout key="collectionViewLayout" id="LN2-bZ-Wmb" customClass="VOKCollectionViewGridLayout">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfColumns">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </collectionViewLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="req-bQ-1bB" secondAttribute="bottom" id="3KT-IR-pL3"/>
+                <constraint firstItem="req-bQ-1bB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Pa-uB-j4E"/>
+                <constraint firstItem="req-bQ-1bB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lfu-El-b0P"/>
+                <constraint firstAttribute="trailing" secondItem="req-bQ-1bB" secondAttribute="trailing" id="Vox-EO-K2f"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

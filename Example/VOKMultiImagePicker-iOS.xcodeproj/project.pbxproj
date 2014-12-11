@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		96769B9A1A378079008CDD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96769B981A378079008CDD06 /* Main.storyboard */; };
+		968B2CFA1A37B21E00337276 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96769BA61A378482008CDD06 /* Photos.framework */; };
+		96D9DE5B1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9DE5A1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m */; };
+		96D9DE5E1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9DE5D1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m */; };
 		BCBBE583F2C6930C432133DC /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62276186041A82C3C2EB4DDD /* libPods-Tests.a */; };
 		D757D840DEBC610B32310944 /* libPods-VOKMultiImagePicker-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A9DB1D04AEABE9B75EF1D /* libPods-VOKMultiImagePicker-iOS.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,10 @@
 		6CCCF8703AD60D56243897F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		96769B991A378079008CDD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96769BA61A378482008CDD06 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		96D9DE591A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKMultiImagePickerExampleDataSource.h; sourceTree = "<group>"; };
+		96D9DE5A1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKMultiImagePickerExampleDataSource.m; sourceTree = "<group>"; };
+		96D9DE5C1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKMultiImagePickerExampleLocalizedStrings.h; sourceTree = "<group>"; };
+		96D9DE5D1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKMultiImagePickerExampleLocalizedStrings.m; sourceTree = "<group>"; };
 		BC8621E530E7D2397F392BA9 /* Pods-VOKMultiImagePicker-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOKMultiImagePicker-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C27A9DB1D04AEABE9B75EF1D /* libPods-VOKMultiImagePicker-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VOKMultiImagePicker-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6E2E80D9AC6A717E84727D /* Pods-VOKMultiImagePicker-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOKMultiImagePicker-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOKMultiImagePicker-iOS/Pods-VOKMultiImagePicker-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968B2CFA1A37B21E00337276 /* Photos.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -148,6 +156,10 @@
 				96769B981A378079008CDD06 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* VOKViewController.h */,
 				6003F5A6195388D20070C39A /* VOKViewController.m */,
+				96D9DE591A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.h */,
+				96D9DE5A1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m */,
+				96D9DE5C1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.h */,
+				96D9DE5D1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -359,8 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D9DE5B1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m in Sources */,
 				6003F59E195388D20070C39A /* VOKAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* VOKViewController.m in Sources */,
+				96D9DE5E1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
