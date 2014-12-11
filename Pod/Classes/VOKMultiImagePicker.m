@@ -13,6 +13,7 @@
 #import "PHFetchResult+VOK.h"
 #import "UIImage+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
+#import "VOKAssetCollectionViewCell.h"
 #import "VOKAssetsViewController.h"
 #import "VOKMultiImagePickerConstants.h"
 #import "VOKSelectedAssetManager.h"
@@ -115,9 +116,11 @@
 
 - (void)setAssetCollectionViewCellClass:(Class)assetCollectionViewCellClass
 {
-    _assetCollectionViewCellClass = assetCollectionViewCellClass;
-    
-    [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+    if ([assetCollectionViewCellClass isSubclassOfClass:[VOKAssetCollectionViewCell class]]) {
+        _assetCollectionViewCellClass = assetCollectionViewCellClass;
+        
+        [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+    }
 }
 
 - (void)setAssetCollectionViewColumnCount:(NSInteger)assetCollectionViewColumnCount
@@ -131,7 +134,7 @@
 
 - (IBAction)doneSelectingAssets
 {
-    [self.imageDelegate multiImagePickerSelectedAssets:[[VOKSelectedAssetManager sharedManager] selectedAssets]];
+    [self.imageDelegate multiImagePicker:self selectedAssets:[[VOKSelectedAssetManager sharedManager] selectedAssets]];
     [self dismissViewControllerAnimated:YES completion:^{
         [[VOKSelectedAssetManager sharedManager] resetManager];
     }];
