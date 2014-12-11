@@ -14,8 +14,7 @@
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     
-    //Ignore PHAssetMediaTypeUnknown (PHAssetMediaTypeUnknown = 0)
-    if (type) {
+    if (type != PHAssetMediaTypeUnknown) {
         fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
     }
     
@@ -28,7 +27,7 @@
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     fetchOptions.sortDescriptors = @[[self vok_creationDateSortDescriptor]];
     
-    if (type) {
+    if (type != PHAssetMediaTypeUnknown) {
         return [PHAsset fetchAssetsWithMediaType:type options:fetchOptions];
     }
     return [PHAsset fetchAssetsWithOptions:fetchOptions];
