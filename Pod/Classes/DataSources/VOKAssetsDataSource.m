@@ -112,27 +112,34 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
                         addedHandler:(void (^)(CGRect addedRect))addedHandler
 {
     if (CGRectIntersectsRect(newRect, oldRect)) {
+        //If the rects cross each other, return the removed portion and the added portion.
         CGFloat oldMaxY = CGRectGetMaxY(oldRect);
         CGFloat oldMinY = CGRectGetMinY(oldRect);
         CGFloat newMaxY = CGRectGetMaxY(newRect);
         CGFloat newMinY = CGRectGetMinY(newRect);
+        
         if (newMaxY > oldMaxY) {
+            //Scrolled down, so added area is an area below the old rect of the difference in Y.
             CGRect rectToAdd = CGRectMake(newRect.origin.x, oldMaxY, newRect.size.width, (newMaxY - oldMaxY));
             addedHandler(rectToAdd);
         }
         if (oldMinY > newMinY) {
+            //Scrolled up, so added area is an area above the old rect of the difference in Y.
             CGRect rectToAdd = CGRectMake(newRect.origin.x, newMinY, newRect.size.width, (oldMinY - newMinY));
             addedHandler(rectToAdd);
         }
         if (newMaxY < oldMaxY) {
+            //Scrolled up, so removed area is an area below the old rect of the difference in Y.
             CGRect rectToRemove = CGRectMake(newRect.origin.x, newMaxY, newRect.size.width, (oldMaxY - newMaxY));
             removedHandler(rectToRemove);
         }
         if (oldMinY < newMinY) {
+            //Scrolled down, so removed area is an area above the old rect of the difference in Y.
             CGRect rectToRemove = CGRectMake(newRect.origin.x, oldMinY, newRect.size.width, (newMinY - oldMinY));
             removedHandler(rectToRemove);
         }
     } else {
+        //The rects do not cross each other, so we can just return them to their respective handler.
         addedHandler(newRect);
         removedHandler(oldRect);
     }
@@ -254,7 +261,7 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
     PHAsset *asset = self.results[indexPath.row];
     if (![[VOKSelectedAssetManager sharedManager] addSelectedAsset:asset]) {
         UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-        cell.selected  = NO;
+        cell.selected = NO;
         [self collectionView:collectionView didDeselectItemAtIndexPath:indexPath];
     }
 }
