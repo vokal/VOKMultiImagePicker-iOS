@@ -27,6 +27,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         SharedManager = [[self alloc] init];
+        [SharedManager resetManager];
     });
     
     return SharedManager;
@@ -38,22 +39,6 @@
     self.mediaType = PHAssetMediaTypeUnknown;
     self.assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
     self.assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
-}
-
-- (Class)assetCollectionViewCellClass
-{
-    if (!_assetCollectionViewCellClass) {
-        _assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
-    }
-    return _assetCollectionViewCellClass;
-}
-
-- (NSInteger)assetCollectionViewColumnCount
-{
-    if (!_assetCollectionViewColumnCount) {
-        _assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
-    }
-    return _assetCollectionViewColumnCount;
 }
 
 - (BOOL)addSelectedAsset:(PHAsset *)asset
@@ -78,15 +63,7 @@
 
 - (NSArray *)selectedAssets
 {
-    return [self.selectedAssetsArray copy];
-}
-
-- (NSMutableArray *)selectedAssetsArray
-{
-    if (!_selectedAssetsMutableArray) {
-        _selectedAssetsMutableArray = [NSMutableArray array];
-    }
-    return _selectedAssetsMutableArray;
+    return [self.selectedAssetsMutableArray copy];
 }
 
 #pragma mark - Helpers
