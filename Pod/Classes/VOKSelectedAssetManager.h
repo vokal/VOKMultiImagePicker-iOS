@@ -31,7 +31,10 @@
 @property (nonatomic) PHAssetMediaType mediaType;
 
 /**
- *  Adds an asset to the selected assets array.
+ *  The class used to display assets with.
+ *  You can subclass VOKAssetCollectionViewCell.
+ */
+@property (nonatomic) Class assetCollectionViewClass;
  *
  *  @param asset The asset to add.
  */

@@ -77,7 +77,11 @@ static NSString *const VOKAssetsDataSourceCellReuseIdentifier = @"VOKAssetsDataS
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PHAsset *asset = self.results[indexPath.row];
-    [[VOKSelectedAssetManager sharedManager] addSelectedAsset:asset];
+    if (![[VOKSelectedAssetManager sharedManager] addSelectedAsset:asset]) {
+        UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+        cell.selected  = NO;
+        [self collectionView:collectionView didDeselectItemAtIndexPath:indexPath];
+    }
 }
 
 @end

@@ -14,7 +14,7 @@
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     
-    //Ignore PHAssetMediaTypeUnknown
+    //Ignore PHAssetMediaTypeUnknown (PHAssetMediaTypeUnknown = 0)
     if (type) {
         fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
     }

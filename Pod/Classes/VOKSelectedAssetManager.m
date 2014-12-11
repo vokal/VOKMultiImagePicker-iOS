@@ -33,6 +33,7 @@
 - (void)resetManager
 {
     self.selectedAssetsMutableArray = [NSMutableArray array];
+    self.mediaType = PHAssetMediaTypeUnknown;
 }
 
 - (void)addSelectedAsset:(PHAsset *)asset
@@ -42,6 +43,17 @@
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:VOKMultiImagePickerNotifications.assetsChanged object:asset];
+- (BOOL)addSelectedAsset:(PHAsset *)asset
+{
+    if ([self assetIsInMediaType:asset]) {
+        if (![self.selectedAssetsMutableArray containsObject:asset]) {
+            [self.selectedAssetsMutableArray addObject:asset];
+        }
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:VOKMultiImagePickerNotifications.assetsChanged object:asset];
+        return YES;
+    }
+    return NO;
 }
 
 - (void)removeSelectedAsset:(PHAsset *)asset
@@ -62,6 +74,18 @@
         _selectedAssetsMutableArray = [NSMutableArray array];
     }
     return _selectedAssetsMutableArray;
+}
+
+#pragma mark - Helpers
+
+- (BOOL)assetIsInMediaType:(PHAsset *)asset;
+{
+    if (self.mediaType == PHAssetMediaTypeUnknown) {
+        return YES;
+    } else if (asset.mediaType == self.mediaType) {
+        return YES;
+    }
+    return NO;
 }
 
 @end
