@@ -5,7 +5,7 @@ target 'VOKMultiImagePicker-iOS', :exclusive => true do
 end
 
 target 'Tests', :exclusive => true do
-  pod "VOKMultiImagePicker-iOS", :path => "../"
+    pod "VOKMultiImagePicker-iOS", :path => "../"
+    pod "Kif"
 
-  
 end
