@@ -13,7 +13,11 @@
 + (instancetype)vok_fetchResultWithAssetCollection:(PHAssetCollection *)assetCollection mediaType:(PHAssetMediaType)type
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
-    fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
+    
+    if (type != PHAssetMediaTypeUnknown) {
+        fetchOptions.predicate = [NSPredicate predicateWithFormat:@"mediaType == %@", @(type)];
+    }
+    
     fetchOptions.sortDescriptors = @[[self vok_creationDateSortDescriptor]];
     return [PHAsset fetchAssetsInAssetCollection:assetCollection options:fetchOptions];
 }
@@ -22,7 +26,11 @@
 {
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     fetchOptions.sortDescriptors = @[[self vok_creationDateSortDescriptor]];
-    return [PHAsset fetchAssetsWithMediaType:type options:fetchOptions];
+    
+    if (type != PHAssetMediaTypeUnknown) {
+        return [PHAsset fetchAssetsWithMediaType:type options:fetchOptions];
+    }
+    return [PHAsset fetchAssetsWithOptions:fetchOptions];
 }
 
 + (NSSortDescriptor *)vok_creationDateSortDescriptor

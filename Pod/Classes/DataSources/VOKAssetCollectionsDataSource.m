@@ -32,17 +32,16 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
         _tableView = tableView;
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:VOKAlbumDataSourceCellReuseIdentifier];
         
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
-                PHFetchOptions *fetchOptions = [PHFetchOptions new];
-#warning TODO: Find out why this line doesn't work.
-                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0"];
                 PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
-                                                                                 options:fetchOptions];
+                                                                                 options:nil];
                 
+                //TODO: Only show albums with more than one asset and not found.
+                //PHFetchOptions *fetchOptions = [PHFetchOptions new];
+                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
                 
                 _collectionFetchResults = @[albums, topLevelUserCollections];
@@ -51,6 +50,8 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
                 });
                 
                 [[PHPhotoLibrary sharedPhotoLibrary] registerChangeObserver:self];
+            } else {
+                //TODO: Handle no access.
             }
         }];
     }
@@ -109,7 +110,10 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VOKAlbumDataSourceCellReuseIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VOKAlbumDataSourceCellReuseIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:VOKAlbumDataSourceCellReuseIdentifier];
+    }
     cell.imageView.image = nil;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -132,6 +136,11 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
     
     //Get album name
     cell.textLabel.text = collection.localizedTitle;
+    if (collection.estimatedAssetCount == NSNotFound) {
+        cell.detailTextLabel.text = nil;
+    } else {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", @(collection.estimatedAssetCount)];
+    }
     
     return cell;
 }

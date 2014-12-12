@@ -11,13 +11,15 @@
 #import "NSBundle+VOK.h"
 #import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
+#import "UIImage+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
+#import "VOKAssetCollectionViewCell.h"
 #import "VOKAssetsViewController.h"
 #import "VOKMultiImagePickerConstants.h"
+#import "VOKSelectedAssetManager.h"
 
 @interface VOKMultiImagePicker ()
 
-@property (nonatomic) NSMutableArray *selectedAssets;
 @property (nonatomic, weak) IBOutlet UIView *containerView;
 
 @end
@@ -26,7 +28,10 @@
 
 - (instancetype)init
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle vok_multiImageSelectBundle]];
+    [[VOKSelectedAssetManager sharedManager] resetManager];
+    
+    //TODO: Remove storyboard.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:VOKMultiImagePickerStoryboardNames.storyboard bundle:[NSBundle vok_multiImageSelectBundle]];
     return [storyboard instantiateInitialViewController];
 }
 
@@ -41,7 +46,7 @@
     [self.containerView addSubview:containerNavigationController.view];
     [containerNavigationController didMoveToParentViewController:self];
     
-    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] initWithMediaType:self.mediaType];
+    VOKAssetCollectionsViewController *albumViewController = [[VOKAssetCollectionsViewController alloc] init];
     
     switch (self.startPosition) {
         case VOKMultiImagePickerStartPositionAlbums:
@@ -56,15 +61,18 @@
         }
     }
     
+    CGSize imageSize = CGSizeMake(CGRectGetWidth(self.addItemsButton.frame), CGRectGetHeight(self.addItemsButton.frame));
+    
+    UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor greenColor] size:imageSize];
+    UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
+    
+    [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
+    [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
     [self updateAddItemsButton];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(notificationReceived:)
-                                                 name:VOKMultiImagePickerNotifications.assetSelected
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(notificationReceived:)
-                                                 name:VOKMultiImagePickerNotifications.assetDeselected
+                                                 name:VOKMultiImagePickerNotifications.assetsChanged
                                                object:nil];
 }
 
@@ -75,35 +83,21 @@
 
 - (void)notificationReceived:(NSNotification *)notification
 {
-    PHAsset *asset = notification.object;
-    if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetSelected]) {
-        if (![self.selectedAssets containsObject:asset]) {
-            [self.selectedAssets addObject:asset];
-        }
-    } else if ([notification.name isEqualToString:VOKMultiImagePickerNotifications.assetDeselected]) {
-        [self.selectedAssets removeObject:asset];
-    }
     [self updateAddItemsButton];
-}
-
-- (NSMutableArray *)selectedAssets
-{
-    if (!_selectedAssets) {
-        _selectedAssets = [NSMutableArray new];
-    }
-    return _selectedAssets;
 }
 
 - (void)updateAddItemsButton
 {
-    if (self.selectedAssets.count) {
+    NSArray *selectedAssetsArray = [[VOKSelectedAssetManager sharedManager] selectedAssets];
+    NSInteger assetCount = selectedAssetsArray.count;
+    if (assetCount) {
         self.addItemsButton.enabled = YES;
         
         NSString *titleString;
-        if (self.selectedAssets.count == 1) {
+        if (assetCount == 1) {
             titleString = [NSString vok_addOneItem];
         } else {
-            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(self.selectedAssets.count)];
+            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(assetCount)];
         }
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     } else {
@@ -112,10 +106,41 @@
     }
 }
 
+#pragma mark - Values passed to the manager.
+
+- (void)setMediaType:(PHAssetMediaType)mediaType
+{
+    _mediaType = mediaType;
+    
+    [VOKSelectedAssetManager sharedManager].mediaType = mediaType;
+}
+
+- (void)setAssetCollectionViewCellClass:(Class)assetCollectionViewCellClass
+{
+    if ([assetCollectionViewCellClass isSubclassOfClass:[VOKAssetCollectionViewCell class]]) {
+        _assetCollectionViewCellClass = assetCollectionViewCellClass;
+        
+        [VOKSelectedAssetManager sharedManager].assetCollectionViewCellClass = assetCollectionViewCellClass;
+    } else {
+        NSAssert(NO, @"You must use a subclass of VOKAssetCollectionViewCell.");
+    }
+}
+
+- (void)setAssetCollectionViewColumnCount:(NSInteger)assetCollectionViewColumnCount
+{
+    _assetCollectionViewColumnCount = assetCollectionViewColumnCount;
+    
+    [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount = assetCollectionViewColumnCount;
+}
+
+#pragma mark - Actions
+
 - (IBAction)doneSelectingAssets
 {
-    [self.imageDelegate multiImagePickerSelectedAssets:[self.selectedAssets copy]];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.imageDelegate multiImagePicker:self selectedAssets:[[VOKSelectedAssetManager sharedManager] selectedAssets]];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[VOKSelectedAssetManager sharedManager] resetManager];
+    }];
 }
 
 @end

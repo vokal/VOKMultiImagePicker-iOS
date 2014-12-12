@@ -8,18 +8,19 @@
 
 #import "VOKCollectionViewGridLayout.h"
 
-const NSUInteger VOKCollectionViewGridLayoutDefaultColumns = 3;
-const CGFloat VOKCollectionViewGridLayoutDefaultSpacing = 2.0f;
+#import "VOKSelectedAssetManager.h"
+
+NSUInteger const VOKCollectionViewGridLayoutDefaultColumns = 3;
 
 @implementation VOKCollectionViewGridLayout
+
+static CGFloat const VOKCollectionViewGridLayoutDefaultSpacing = 2.0f;
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
     
-    if (!(_numberOfColumns > 0)) {
-        _numberOfColumns = VOKCollectionViewGridLayoutDefaultColumns;
-    }
+    _numberOfColumns = [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount;
     
     self.minimumInteritemSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
     self.minimumLineSpacing = VOKCollectionViewGridLayoutDefaultSpacing;

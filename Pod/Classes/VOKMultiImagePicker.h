@@ -25,6 +25,8 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
     VOKMultiImagePickerStartPositionCameraRoll,
 };
 
+@class VOKMultiImagePicker;
+
 /**
  *  The protocol your code should handle to receive the assets selected
  *  within the multi image picker.
@@ -34,9 +36,12 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  When the user finishes selecting images the assets are returned in
  *  this method call.
  *
- *  @param assets An array of PHAsset objects that the user selected.
+ *  @param multiImagePicker The multi image picker that returned from presenting.
+ *  @param assets           An array of PHAsset objects that the user selected.
  */
-- (void)multiImagePickerSelectedAssets:(NSArray *)assets;
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets;
+
+//TODO: Create a multiImagePickerDidCancel: delegate call.
 @end
 
 @interface VOKMultiImagePicker : UIViewController
@@ -56,17 +61,32 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  The media type of assets to display. All other assets will not
  *  be shown.
  *
- *  PHAssetMediaTypeUnknown,
- *  PHAssetMediaTypeImage,
- *  PHAssetMediaTypeVideo,
- *  PHAssetMediaTypeAudio
+ *  PHAssetMediaTypeUnknown - Will display all.
+ *  PHAssetMediaTypeImage - Will display just images.
+ *  PHAssetMediaTypeVideo - Will display just videos.
+ *  PHAssetMediaTypeAudio - Will display just audio items.
  */
+//TODO: Make this a bitmask.
 @property (nonatomic) PHAssetMediaType mediaType;
 
 /**
- *  Set the start position the user will see first once the image picker
+ *  Set the start position the user will see once the image picker
  *  is displayed on screen.
  */
 @property (nonatomic) enum VOKMultiImagePickerStartPosition startPosition;
+
+/**
+ *  The class used to display assets with.
+ *  You can subclass VOKAssetCollectionViewCell.
+ *  Default is VOKAssetCollectionViewCell.
+ */
+@property (nonatomic) Class assetCollectionViewCellClass;
+
+/**
+ *  The number of columns in the asset grid view.
+ *  Default is three.
+ */
+//TODO: Probably should have the user pass in a subclass of VOKCollectionViewGridLayout for better customization.
+@property (nonatomic) NSInteger assetCollectionViewColumnCount;
 
 @end

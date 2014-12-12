@@ -2,7 +2,7 @@
 //  VOKMultiImagePickerExampleLocalizedStrings.m
 //  VOKMultiImagePicker-iOS
 //
-//  Created by Luke Q on 12/10/14.
+//  Created by Luke Quigley on 12/10/14.
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
@@ -33,6 +33,21 @@
 + (NSString *)vok_selectVideosInCameraRoll
 {
     return NSLocalizedString(@"Select Videos In Camera Roll", @"Select Videos In Camera Roll");
+}
+
++ (NSString *)vok_useCustomCollectionViewCell
+{
+    return NSLocalizedString(@"Use Custom Collection View Cell", @"Use Custom Collection View Cell");
+}
+
++ (NSString *)vok_oneColumn
+{
+    return NSLocalizedString(@"One Column", @"One Column");
+}
+
++ (NSString *)vok_fiveColumns
+{
+    return NSLocalizedString(@"Five Column", @"Five Column");
 }
 
 @end

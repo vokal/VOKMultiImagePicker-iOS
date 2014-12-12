@@ -8,9 +8,11 @@
 
 #import "VOKViewController.h"
 
+#import "VOKMultiImagePickerExampleAssetCell.h"
 #import "VOKMultiImagePickerExampleDataSource.h"
 
 #import <VOKMultiImagePicker.h>
+#import <UIImage+VOK.h>
 
 @interface VOKViewController () <VOKMultiImagePickerExampleDataSourceDelegate, VOKMultiImagePickerDelegate>
 
@@ -53,8 +55,8 @@
             break;
         }
         case VOKMultiImagePickerExampleDataSourceRowPhotosInCameraRoll: {
-            multiImagePicker.mediaType = PHAssetMediaTypeImage;
             multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            multiImagePicker.mediaType = PHAssetMediaTypeImage;
             break;
         }
         case VOKMultiImagePickerExampleDataSourceRowVideosInCameraRoll: {
@@ -62,18 +64,44 @@
             multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
             break;
         }
+        case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            multiImagePicker.assetCollectionViewCellClass = [VOKMultiImagePickerExampleAssetCell class];
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowOneColumn:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            multiImagePicker.assetCollectionViewColumnCount = 1;
+            break;
+        case VOKMultiImagePickerExampleDataSourceRowFiveColumns:
+            //Put a check mark on the cell using a subclassed cell.
+            multiImagePicker.assetCollectionViewColumnCount = 5;
+            multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
+            break;
     }
     
     [self.navigationController presentViewController:multiImagePicker
                                             animated:YES
                                           completion:nil];
+    
+    //Customize the add items button after it has been loaded.
+    CGSize imageSize = CGSizeMake(CGRectGetWidth(multiImagePicker.addItemsButton.frame), CGRectGetHeight(multiImagePicker.addItemsButton.frame));
+    
+    UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor redColor] size:imageSize];
+    UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
+    
+    [multiImagePicker.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
+    [multiImagePicker.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
+    
+    multiImagePicker.addItemsButton.titleLabel.font = [UIFont systemFontOfSize:24];
 }
 
 #pragma mark - VOKMultiImagePickerDelegate
 
-- (void)multiImagePickerSelectedAssets:(NSArray *)assets
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets
 {
-#warning TODO: Show the assets.
+    //TODO: Show the selected assets in the example instead of logging.
     NSLog(@"%@", @(assets.count));
     for (PHAsset *asset in assets) {
         NSLog(@"%@", asset);
