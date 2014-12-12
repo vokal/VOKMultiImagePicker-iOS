@@ -89,7 +89,6 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
     
     self.containerView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     self.addItemsButton.autoresizingMask = (UIViewAutoresizingFlexibleWidth| UIViewAutoresizingFlexibleTopMargin);
-    [self.view setTranslatesAutoresizingMaskIntoConstraints:YES];
     
     UINavigationController *containerNavigationController = [[UINavigationController alloc] init];
     containerNavigationController.view.frame = self.containerView.bounds;
