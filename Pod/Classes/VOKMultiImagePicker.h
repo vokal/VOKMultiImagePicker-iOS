@@ -77,7 +77,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 
 /**
  *  The class used to display assets with.
- *  You can subclass VOKAssetCollectionViewCell.
+ *  You have to subclass VOKAssetCollectionViewCell.
  *  Default is VOKAssetCollectionViewCell.
  */
 @property (nonatomic) Class assetCollectionViewCellClass;
