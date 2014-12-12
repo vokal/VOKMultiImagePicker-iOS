@@ -26,12 +26,18 @@
 
 @implementation VOKMultiImagePicker
 
+static CGFloat const VOKMultiImagePickerViewDefaultWidth = 600.0f;
 static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
 
 - (instancetype)init
 {
     if (self = [super init]) {
         [[VOKSelectedAssetManager sharedManager] resetManager];
+        _addItemsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _addItemsButton.frame = CGRectMake(0.0f,
+                                           0.0f,
+                                           VOKMultiImagePickerViewDefaultWidth,
+                                           VOKMultiImagePickerAddItemsButtonHeight);
     }
     return self;
 }
@@ -58,7 +64,6 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
     [self.view addSubview:self.containerView];
     
     //Setup add items button.
-    self.addItemsButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.addItemsButton addTarget:self action:@selector(doneSelectingAssets) forControlEvents:UIControlEventTouchUpInside];
     self.addItemsButton.frame = CGRectMake(0.0f,
                                            CGRectGetMaxY(self.containerView.frame),
@@ -66,12 +71,19 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
                                            VOKMultiImagePickerAddItemsButtonHeight);
     
     CGSize imageSize = CGSizeMake(CGRectGetWidth(self.addItemsButton.frame), VOKMultiImagePickerAddItemsButtonHeight);
-    UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor greenColor] size:imageSize];
-    UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
+    if (![self.addItemsButton backgroundImageForState:UIControlStateNormal]) {
+        UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor greenColor] size:imageSize];
+        [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
+    }
+    if (![self.addItemsButton backgroundImageForState:UIControlStateDisabled]) {
+        UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
+        [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
+    }
     
-    [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
-    [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
-    [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
+    if (![self.addItemsButton titleForState:UIControlStateNormal]) {
+        [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
+    }
+    
     [self.view addSubview:self.addItemsButton];
     
     self.containerView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);

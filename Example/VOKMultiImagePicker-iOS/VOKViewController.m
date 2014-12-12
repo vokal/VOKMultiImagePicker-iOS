@@ -81,11 +81,7 @@
             break;
     }
     
-    [self.navigationController presentViewController:multiImagePicker
-                                            animated:YES
-                                          completion:nil];
-    
-    //Customize the add items button after it has been loaded.
+    //Customize the add items button.
     CGSize imageSize = CGSizeMake(CGRectGetWidth(multiImagePicker.addItemsButton.frame), CGRectGetHeight(multiImagePicker.addItemsButton.frame));
     
     UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor redColor] size:imageSize];
@@ -94,7 +90,11 @@
     [multiImagePicker.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
     [multiImagePicker.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
     
-    multiImagePicker.addItemsButton.titleLabel.font = [UIFont systemFontOfSize:24];
+    multiImagePicker.addItemsButton.titleLabel.font = [UIFont systemFontOfSize:30];
+    
+    [self.navigationController presentViewController:multiImagePicker
+                                            animated:YES
+                                          completion:nil];
 }
 
 #pragma mark - VOKMultiImagePickerDelegate
