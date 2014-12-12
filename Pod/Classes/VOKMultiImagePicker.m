@@ -30,6 +30,7 @@
 {
     [[VOKSelectedAssetManager sharedManager] resetManager];
     
+    //TODO: Remove storyboard.
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:VOKMultiImagePickerStoryboardNames.storyboard bundle:[NSBundle vok_multiImageSelectBundle]];
     return [storyboard instantiateInitialViewController];
 }
