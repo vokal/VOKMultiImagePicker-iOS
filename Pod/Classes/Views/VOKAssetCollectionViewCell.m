@@ -49,7 +49,7 @@
     if (!_shadeView) {
         _shadeView = [[UIView alloc] initWithFrame:self.contentView.bounds];
         _shadeView.backgroundColor = [UIColor blackColor];
-        _shadeView.alpha = 0.6f;
+        _shadeView.alpha = 0.4f;
     }
     return _shadeView;
 }

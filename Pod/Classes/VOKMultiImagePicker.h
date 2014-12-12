@@ -55,7 +55,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  The button the user will select to finish selecting assets.
  *  This button can be customized.
  */
-@property (nonatomic, weak) IBOutlet UIButton *addItemsButton;
+@property (nonatomic, weak, readonly) UIButton *addItemsButton;
 
 /**
  *  The media type of assets to display. All other assets will not
@@ -77,7 +77,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 
 /**
  *  The class used to display assets with.
- *  You can subclass VOKAssetCollectionViewCell.
+ *  You have to subclass VOKAssetCollectionViewCell.
  *  Default is VOKAssetCollectionViewCell.
  */
 @property (nonatomic) Class assetCollectionViewCellClass;
