@@ -20,7 +20,7 @@
 
 @interface VOKMultiImagePicker ()
 
-@property (nonatomic) UIView *containerView;
+@property (nonatomic, weak) UIView *containerView;
 
 @end
 
@@ -57,10 +57,11 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
 - (void)setupView
 {
     //Setup container view.
-    self.containerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
-                                                                  0.0f,
-                                                                  CGRectGetWidth(self.view.frame),
-                                                                  CGRectGetHeight(self.view.frame) - VOKMultiImagePickerAddItemsButtonHeight)];
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
+                                                                     0.0f,
+                                                                     CGRectGetWidth(self.view.frame),
+                                                                     CGRectGetHeight(self.view.frame) - VOKMultiImagePickerAddItemsButtonHeight)];
+    self.containerView = containerView;
     [self.view addSubview:self.containerView];
     
     //Setup add items button.
