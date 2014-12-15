@@ -16,14 +16,15 @@ NSUInteger const VOKCollectionViewGridLayoutDefaultColumns = 3;
 
 static CGFloat const VOKCollectionViewGridLayoutDefaultSpacing = 2.0f;
 
-- (void)awakeFromNib
+- (instancetype)init
 {
-    [super awakeFromNib];
-    
-    _numberOfColumns = [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount;
-    
-    self.minimumInteritemSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
-    self.minimumLineSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
+    if (self = [super init]) {
+        _numberOfColumns = [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount;
+
+        self.minimumInteritemSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
+        self.minimumLineSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
+    }
+    return self;
 }
 
 - (CGSize)itemSize
