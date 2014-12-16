@@ -16,7 +16,7 @@
 
 @interface VOKAssetCollectionsViewController () <VOKAssetCollectionsDataSourceDelegate>
 
-@property (nonatomic) UITableView *tableView;
+@property (nonatomic, readwrite) UITableView *tableView;
 @property (nonatomic) VOKAssetCollectionsDataSource *dataSource;
 
 @end

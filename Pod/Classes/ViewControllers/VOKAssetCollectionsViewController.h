@@ -12,4 +12,6 @@
 
 @interface VOKAssetCollectionsViewController : VOKBaseViewController
 
+@property (nonatomic, readonly) UITableView *tableView;
+
 @end

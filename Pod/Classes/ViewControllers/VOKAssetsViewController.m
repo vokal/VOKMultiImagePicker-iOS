@@ -13,7 +13,7 @@
 
 @interface VOKAssetsViewController ()
 
-@property (nonatomic) UICollectionView *collectionView;
+@property (nonatomic, readwrite) UICollectionView *collectionView;
 @property (nonatomic) PHFetchResult *fetchResult;
 @property (nonatomic) VOKAssetsDataSource *dataSource;
 
@@ -36,6 +36,7 @@
     // Initialize and configure the collection view, then add it as a subview
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame
                                              collectionViewLayout:[[VOKCollectionViewGridLayout alloc] init]];
+    // Use a white background by default. If this isn't set, the background appears black.
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.allowsMultipleSelection = YES;
 
