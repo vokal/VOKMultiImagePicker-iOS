@@ -8,7 +8,6 @@
 
 #import "VOKMultiImagePicker.h"
 
-#import "NSBundle+VOK.h"
 #import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
 #import "UIImage+VOK.h"

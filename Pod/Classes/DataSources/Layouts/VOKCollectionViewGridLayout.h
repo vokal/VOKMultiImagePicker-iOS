@@ -13,11 +13,6 @@ FOUNDATION_EXPORT NSUInteger const VOKCollectionViewGridLayoutDefaultColumns;
 @interface VOKCollectionViewGridLayout : UICollectionViewFlowLayout
 
 /**
- *  Set number of columns to appear in the grid view.
- */
-@property (nonatomic) IBInspectable NSUInteger numberOfColumns;
-
-/**
  *  @return The size of the asset cells.
  */
 - (CGSize)itemSize;

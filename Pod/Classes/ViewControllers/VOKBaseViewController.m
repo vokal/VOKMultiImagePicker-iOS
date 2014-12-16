@@ -8,19 +8,12 @@
 
 #import "VOKBaseViewController.h"
 
-#import "NSBundle+VOK.h"
-
 @implementation VOKBaseViewController
-
-- (instancetype)init
-{
-    return [super initWithNibName:NSStringFromClass([self class]) bundle:[NSBundle vok_multiImageSelectBundle]];
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     UIBarButtonItem *cancelBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                          target:self
                                                                                          action:@selector(close)];

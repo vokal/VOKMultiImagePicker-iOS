@@ -12,16 +12,37 @@
 
 NSUInteger const VOKCollectionViewGridLayoutDefaultColumns = 3;
 
+@interface VOKCollectionViewGridLayout ()
+
+/**
+ *  Set number of columns to appear in the grid view.
+ */
+@property (nonatomic) NSUInteger numberOfColumns;
+
+@end
+
 @implementation VOKCollectionViewGridLayout
 
 static CGFloat const VOKCollectionViewGridLayoutDefaultSpacing = 2.0f;
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self setupDefaults];
+    }
+    return self;
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
+    [self setupDefaults];
+}
+
+- (void)setupDefaults
+{
     _numberOfColumns = [VOKSelectedAssetManager sharedManager].assetCollectionViewColumnCount;
-    
+
     self.minimumInteritemSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
     self.minimumLineSpacing = VOKCollectionViewGridLayoutDefaultSpacing;
 }
