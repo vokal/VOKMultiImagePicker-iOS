@@ -12,7 +12,7 @@
 
 @interface VOKAssetsViewController : VOKBaseViewController
 
-@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic, readonly) IBOutlet UICollectionView *collectionView;
 
 /**
  *  Initializes an assets view controller with specific fetch results.
