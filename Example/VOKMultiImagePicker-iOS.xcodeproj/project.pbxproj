@@ -22,7 +22,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		96769B9A1A378079008CDD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96769B981A378079008CDD06 /* Main.storyboard */; };
 		968B2CFA1A37B21E00337276 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96769BA61A378482008CDD06 /* Photos.framework */; };
-		96BE1C751A48A7E200FE9B05 /* NSString+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BE1C741A48A7E200FE9B05 /* NSString+Localized.m */; };
 		96D9DE5B1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9DE5A1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m */; };
 		96D9DE5E1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9DE5D1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m */; };
 		96DF6D321A3A086400DFEC72 /* VOKMultiImagePickerExampleAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF6D311A3A086400DFEC72 /* VOKMultiImagePickerExampleAssetCell.m */; };
@@ -68,8 +67,6 @@
 		6CCCF8703AD60D56243897F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		96769B991A378079008CDD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96769BA61A378482008CDD06 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		96BE1C731A48A7E200FE9B05 /* NSString+Localized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localized.h"; sourceTree = "<group>"; };
-		96BE1C741A48A7E200FE9B05 /* NSString+Localized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localized.m"; sourceTree = "<group>"; };
 		96D9DE591A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKMultiImagePickerExampleDataSource.h; sourceTree = "<group>"; };
 		96D9DE5A1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOKMultiImagePickerExampleDataSource.m; sourceTree = "<group>"; };
 		96D9DE5C1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOKMultiImagePickerExampleLocalizedStrings.h; sourceTree = "<group>"; };
@@ -157,8 +154,6 @@
 		6003F593195388D20070C39A /* VOKMultiImagePicker-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				96BE1C731A48A7E200FE9B05 /* NSString+Localized.h */,
-				96BE1C741A48A7E200FE9B05 /* NSString+Localized.m */,
 				6003F59C195388D20070C39A /* VOKAppDelegate.h */,
 				6003F59D195388D20070C39A /* VOKAppDelegate.m */,
 				96769B981A378079008CDD06 /* Main.storyboard */,
@@ -383,7 +378,6 @@
 			files = (
 				96DF6D321A3A086400DFEC72 /* VOKMultiImagePickerExampleAssetCell.m in Sources */,
 				96D9DE5B1A38CC5400FCF99B /* VOKMultiImagePickerExampleDataSource.m in Sources */,
-				96BE1C751A48A7E200FE9B05 /* NSString+Localized.m in Sources */,
 				6003F59E195388D20070C39A /* VOKAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* VOKViewController.m in Sources */,
 				96D9DE5E1A38CDA600FCF99B /* VOKMultiImagePickerExampleLocalizedStrings.m in Sources */,

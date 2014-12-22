@@ -19,4 +19,19 @@
 + (NSString *)vok_oneColumn;
 + (NSString *)vok_fiveColumns;
 
+//Localized strings referring to images.
++ (NSString *)vok_addXImagesFormat;
++ (NSString *)vok_addOneImage;
++ (NSString *)vok_addImages;
+
+//Localized strings referring to videos.
++ (NSString *)vok_addXVideosFormat;
++ (NSString *)vok_addOneVideo;
++ (NSString *)vok_addVideos;
+
+//Localized strings referring to audio.
++ (NSString *)vok_addXAudioItemsFormat;
++ (NSString *)vok_addOneAudioItem;
++ (NSString *)vok_addAudioItems;
+
 @end

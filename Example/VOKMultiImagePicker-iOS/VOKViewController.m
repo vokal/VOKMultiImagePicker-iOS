@@ -8,9 +8,9 @@
 
 #import "VOKViewController.h"
 
-#import "NSString+Localized.h"
 #import "VOKMultiImagePickerExampleAssetCell.h"
 #import "VOKMultiImagePickerExampleDataSource.h"
+#import "VOKMultiImagePickerExampleLocalizedStrings.h"
 
 #import <VOKMultiImagePicker.h>
 #import <NSString+VOK.h>
@@ -123,27 +123,27 @@
             }
         case PHAssetMediaTypeImage:
             if (itemCount == 0) {
-                return [NSString vok_addImages];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addImages];
             } else if (itemCount == 1) {
-                return [NSString vok_addOneImage];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneImage];
             } else {
-                return [NSString stringWithFormat:[NSString vok_addXImagesFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXImagesFormat], @(itemCount)];
             }
         case PHAssetMediaTypeVideo:
             if (itemCount == 0) {
-                return [NSString vok_addVideos];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addVideos];
             } else if (itemCount == 1) {
-                return [NSString vok_addOneVideo];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneVideo];
             } else {
-                return [NSString stringWithFormat:[NSString vok_addXVideosFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXVideosFormat], @(itemCount)];
             }
         case PHAssetMediaTypeAudio:
             if (itemCount == 0) {
-                return [NSString vok_addAudioItems];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addAudioItems];
             } else if (itemCount == 1) {
-                return [NSString vok_addOneAudioItem];
+                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneAudioItem];
             } else {
-                return [NSString stringWithFormat:[NSString vok_addXAudioItemsFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXAudioItemsFormat], @(itemCount)];
             }
     }
     return nil;

@@ -50,4 +50,49 @@
     return NSLocalizedString(@"Five Column", @"Five Column");
 }
 
++ (NSString *)vok_addXImagesFormat
+{
+    return NSLocalizedString(@"Add %@ Images", @"Add %@ Images");
+}
+
++ (NSString *)vok_addOneImage
+{
+    return NSLocalizedString(@"Add 1 Image", @"Add 1 Image");
+}
+
++ (NSString *)vok_addImages
+{
+    return NSLocalizedString(@"Add Images", @"Add Images");
+}
+
++ (NSString *)vok_addXVideosFormat
+{
+    return NSLocalizedString(@"Add %@ Videos", @"Add %@ Videos");
+}
+
++ (NSString *)vok_addOneVideo
+{
+    return NSLocalizedString(@"Add 1 Video", @"Add 1 Video");
+}
+
++ (NSString *)vok_addVideos
+{
+    return NSLocalizedString(@"Add Videos", @"Add Videos");
+}
+
++ (NSString *)vok_addXAudioItemsFormat
+{
+    return NSLocalizedString(@"Add %@ Audio Items", @"Add %@ Audio Items");
+}
+
++ (NSString *)vok_addOneAudioItem
+{
+    return NSLocalizedString(@"Add 1 Audio Item", @"Add 1 Audio Item");
+}
+
++ (NSString *)vok_addAudioItems
+{
+    return NSLocalizedString(@"Add Audio Items", @"Add Audio Items");
+}
+
 @end
