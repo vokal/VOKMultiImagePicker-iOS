@@ -35,7 +35,7 @@
 
 + (NSSortDescriptor *)vok_creationDateSortDescriptor
 {
-    return [NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES];
+    return [NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO];
 }
 
 @end
