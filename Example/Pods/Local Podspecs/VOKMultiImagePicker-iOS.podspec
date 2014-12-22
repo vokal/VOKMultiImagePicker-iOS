@@ -22,9 +22,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*.{h,m}'
-  s.resource_bundles = {
-      'VOKMultiImagePicker-iOS' => ['Pod/Assets/*.{xib,storyboard}']
-  }
 
   s.frameworks = 'UIKit', 'Photos'
 end

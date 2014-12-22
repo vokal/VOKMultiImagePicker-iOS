@@ -32,6 +32,9 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  within the multi image picker.
  */
 @protocol VOKMultiImagePickerDelegate <NSObject>
+
+@required
+
 /**
  *  When the user finishes selecting images the assets are returned in
  *  this method call.
@@ -42,6 +45,21 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 - (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets;
 
 //TODO: Create a multiImagePickerDidCancel: delegate call.
+
+@optional
+
+/**
+ *  Allows the user to customize the title on the "Add Items" button depending on
+ *  the quantity of items that are selected. If this method is not implemented, the
+ *  multi image picker will default to "Add x Items".
+ *
+ *  @param multiImagePicker The multi image picker that is requesting information.
+ *  @param itemCount        The item count that the multi image picker will display.
+ *
+ *  @return The string title for the "Add Items" button.
+ */
+- (NSString *)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker addButtonLabelForItemCount:(NSUInteger)itemCount;
+
 @end
 
 @interface VOKMultiImagePicker : UIViewController

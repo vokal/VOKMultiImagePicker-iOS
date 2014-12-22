@@ -8,10 +8,12 @@
 
 #import "VOKViewController.h"
 
+#import "NSString+Localized.h"
 #import "VOKMultiImagePickerExampleAssetCell.h"
 #import "VOKMultiImagePickerExampleDataSource.h"
 
 #import <VOKMultiImagePicker.h>
+#import <NSString+VOK.h>
 #import <UIImage+VOK.h>
 
 @interface VOKViewController () <VOKMultiImagePickerExampleDataSourceDelegate, VOKMultiImagePickerDelegate>
@@ -106,6 +108,45 @@
     for (PHAsset *asset in assets) {
         NSLog(@"%@", asset);
     }
+}
+
+- (NSString *)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker addButtonLabelForItemCount:(NSUInteger)itemCount
+{
+    switch (multiImagePicker.mediaType) {
+        case PHAssetMediaTypeUnknown:
+            if (itemCount == 0) {
+                return [NSString vok_addItems];
+            } else if (itemCount == 1) {
+                return [NSString vok_addOneItem];
+            } else {
+                return [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(itemCount)];
+            }
+        case PHAssetMediaTypeImage:
+            if (itemCount == 0) {
+                return [NSString vok_addImages];
+            } else if (itemCount == 1) {
+                return [NSString vok_addOneImage];
+            } else {
+                return [NSString stringWithFormat:[NSString vok_addXImagesFormat], @(itemCount)];
+            }
+        case PHAssetMediaTypeVideo:
+            if (itemCount == 0) {
+                return [NSString vok_addVideos];
+            } else if (itemCount == 1) {
+                return [NSString vok_addOneVideo];
+            } else {
+                return [NSString stringWithFormat:[NSString vok_addXVideosFormat], @(itemCount)];
+            }
+        case PHAssetMediaTypeAudio:
+            if (itemCount == 0) {
+                return [NSString vok_addAudioItems];
+            } else if (itemCount == 1) {
+                return [NSString vok_addOneAudioItem];
+            } else {
+                return [NSString stringWithFormat:[NSString vok_addXAudioItemsFormat], @(itemCount)];
+            }
+    }
+    return nil;
 }
 
 @end

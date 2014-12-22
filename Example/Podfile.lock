@@ -1,7 +1,7 @@
 PODS:
-  - KIF (3.0.8):
-    - KIF/XCTest (= 3.0.8)
-  - KIF/XCTest (3.0.8)
+  - KIF (3.1.0):
+    - KIF/XCTest (= 3.1.0)
+  - KIF/XCTest (3.1.0)
   - VOKMultiImagePicker-iOS (0.1.0)
 
 DEPENDENCIES:
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KIF: 2db5e8cf59136dd1267d49cca0d55883389b09d3
-  VOKMultiImagePicker-iOS: f226a20aa16d7fa2660ff234e168fbd53f4f47a5
+  KIF: de7c7f4aea08179c65d963a3c5ec438ee6408e8c
+  VOKMultiImagePicker-iOS: 1e6b57739a4860037a08b9d5ff3bbe8a6fe6fbfc
 
 COCOAPODS: 0.35.0
