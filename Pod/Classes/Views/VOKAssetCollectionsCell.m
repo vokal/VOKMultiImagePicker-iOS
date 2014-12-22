@@ -19,7 +19,8 @@ static CGFloat const VOKAssetCollectionCellImageMargin = 5.0f;
 {
     if (self = [super init]) {
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        self.imageView.clipsToBounds = YES;
     }
     return self;
 }
