@@ -128,11 +128,14 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
 {
     NSArray *selectedAssetsArray = [[VOKSelectedAssetManager sharedManager] selectedAssets];
     NSInteger assetCount = selectedAssetsArray.count;
+    
     if (assetCount) {
         self.addItemsButton.enabled = YES;
         
         NSString *titleString;
-        if (assetCount == 1) {
+        if ([self.imageDelegate respondsToSelector:@selector(multiImagePicker:addButtonLabelForItemCount:)]) {
+            titleString = [self.imageDelegate multiImagePicker:self addButtonLabelForItemCount:assetCount];
+        } else if (assetCount == 1) {
             titleString = [NSString vok_addOneItem];
         } else {
             titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(assetCount)];
@@ -140,7 +143,14 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     } else {
         self.addItemsButton.enabled = NO;
-        [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
+        
+        NSString *titleString;
+        if ([self.imageDelegate respondsToSelector:@selector(multiImagePicker:addButtonLabelForItemCount:)]) {
+            titleString = [self.imageDelegate multiImagePicker:self addButtonLabelForItemCount:assetCount];
+        } else {
+            titleString = [NSString vok_addItems];
+        }
+        [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     }
 }
 

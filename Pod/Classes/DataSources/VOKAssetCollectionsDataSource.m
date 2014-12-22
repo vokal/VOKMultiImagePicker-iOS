@@ -8,6 +8,8 @@
 
 #import "VOKAssetCollectionsDataSource.h"
 
+#import "VOKAssetCollectionsCell.h"
+
 @interface VOKAssetCollectionsDataSource () <PHPhotoLibraryChangeObserver, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) UITableView *tableView;
@@ -24,14 +26,15 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
     VOKAlbumDataSourceTypeCount
 };
 
-static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSourceCellReuseIdentifier";
-
 - (instancetype)initWithTableView:(UITableView *)tableView
 {
     if (self = [super init]) {
         _tableView = tableView;
         _tableView.dataSource = self;
         _tableView.delegate = self;
+        _tableView.rowHeight = [VOKAssetCollectionsCell height];
+        
+        [_tableView registerClass:[VOKAssetCollectionsCell class] forCellReuseIdentifier:VOKAssetCollectionsCellReuseIdentifier];
         
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
@@ -39,7 +42,7 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
                 
-                //TODO: Only show albums with more than one asset and not found.
+                //TODO: Figure out why these fetch options won't work.
                 //PHFetchOptions *fetchOptions = [PHFetchOptions new];
                 //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
@@ -110,13 +113,8 @@ static NSString *const VOKAlbumDataSourceCellReuseIdentifier = @"VOKAlbumDataSou
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VOKAlbumDataSourceCellReuseIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:VOKAlbumDataSourceCellReuseIdentifier];
-    }
+    VOKAssetCollectionsCell *cell = [tableView dequeueReusableCellWithIdentifier:VOKAssetCollectionsCellReuseIdentifier forIndexPath:indexPath];
     cell.imageView.image = nil;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     PHAssetCollection *collection = [self assetCollectionForIndexPath:indexPath];
     
