@@ -42,7 +42,7 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
                 
-                //TODO: Only show albums with more than one asset and not found.
+                //TODO: Figure out why these fetch options won't work.
                 //PHFetchOptions *fetchOptions = [PHFetchOptions new];
                 //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
