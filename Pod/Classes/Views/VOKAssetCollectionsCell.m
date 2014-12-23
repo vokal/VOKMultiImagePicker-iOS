@@ -39,6 +39,13 @@ static CGFloat const VOKAssetCollectionCellImageMargin = 5.0f;
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self commonSetup];
+    }
+    return self;
+}
+
 - (void)commonSetup
 {
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
