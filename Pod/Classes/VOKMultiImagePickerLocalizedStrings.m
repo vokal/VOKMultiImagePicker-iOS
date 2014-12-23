@@ -1,36 +1,36 @@
 //
-//  NSString+VOK.m
+//  VOKMultiImagePickerLocalizedStrings.m
 //  VOKMultiImagePicker
 //
 //  Created by Luke Quigley on 12/8/14.
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-#import "NSString+VOK.h"
+#import "VOKMultiImagePickerLocalizedStrings.h"
 
-@implementation NSString (VOK)
+@implementation VOKMultiImagePickerLocalizedStrings
 
-+ (instancetype)vok_selectAnAlbum
++ (NSString *)selectAnAlbum
 {
     return NSLocalizedString(@"Select an Album", @"Select an Album");
 }
 
-+ (instancetype)vok_cameraRoll
++ (NSString *)cameraRoll
 {
     return NSLocalizedString(@"Camera Roll", @"Camera Roll");
 }
 
-+ (instancetype)vok_addItems
++ (NSString *)addItems
 {
     return NSLocalizedString(@"Add Items", @"Add Items");
 }
 
-+ (instancetype)vok_addOneItem
++ (NSString *)addOneItem
 {
     return NSLocalizedString(@"Add 1 Item", @"Add 1 Item");
 }
 
-+ (instancetype)vok_addXItemsFormat
++ (NSString *)addXItemsFormat
 {
     return NSLocalizedString(@"Add %@ Items", @"Add %@ Items");
 }

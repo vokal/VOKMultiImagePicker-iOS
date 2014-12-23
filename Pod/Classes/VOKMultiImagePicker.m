@@ -8,13 +8,13 @@
 
 #import "VOKMultiImagePicker.h"
 
-#import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
 #import "UIImage+VOK.h"
 #import "VOKAssetCollectionsViewController.h"
 #import "VOKAssetCollectionViewCell.h"
 #import "VOKAssetsViewController.h"
 #import "VOKMultiImagePickerConstants.h"
+#import "VOKMultiImagePickerLocalizedStrings.h"
 #import "VOKSelectedAssetManager.h"
 
 @interface VOKMultiImagePicker ()
@@ -81,7 +81,7 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
     }
     
     if (![self.addItemsButton titleForState:UIControlStateNormal]) {
-        [self.addItemsButton setTitle:[NSString vok_addItems] forState:UIControlStateNormal];
+        [self.addItemsButton setTitle:[VOKMultiImagePickerLocalizedStrings addItems] forState:UIControlStateNormal];
     }
     
     [self.view addSubview:self.addItemsButton];
@@ -105,7 +105,7 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
         case VOKMultiImagePickerStartPositionCameraRoll: {
             PHFetchResult *fetchResult = [PHFetchResult vok_fetchResultWithAssetsOfType:self.mediaType];
             VOKAssetsViewController *cameraRollViewController = [[VOKAssetsViewController alloc] initWithFetchResult:fetchResult];
-            cameraRollViewController.title = [NSString vok_cameraRoll];
+            cameraRollViewController.title = [VOKMultiImagePickerLocalizedStrings cameraRoll];
             containerNavigationController.viewControllers = @[albumViewController, cameraRollViewController];
             break;
         }
@@ -136,9 +136,9 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
         if ([self.imageDelegate respondsToSelector:@selector(multiImagePicker:addButtonLabelForItemCount:)]) {
             titleString = [self.imageDelegate multiImagePicker:self addButtonLabelForItemCount:assetCount];
         } else if (assetCount == 1) {
-            titleString = [NSString vok_addOneItem];
+            titleString = [VOKMultiImagePickerLocalizedStrings addOneItem];
         } else {
-            titleString = [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(assetCount)];
+            titleString = [NSString stringWithFormat:[VOKMultiImagePickerLocalizedStrings addXItemsFormat], @(assetCount)];
         }
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     } else {
@@ -148,7 +148,7 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
         if ([self.imageDelegate respondsToSelector:@selector(multiImagePicker:addButtonLabelForItemCount:)]) {
             titleString = [self.imageDelegate multiImagePicker:self addButtonLabelForItemCount:assetCount];
         } else {
-            titleString = [NSString vok_addItems];
+            titleString = [VOKMultiImagePickerLocalizedStrings addItems];
         }
         [self.addItemsButton setTitle:titleString forState:UIControlStateNormal];
     }

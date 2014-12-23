@@ -13,7 +13,7 @@
 #import "VOKMultiImagePickerExampleLocalizedStrings.h"
 
 #import <VOKMultiImagePicker.h>
-#import <NSString+VOK.h>
+#import <VOKMultiImagePickerLocalizedStrings.h>
 #import <UIImage+VOK.h>
 
 @interface VOKViewController () <VOKMultiImagePickerExampleDataSourceDelegate, VOKMultiImagePickerDelegate>
@@ -115,35 +115,35 @@
     switch (multiImagePicker.mediaType) {
         case PHAssetMediaTypeUnknown:
             if (itemCount == 0) {
-                return [NSString vok_addItems];
+                return [VOKMultiImagePickerLocalizedStrings addItems];
             } else if (itemCount == 1) {
-                return [NSString vok_addOneItem];
+                return [VOKMultiImagePickerLocalizedStrings addOneItem];
             } else {
-                return [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerLocalizedStrings addXItemsFormat], @(itemCount)];
             }
         case PHAssetMediaTypeImage:
             if (itemCount == 0) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addImages];
+                return [VOKMultiImagePickerExampleLocalizedStrings addImages];
             } else if (itemCount == 1) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneImage];
+                return [VOKMultiImagePickerExampleLocalizedStrings addOneImage];
             } else {
-                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXImagesFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings addXImagesFormat], @(itemCount)];
             }
         case PHAssetMediaTypeVideo:
             if (itemCount == 0) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addVideos];
+                return [VOKMultiImagePickerExampleLocalizedStrings addVideos];
             } else if (itemCount == 1) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneVideo];
+                return [VOKMultiImagePickerExampleLocalizedStrings addOneVideo];
             } else {
-                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXVideosFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings addXVideosFormat], @(itemCount)];
             }
         case PHAssetMediaTypeAudio:
             if (itemCount == 0) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addAudioItems];
+                return [VOKMultiImagePickerExampleLocalizedStrings addAudioItems];
             } else if (itemCount == 1) {
-                return [VOKMultiImagePickerExampleLocalizedStrings vok_addOneAudioItem];
+                return [VOKMultiImagePickerExampleLocalizedStrings addOneAudioItem];
             } else {
-                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings vok_addXAudioItemsFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerExampleLocalizedStrings addXAudioItemsFormat], @(itemCount)];
             }
     }
     return nil;

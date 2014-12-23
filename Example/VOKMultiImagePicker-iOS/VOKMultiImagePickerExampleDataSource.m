@@ -43,28 +43,28 @@ static NSString *const VOKMultiImagePickerExampleDataSourceRowIdentifier = @"Exa
     NSString *title;
     switch (indexPath.row) {
         case VOKMultiImagePickerExampleDataSourceRowPhotos:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectPhotos];
+            title = [VOKMultiImagePickerExampleLocalizedStrings selectPhotos];
             break;
         case VOKMultiImagePickerExampleDataSourceRowVideos:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectVideos];
+            title = [VOKMultiImagePickerExampleLocalizedStrings selectVideos];
             break;
         case VOKMultiImagePickerExampleDataSourceRowBoth:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectBoth];
+            title = [VOKMultiImagePickerExampleLocalizedStrings selectBoth];
             break;
         case VOKMultiImagePickerExampleDataSourceRowPhotosInCameraRoll:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectPhotosInCameraRoll];
+            title = [VOKMultiImagePickerExampleLocalizedStrings selectPhotosInCameraRoll];
             break;
         case VOKMultiImagePickerExampleDataSourceRowVideosInCameraRoll:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_selectVideosInCameraRoll];
+            title = [VOKMultiImagePickerExampleLocalizedStrings selectVideosInCameraRoll];
             break;
         case VOKMultiImagePickerExampleDataSourceRowUseCustomCollectionViewCell:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_useCustomCollectionViewCell];
+            title = [VOKMultiImagePickerExampleLocalizedStrings useCustomCollectionViewCell];
             break;
         case VOKMultiImagePickerExampleDataSourceRowOneColumn:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_oneColumn];
+            title = [VOKMultiImagePickerExampleLocalizedStrings oneColumn];
             break;
         case VOKMultiImagePickerExampleDataSourceRowFiveColumns:
-            title = [VOKMultiImagePickerExampleLocalizedStrings vok_fiveColumns];
+            title = [VOKMultiImagePickerExampleLocalizedStrings fiveColumns];
             break;
     }
     cell.textLabel.text = title;
