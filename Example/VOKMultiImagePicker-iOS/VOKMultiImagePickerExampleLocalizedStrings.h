@@ -10,28 +10,28 @@
 
 @interface VOKMultiImagePickerExampleLocalizedStrings : NSObject
 
-+ (NSString *)vok_selectPhotos;
-+ (NSString *)vok_selectVideos;
-+ (NSString *)vok_selectBoth;
-+ (NSString *)vok_selectPhotosInCameraRoll;
-+ (NSString *)vok_selectVideosInCameraRoll;
-+ (NSString *)vok_useCustomCollectionViewCell;
-+ (NSString *)vok_oneColumn;
-+ (NSString *)vok_fiveColumns;
++ (NSString *)selectPhotos;
++ (NSString *)selectVideos;
++ (NSString *)selectBoth;
++ (NSString *)selectPhotosInCameraRoll;
++ (NSString *)selectVideosInCameraRoll;
++ (NSString *)useCustomCollectionViewCell;
++ (NSString *)oneColumn;
++ (NSString *)fiveColumns;
 
 //Localized strings referring to images.
-+ (NSString *)vok_addXImagesFormat;
-+ (NSString *)vok_addOneImage;
-+ (NSString *)vok_addImages;
++ (NSString *)addXImagesFormat;
++ (NSString *)addOneImage;
++ (NSString *)addImages;
 
 //Localized strings referring to videos.
-+ (NSString *)vok_addXVideosFormat;
-+ (NSString *)vok_addOneVideo;
-+ (NSString *)vok_addVideos;
++ (NSString *)addXVideosFormat;
++ (NSString *)addOneVideo;
++ (NSString *)addVideos;
 
 //Localized strings referring to audio.
-+ (NSString *)vok_addXAudioItemsFormat;
-+ (NSString *)vok_addOneAudioItem;
-+ (NSString *)vok_addAudioItems;
++ (NSString *)addXAudioItemsFormat;
++ (NSString *)addOneAudioItem;
++ (NSString *)addAudioItems;
 
 @end

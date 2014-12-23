@@ -50,7 +50,7 @@
     // Setup the data source and other config
     self.dataSource = [[VOKAssetCollectionsDataSource alloc] initWithTableView:self.tableView];
     self.dataSource.delegate = self;
-    self.title = [VOKMultiImagePickerLocalizedStrings vok_selectAnAlbum];
+    self.title = [VOKMultiImagePickerLocalizedStrings selectAnAlbum];
 }
 
 #pragma mark - VOKAssetCollectionsDataSourceDelegate

@@ -10,27 +10,27 @@
 
 @implementation VOKMultiImagePickerLocalizedStrings
 
-+ (NSString *)vok_selectAnAlbum
++ (NSString *)selectAnAlbum
 {
     return NSLocalizedString(@"Select an Album", @"Select an Album");
 }
 
-+ (NSString *)vok_cameraRoll
++ (NSString *)cameraRoll
 {
     return NSLocalizedString(@"Camera Roll", @"Camera Roll");
 }
 
-+ (NSString *)vok_addItems
++ (NSString *)addItems
 {
     return NSLocalizedString(@"Add Items", @"Add Items");
 }
 
-+ (NSString *)vok_addOneItem
++ (NSString *)addOneItem
 {
     return NSLocalizedString(@"Add 1 Item", @"Add 1 Item");
 }
 
-+ (NSString *)vok_addXItemsFormat
++ (NSString *)addXItemsFormat
 {
     return NSLocalizedString(@"Add %@ Items", @"Add %@ Items");
 }

@@ -10,10 +10,10 @@
 
 @interface VOKMultiImagePickerLocalizedStrings : NSObject
 
-+ (NSString *)vok_selectAnAlbum;
-+ (NSString *)vok_cameraRoll;
-+ (NSString *)vok_addItems;
-+ (NSString *)vok_addOneItem;
-+ (NSString *)vok_addXItemsFormat;
++ (NSString *)selectAnAlbum;
++ (NSString *)cameraRoll;
++ (NSString *)addItems;
++ (NSString *)addOneItem;
++ (NSString *)addXItemsFormat;
 
 @end

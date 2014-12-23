@@ -10,87 +10,87 @@
 
 @implementation VOKMultiImagePickerExampleLocalizedStrings
 
-+ (NSString *)vok_selectPhotos
++ (NSString *)selectPhotos
 {
     return NSLocalizedString(@"Select Photos", @"Select Photos");
 }
 
-+ (NSString *)vok_selectVideos
++ (NSString *)selectVideos
 {
     return NSLocalizedString(@"Select Videos", @"Select Videos");
 }
 
-+ (NSString *)vok_selectBoth
++ (NSString *)selectBoth
 {
     return NSLocalizedString(@"Select Both", @"Select Both");
 }
 
-+ (NSString *)vok_selectPhotosInCameraRoll
++ (NSString *)selectPhotosInCameraRoll
 {
     return NSLocalizedString(@"Select Photos In Camera Roll", @"Select Photos In Camera Roll");
 }
 
-+ (NSString *)vok_selectVideosInCameraRoll
++ (NSString *)selectVideosInCameraRoll
 {
     return NSLocalizedString(@"Select Videos In Camera Roll", @"Select Videos In Camera Roll");
 }
 
-+ (NSString *)vok_useCustomCollectionViewCell
++ (NSString *)useCustomCollectionViewCell
 {
     return NSLocalizedString(@"Use Custom Collection View Cell", @"Use Custom Collection View Cell");
 }
 
-+ (NSString *)vok_oneColumn
++ (NSString *)oneColumn
 {
     return NSLocalizedString(@"One Column", @"One Column");
 }
 
-+ (NSString *)vok_fiveColumns
++ (NSString *)fiveColumns
 {
     return NSLocalizedString(@"Five Column", @"Five Column");
 }
 
-+ (NSString *)vok_addXImagesFormat
++ (NSString *)addXImagesFormat
 {
     return NSLocalizedString(@"Add %@ Images", @"Add %@ Images");
 }
 
-+ (NSString *)vok_addOneImage
++ (NSString *)addOneImage
 {
     return NSLocalizedString(@"Add 1 Image", @"Add 1 Image");
 }
 
-+ (NSString *)vok_addImages
++ (NSString *)addImages
 {
     return NSLocalizedString(@"Add Images", @"Add Images");
 }
 
-+ (NSString *)vok_addXVideosFormat
++ (NSString *)addXVideosFormat
 {
     return NSLocalizedString(@"Add %@ Videos", @"Add %@ Videos");
 }
 
-+ (NSString *)vok_addOneVideo
++ (NSString *)addOneVideo
 {
     return NSLocalizedString(@"Add 1 Video", @"Add 1 Video");
 }
 
-+ (NSString *)vok_addVideos
++ (NSString *)addVideos
 {
     return NSLocalizedString(@"Add Videos", @"Add Videos");
 }
 
-+ (NSString *)vok_addXAudioItemsFormat
++ (NSString *)addXAudioItemsFormat
 {
     return NSLocalizedString(@"Add %@ Audio Items", @"Add %@ Audio Items");
 }
 
-+ (NSString *)vok_addOneAudioItem
++ (NSString *)addOneAudioItem
 {
     return NSLocalizedString(@"Add 1 Audio Item", @"Add 1 Audio Item");
 }
 
-+ (NSString *)vok_addAudioItems
++ (NSString *)addAudioItems
 {
     return NSLocalizedString(@"Add Audio Items", @"Add Audio Items");
 }
