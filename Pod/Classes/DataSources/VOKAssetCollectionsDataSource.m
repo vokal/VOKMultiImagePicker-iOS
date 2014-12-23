@@ -117,12 +117,12 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
                     updatedCollectionsFetchResults = [self.collectionFetchResults mutableCopy];
                 }
                 [updatedCollectionsFetchResults replaceObjectAtIndex:[self.collectionFetchResults indexOfObject:collectionsFetchResult] withObject:[changeDetails fetchResultAfterChanges]];
-                [self updateCollectionArrays];
             }
         }
         
         if (updatedCollectionsFetchResults) {
             self.collectionFetchResults = updatedCollectionsFetchResults;
+            [self updateCollectionArrays];
             [self.tableView reloadData];
         }
     };
