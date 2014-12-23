@@ -38,16 +38,24 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
         
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
+                //This doesn't seem to work because they all return NSNotFound for estimatedAssetCount. Had to enumerate through them below.
+                //PHFetchOptions *fetchOptions = [PHFetchOptions new];
+                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
+                NSMutableArray *albumsWithAssetsArray = [NSMutableArray new];
+                [albums enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    PHAssetCollection *collection = (PHAssetCollection *)obj;
+                    PHFetchResult *assetsInCollection = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
+                    if (assetsInCollection.count > 0 && assetsInCollection.count < NSNotFound) {
+                        [albumsWithAssetsArray addObject:collection];
+                    }
+                }];
                 
-                //TODO: Figure out why these fetch options won't work.
-                //PHFetchOptions *fetchOptions = [PHFetchOptions new];
-                //fetchOptions.predicate = [NSPredicate predicateWithFormat:@"estimatedAssetCount > 0 AND estimatedAssetCount < %@", @(NSNotFound)];
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
                 
-                _collectionFetchResults = @[albums, topLevelUserCollections];
+                _collectionFetchResults = @[albumsWithAssetsArray, topLevelUserCollections];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [tableView reloadData];
                 });
