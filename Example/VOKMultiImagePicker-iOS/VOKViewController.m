@@ -13,7 +13,7 @@
 #import "VOKMultiImagePickerExampleLocalizedStrings.h"
 
 #import <VOKMultiImagePicker.h>
-#import <NSString+VOK.h>
+#import <VOKMultiImagePickerLocalizedStrings.h>
 #import <UIImage+VOK.h>
 
 @interface VOKViewController () <VOKMultiImagePickerExampleDataSourceDelegate, VOKMultiImagePickerDelegate>
@@ -115,11 +115,11 @@
     switch (multiImagePicker.mediaType) {
         case PHAssetMediaTypeUnknown:
             if (itemCount == 0) {
-                return [NSString vok_addItems];
+                return [VOKMultiImagePickerLocalizedStrings vok_addItems];
             } else if (itemCount == 1) {
-                return [NSString vok_addOneItem];
+                return [VOKMultiImagePickerLocalizedStrings vok_addOneItem];
             } else {
-                return [NSString stringWithFormat:[NSString vok_addXItemsFormat], @(itemCount)];
+                return [NSString stringWithFormat:[VOKMultiImagePickerLocalizedStrings vok_addXItemsFormat], @(itemCount)];
             }
         case PHAssetMediaTypeImage:
             if (itemCount == 0) {

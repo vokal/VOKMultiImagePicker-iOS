@@ -8,10 +8,10 @@
 
 #import "VOKAssetCollectionsViewController.h"
 
-#import "NSString+VOK.h"
 #import "PHFetchResult+VOK.h"
 #import "VOKAssetCollectionsDataSource.h"
 #import "VOKAssetsViewController.h"
+#import "VOKMultiImagePickerLocalizedStrings.h"
 #import "VOKSelectedAssetManager.h"
 
 @interface VOKAssetCollectionsViewController () <VOKAssetCollectionsDataSourceDelegate>
@@ -50,7 +50,7 @@
     // Setup the data source and other config
     self.dataSource = [[VOKAssetCollectionsDataSource alloc] initWithTableView:self.tableView];
     self.dataSource.delegate = self;
-    self.title = [NSString vok_selectAnAlbum];
+    self.title = [VOKMultiImagePickerLocalizedStrings vok_selectAnAlbum];
 }
 
 #pragma mark - VOKAssetCollectionsDataSourceDelegate
