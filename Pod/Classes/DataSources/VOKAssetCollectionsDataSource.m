@@ -44,12 +44,12 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
                 PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
-                NSMutableArray *albumsWithAssetsArray = [NSMutableArray new];
-                [albums enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                    PHAssetCollection *collection = (PHAssetCollection *)obj;
-                    PHFetchResult *assetsInCollection = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
+                
+                NSMutableArray *albumsWithAssetsArray = [NSMutableArray arrayWithCapacity:albums.count];
+                [albums enumerateObjectsUsingBlock:^(PHAssetCollection *obj, NSUInteger idx, BOOL *stop) {
+                    PHFetchResult *assetsInCollection = [PHAsset fetchAssetsInAssetCollection:obj options:nil];
                     if (assetsInCollection.count > 0 && assetsInCollection.count < NSNotFound) {
-                        [albumsWithAssetsArray addObject:collection];
+                        [albumsWithAssetsArray addObject:obj];
                     }
                 }];
                 
