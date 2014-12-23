@@ -9,11 +9,14 @@
 #import "VOKAssetCollectionsDataSource.h"
 
 #import "VOKAssetCollectionsCell.h"
+#import "VOKSelectedAssetManager.h"
+#import "PHFetchResult+VOK.h"
 
 @interface VOKAssetCollectionsDataSource () <PHPhotoLibraryChangeObserver, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) UITableView *tableView;
 @property (nonatomic) NSArray *collectionFetchResults;
+@property (nonatomic) NSArray *collectionArrays;
 
 @end
 
@@ -45,17 +48,13 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
                                                                                  subtype:PHAssetCollectionSubtypeAlbumRegular
                                                                                  options:nil];
                 
-                NSMutableArray *albumsWithAssetsArray = [NSMutableArray arrayWithCapacity:albums.count];
-                [albums enumerateObjectsUsingBlock:^(PHAssetCollection *obj, NSUInteger idx, BOOL *stop) {
-                    PHFetchResult *assetsInCollection = [PHAsset fetchAssetsInAssetCollection:obj options:nil];
-                    if (assetsInCollection.count > 0 && assetsInCollection.count < NSNotFound) {
-                        [albumsWithAssetsArray addObject:obj];
-                    }
-                }];
-                
+                //Fetch top level user collections
                 PHFetchResult *topLevelUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
                 
-                _collectionFetchResults = @[albumsWithAssetsArray, topLevelUserCollections];
+                _collectionFetchResults = @[albums, topLevelUserCollections];
+                
+                [self updateCollectionArrays];
+                
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [tableView reloadData];
                 });
@@ -69,6 +68,29 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
     return self;
 }
 
+- (void)updateCollectionArrays
+{
+    PHFetchResult *albums = self.collectionFetchResults[VOKAlbumDataSourceTypeAlbums];
+    NSMutableArray *albumsWithAssetsArray = [NSMutableArray arrayWithCapacity:albums.count];
+    [albums enumerateObjectsUsingBlock:^(PHAssetCollection *obj, NSUInteger idx, BOOL *stop) {
+        PHFetchResult *assetsInCollection = [PHFetchResult vok_fetchResultWithAssetCollection:obj mediaType:[VOKSelectedAssetManager sharedManager].mediaType];
+        if (assetsInCollection.count > 0 && assetsInCollection.count < NSNotFound) {
+            [albumsWithAssetsArray addObject:obj];
+        }
+    }];
+    
+    PHFetchResult *topLevelUserCollections = self.collectionFetchResults[VOKAlbumDataSourceTypeTopLevelUserCollections];
+    NSMutableArray *topLevelUserCollectionsWithAssetsArray = [NSMutableArray arrayWithCapacity:topLevelUserCollections.count];
+    [topLevelUserCollectionsWithAssetsArray enumerateObjectsUsingBlock:^(PHAssetCollection *obj, NSUInteger idx, BOOL *stop) {
+        PHFetchResult *assetsInCollection = [PHFetchResult vok_fetchResultWithAssetCollection:obj mediaType:[VOKSelectedAssetManager sharedManager].mediaType];
+        if (assetsInCollection.count > 0 && assetsInCollection.count < NSNotFound) {
+            [topLevelUserCollectionsWithAssetsArray addObject:obj];
+        }
+    }];
+    
+    self.collectionArrays = @[albumsWithAssetsArray, topLevelUserCollectionsWithAssetsArray];
+}
+
 - (void)dealloc
 {
     [[PHPhotoLibrary sharedPhotoLibrary] unregisterChangeObserver:self];
@@ -76,8 +98,8 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
 
 - (PHAssetCollection *)assetCollectionForIndexPath:(NSIndexPath *)indexPath
 {
-    PHFetchResult *fetchResult = self.collectionFetchResults[indexPath.section];
-    return fetchResult[indexPath.row];
+    NSArray *fetchResults = self.collectionArrays[indexPath.section];
+    return fetchResults[indexPath.row];
 }
 
 #pragma mark - PHPhotoLibraryChangeObserver
@@ -95,6 +117,7 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
                     updatedCollectionsFetchResults = [self.collectionFetchResults mutableCopy];
                 }
                 [updatedCollectionsFetchResults replaceObjectAtIndex:[self.collectionFetchResults indexOfObject:collectionsFetchResult] withObject:[changeDetails fetchResultAfterChanges]];
+                [self updateCollectionArrays];
             }
         }
         
@@ -115,7 +138,7 @@ NS_ENUM(NSInteger, VOKAlbumDataSourceType) {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    PHFetchResult *fetchResult = self.collectionFetchResults[section];
+    PHFetchResult *fetchResult = self.collectionArrays[section];
     return fetchResult.count;
 }
 
