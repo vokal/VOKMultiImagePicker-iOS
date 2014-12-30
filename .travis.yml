@@ -5,3 +5,9 @@ before_install:
 xcode_workspace: Example/VOKMultiImagePicker-iOS.xcworkspace
 xcode_scheme: VOKMultiImagePicker-iOS
 xcode_sdk: iphonesimulator8.1
+podfile: Example/Podfile
+
+# belows are added to fix "The run destination XX is not valid" error
+script:
+  - cd Example
+  - xctool -workspace VOKMultiImagePicker-iOS.xcworkspace -scheme VOKMultiImagePicker-iOS -sdk iphonesimulator8.1 test
