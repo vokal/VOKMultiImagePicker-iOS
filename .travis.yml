@@ -1,4 +1,7 @@
 language: objective-c
+before_install:
+  - brew update
+  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 xcode_workspace: Example/VOKMultiImagePicker-iOS.xcworkspace
 xcode_scheme: VOKMultiImagePicker-iOS
 xcode_sdk: iphonesimulator8.1
