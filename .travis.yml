@@ -10,4 +10,4 @@ podfile: Example/Podfile
 # belows are added to fix "The run destination XX is not valid" error
 script:
   - cd Example
-  - xctool -workspace VOKMultiImagePicker-iOS.xcworkspace -scheme VOKMultiImagePicker-iOS -sdk iphonesimulator8.1 build
+  - xctool -workspace VOKMultiImagePicker-iOS.xcworkspace -scheme VOKMultiImagePicker-iOS -sdk iphonesimulator8.1 test
