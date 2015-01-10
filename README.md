@@ -2,7 +2,7 @@
 
 A multiple image picker using PhotoKit. 
 
-[![CI Status](https://travis-ci.org/vokalinteractive/VOKMultiImagePicker-iOS.svg)](https://travis-ci.org/vokalinteractive/VOKMultiImagePicker-iOS)
+[![CI Status](https://travis-ci.org/vokal/VOKMultiImagePicker-iOS.svg)](https://travis-ci.org/vokal/VOKMultiImagePicker-iOS)
 [![Version](https://img.shields.io/cocoapods/v/VOKMultiImagePicker-iOS.svg?style=flat)](http://cocoadocs.org/docsets/VOKMultiImagePicker-iOS)
 [![License](https://img.shields.io/cocoapods/l/VOKMultiImagePicker-iOS.svg?style=flat)](http://cocoadocs.org/docsets/VOKMultiImagePicker-iOS)
 [![Platform](https://img.shields.io/cocoapods/p/VOKMultiImagePicker-iOS.svg?style=flat)](http://cocoadocs.org/docsets/VOKMultiImagePicker-iOS)
