@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import UIKit;
 
 @interface UICollectionView (VOK)
@@ -17,6 +19,8 @@
  *
  *  @return An array of NSIndexPaths of elements in the specified rect.
  */
-- (NSArray *)vok_indexPathsForElementsInRect:(CGRect)rect;
+- (NSArray<NSIndexPath *> *__nullable)vok_indexPathsForElementsInRect:(CGRect)rect;
 
 @end
+
+NS_ASSUME_NONNULL_END

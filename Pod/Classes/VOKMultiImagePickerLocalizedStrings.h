@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import Foundation;
 
 @interface VOKMultiImagePickerLocalizedStrings : NSObject
@@ -17,3 +19,5 @@
 + (NSString *)addXItemsFormat;
 
 @end
+
+NS_ASSUME_NONNULL_END

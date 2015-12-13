@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIImage (VOK)
 
 /**
@@ -18,6 +20,8 @@
  *
  *  @return An image of a solid color with the specified size.
  */
-+ (UIImage *)vok_imageOfColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *__nullable)vok_imageOfColor:(UIColor *)color size:(CGSize)size;
 
 @end
+
+NS_ASSUME_NONNULL_END

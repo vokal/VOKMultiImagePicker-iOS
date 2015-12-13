@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import UIKit;
 
 @import Photos;
@@ -42,7 +44,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  @param multiImagePicker The multi image picker that returned from presenting.
  *  @param assets           An array of PHAsset objects that the user selected.
  */
-- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets;
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray<PHAsset *> *)assets;
 
 //TODO: Create a multiImagePickerDidCancel: delegate call.
 
@@ -67,7 +69,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 /**
  *  The object that will retrieve the selected objects once finished.
  */
-@property (nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
+@property (nullable, nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
 
 /**
  *  The button the user will select to finish selecting assets.
@@ -98,7 +100,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  You have to subclass VOKAssetCollectionViewCell.
  *  Default is VOKAssetCollectionViewCell.
  */
-@property (nonatomic) Class assetCollectionViewCellClass;
+@property (nullable, nonatomic) Class assetCollectionViewCellClass;
 
 /**
  *  The number of columns in the asset grid view.
@@ -114,3 +116,5 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 @property (nonatomic) NSUInteger maxNumberOfAssets;
 
 @end
+
+NS_ASSUME_NONNULL_END

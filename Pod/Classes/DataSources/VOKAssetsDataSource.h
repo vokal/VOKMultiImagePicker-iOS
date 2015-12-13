@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-@import Foundation;
+NS_ASSUME_NONNULL_BEGIN
 
+@import Foundation;
 @import Photos;
 
 @interface VOKAssetsDataSource : NSObject
@@ -32,3 +33,5 @@
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView fetchResult:(PHFetchResult *)fetchResult;
 
 @end
+
+NS_ASSUME_NONNULL_END

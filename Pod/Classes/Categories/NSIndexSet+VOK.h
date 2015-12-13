@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import Foundation;
 
 @interface NSIndexSet (VOK)
@@ -18,6 +20,8 @@
  *
  *  @return An array of NSIndexPaths.
  */
-- (NSArray *)vok_indexPathsFromIndexesWithSection:(NSUInteger)section;
+- (NSArray<NSIndexPath *> *)vok_indexPathsFromIndexesWithSection:(NSUInteger)section;
 
 @end
+
+NS_ASSUME_NONNULL_END

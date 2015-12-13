@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import Foundation;
 
 @interface VOKMultiImagePickerConstants : NSObject
@@ -29,3 +31,5 @@ FOUNDATION_EXPORT const struct VOKMultiImagePickerNotifications {
 } VOKMultiImagePickerNotifications;
 
 @end
+
+NS_ASSUME_NONNULL_END

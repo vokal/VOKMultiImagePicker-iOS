@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-@import Foundation;
+NS_ASSUME_NONNULL_BEGIN
 
+@import Foundation;
 @import Photos;
 
 @class VOKAssetCollectionsDataSource;
@@ -26,7 +27,7 @@
 
 @interface VOKAssetCollectionsDataSource : NSObject
 
-@property (nonatomic, weak) id<VOKAssetCollectionsDataSourceDelegate> delegate;
+@property (nullable, nonatomic, weak) id<VOKAssetCollectionsDataSourceDelegate> delegate;
 
 /**
  *  Initializes to use the table view sent in for displaying information.
@@ -38,3 +39,5 @@
 - (instancetype)initWithTableView:(UITableView *)tableView;
 
 @end
+
+NS_ASSUME_NONNULL_END

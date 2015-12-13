@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import UIKit;
 
 FOUNDATION_EXPORT NSUInteger const VOKCollectionViewGridLayoutDefaultColumns;
@@ -18,3 +20,5 @@ FOUNDATION_EXPORT NSUInteger const VOKCollectionViewGridLayoutDefaultColumns;
 - (CGSize)itemSize;
 
 @end
+
+NS_ASSUME_NONNULL_END
