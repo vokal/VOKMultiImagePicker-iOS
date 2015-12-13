@@ -18,7 +18,6 @@
 #import "VOKSelectedAssetManager.h"
 
 @interface VOKMultiImagePicker ()
-
 @property (nonatomic, weak) UIView *containerView;
 
 @end
@@ -27,6 +26,8 @@
 
 static CGFloat const VOKMultiImagePickerViewDefaultWidth = 600.0f;
 static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
+
+#pragma mark - Initialization
 
 - (instancetype)init
 {
@@ -41,6 +42,8 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
     return self;
 }
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,41 +56,17 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
                                                object:nil];
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Setup
+
 - (void)setupView
 {
-    //Setup container view.
-    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
-                                                                     0.0f,
-                                                                     CGRectGetWidth(self.view.frame),
-                                                                     CGRectGetHeight(self.view.frame) - VOKMultiImagePickerAddItemsButtonHeight)];
-    self.containerView = containerView;
-    [self.view addSubview:self.containerView];
-    
-    //Setup add items button.
-    [self.addItemsButton addTarget:self action:@selector(doneSelectingAssets) forControlEvents:UIControlEventTouchUpInside];
-    self.addItemsButton.frame = CGRectMake(0.0f,
-                                           CGRectGetMaxY(self.containerView.frame),
-                                           CGRectGetWidth(self.view.frame),
-                                           VOKMultiImagePickerAddItemsButtonHeight);
-    
-    CGSize imageSize = CGSizeMake(CGRectGetWidth(self.addItemsButton.frame), VOKMultiImagePickerAddItemsButtonHeight);
-    if (![self.addItemsButton backgroundImageForState:UIControlStateNormal]) {
-        UIImage *enabledImage = [UIImage vok_imageOfColor:[UIColor greenColor] size:imageSize];
-        [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
-    }
-    if (![self.addItemsButton backgroundImageForState:UIControlStateDisabled]) {
-        UIImage *disabledImage = [UIImage vok_imageOfColor:[UIColor lightGrayColor] size:imageSize];
-        [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
-    }
-    
-    if (![self.addItemsButton titleForState:UIControlStateNormal]) {
-        [self.addItemsButton setTitle:[VOKMultiImagePickerLocalizedStrings addItems] forState:UIControlStateNormal];
-    }
-    
-    [self.view addSubview:self.addItemsButton];
-    
-    self.containerView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-    self.addItemsButton.autoresizingMask = (UIViewAutoresizingFlexibleWidth| UIViewAutoresizingFlexibleTopMargin);
+    [self setupContainerView];
+    [self setupAddItemsButton];
     
     UINavigationController *containerNavigationController = [[UINavigationController alloc] init];
     containerNavigationController.view.frame = self.containerView.bounds;
@@ -114,9 +93,71 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
     [self updateAddItemsButton];
 }
 
-- (void)dealloc
+- (void)setupContainerView
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    //Setup container view.
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
+                                                                     0.0f,
+                                                                     CGRectGetWidth(self.view.frame),
+                                                                     CGRectGetHeight(self.view.frame) - VOKMultiImagePickerAddItemsButtonHeight)];
+    self.containerView = containerView;
+    [self.view addSubview:self.containerView];
+    self.containerView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+}
+
+- (void)setupAddItemsButton
+{
+    self.addItemsButton.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+
+    [self.addItemsButton addTarget:self
+                            action:@selector(doneSelectingAssets)
+                  forControlEvents:UIControlEventTouchUpInside];
+    
+    self.addItemsButton.frame = CGRectMake(0.0f,
+                                           CGRectGetMaxY(self.containerView.frame),
+                                           CGRectGetWidth(self.view.frame),
+                                           VOKMultiImagePickerAddItemsButtonHeight);
+    
+    
+    CGSize imageSize = CGSizeMake(CGRectGetWidth(self.addItemsButton.frame), VOKMultiImagePickerAddItemsButtonHeight);
+    [self setupEnabledColorIfNeededWithSize:imageSize];
+    [self setupDisabledColorIfNeededWithSize:imageSize];
+    
+    if (![self.addItemsButton titleForState:UIControlStateNormal]) {
+        [self.addItemsButton setTitle:[VOKMultiImagePickerLocalizedStrings addItems] forState:UIControlStateNormal];
+    }
+    
+    [self.view addSubview:self.addItemsButton];
+}
+
+- (void)setupEnabledColorIfNeededWithSize:(CGSize)imageSize
+{
+    if (![self.addItemsButton backgroundImageForState:UIControlStateNormal]) {
+        UIColor *enabledColor;
+        if ([self.imageDelegate respondsToSelector:@selector(multiImagePickerEnabledBackgroundColor:)]) {
+            enabledColor = [self.imageDelegate multiImagePickerEnabledBackgroundColor:self];
+        } else {
+            enabledColor = [UIColor greenColor];
+        }
+        
+        UIImage *enabledImage = [UIImage vok_imageOfColor:enabledColor size:imageSize];
+        [self.addItemsButton setBackgroundImage:enabledImage forState:UIControlStateNormal];
+    }
+}
+
+- (void)setupDisabledColorIfNeededWithSize:(CGSize)imageSize
+{
+    if (![self.addItemsButton backgroundImageForState:UIControlStateDisabled]) {
+        UIColor *disabledColor;
+        if ([self.imageDelegate respondsToSelector:@selector(multiImagePickerDisabledBackgroundColor:)]) {
+            disabledColor = [self.imageDelegate multiImagePickerDisabledBackgroundColor:self];
+        } else {
+            disabledColor = [UIColor lightGrayColor];
+        }
+        
+        UIImage *disabledImage = [UIImage vok_imageOfColor:disabledColor size:imageSize];
+        [self.addItemsButton setBackgroundImage:disabledImage forState:UIControlStateDisabled];
+    }
 }
 
 - (void)notificationReceived:(NSNotification *)notification

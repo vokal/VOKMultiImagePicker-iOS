@@ -62,6 +62,32 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  */
 - (NSString *)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker addButtonLabelForItemCount:(NSUInteger)itemCount;
 
+/**
+ *  Allows the user to customize the default background color of the button for
+ *  the enabled state.
+ *
+ *  If unimplemented AND the button provides no image for the enabled state,
+ *  the default background color is [UIColor greenColor]
+ *
+ *  @param multiImagePicker The multi image picker that is requesting information
+ *
+ *  @return The color you wish to use as the background color when the button is enabled.
+ */
+- (UIColor *)multiImagePickerEnabledBackgroundColor:(VOKMultiImagePicker *)multiImagePicker;
+
+/**
+ *  Allows the user to customize the default background color of the button for
+ *  the enabled state.
+ *
+ *  If unimplemented AND the button provides no image for the disabled state,
+ *  the default background color is [UIColor lightGrayColor]
+ *
+ *  @param multiImagePicker The multi image picker that is requesting information
+ *
+ *  @return The color you wish to use as the background color when the button is disabled.
+ */
+- (UIColor *)multiImagePickerDisabledBackgroundColor:(VOKMultiImagePicker *)multiImagePicker;
+
 @end
 
 @interface VOKMultiImagePicker : UIViewController
