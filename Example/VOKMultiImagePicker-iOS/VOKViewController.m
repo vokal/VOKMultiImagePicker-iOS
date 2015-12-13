@@ -81,6 +81,10 @@
             multiImagePicker.assetCollectionViewColumnCount = 5;
             multiImagePicker.startPosition = VOKMultiImagePickerStartPositionCameraRoll;
             break;
+        case VOKMultiImagePickerExampleDataSourceRowMaxTwoPhotos:
+            multiImagePicker.maxNumberOfAssets = 2;
+            multiImagePicker.mediaType = PHAssetMediaTypeImage;
+            break;
     }
     
     //Customize the add items button.

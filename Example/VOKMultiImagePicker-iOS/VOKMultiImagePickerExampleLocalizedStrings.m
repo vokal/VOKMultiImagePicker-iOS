@@ -50,6 +50,11 @@
     return NSLocalizedString(@"Five Column", @"Five Column");
 }
 
++ (NSString *)maxTwoPhotos
+{
+    return NSLocalizedString(@"Maximum 2 Images", @"Maximum 2 Images");
+}
+
 + (NSString *)addXImagesFormat
 {
     return NSLocalizedString(@"Add %@ Images", @"Add %@ Images");
