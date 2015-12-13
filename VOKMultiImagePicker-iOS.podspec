@@ -1,15 +1,6 @@
-#
-# Be sure to run `pod lib lint VOKMultiImagePicker-iOS.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "VOKMultiImagePicker-iOS"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "A multiple image picker using Photos framework."
   s.description      = "A customizable library for selecting assets from the built in Photos app using the Photos framework."
   s.homepage         = "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS"
