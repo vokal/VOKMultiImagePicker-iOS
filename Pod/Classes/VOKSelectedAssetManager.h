@@ -42,6 +42,12 @@
 @property (nonatomic) NSInteger assetCollectionViewColumnCount;
 
 /**
+ *  Enforces a maximum number of assets which can be selected if set to anything other than 0.
+ *  Defaults to 0.
+ */
+@property (nonatomic) NSUInteger maxNumberOfAssets;
+
+/**
  *  Adds an asset to the selected assets array IF it matches the media type.
  *
  *  @param asset The asset to add.
@@ -61,6 +67,5 @@
  *  @return A list of all the assets that were added as selected.
  */
 - (NSArray *)selectedAssets;
-
 
 @end

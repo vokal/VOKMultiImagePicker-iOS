@@ -156,6 +156,12 @@ static CGFloat const VOKMultiImagePickerAddItemsButtonHeight = 60.0f;
 
 #pragma mark - Values passed to the manager.
 
+- (void)setMaxNumberOfAssets:(NSUInteger)maxNumberOfAssets
+{
+    _maxNumberOfAssets = maxNumberOfAssets;
+    [VOKSelectedAssetManager sharedManager].maxNumberOfAssets = maxNumberOfAssets;
+}
+
 - (void)setMediaType:(PHAssetMediaType)mediaType
 {
     _mediaType = mediaType;

@@ -107,4 +107,10 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 //TODO: Probably should have the user pass in a subclass of VOKCollectionViewGridLayout for better customization.
 @property (nonatomic) NSInteger assetCollectionViewColumnCount;
 
+/**
+ *  Enforces a maximum number of assets which can be selected if set to anything other than 0.
+ *  Defaults to 0.
+ */
+@property (nonatomic) NSUInteger maxNumberOfAssets;
+
 @end
