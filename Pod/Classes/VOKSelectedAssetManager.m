@@ -39,6 +39,7 @@
     self.mediaType = PHAssetMediaTypeUnknown;
     self.assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
     self.assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
+    self.maxNumberOfAssets = 0;
 }
 
 - (BOOL)addSelectedAsset:(PHAsset *)asset
