@@ -16,4 +16,4 @@ env:
 git:
   depth: 10000  # For the auto-incrementing build number script to work, we need to clone with a basically-infinite depth.
 after_script:
-    - pod lib lint --only-errors
+    - pod lib lint --allow-warnings
