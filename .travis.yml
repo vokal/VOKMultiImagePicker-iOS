@@ -8,7 +8,7 @@ script: ./travis/build.sh  # Primary (simulator) build & test.
 podfile: Example/Podfile # TODO: Remove this and just commit pods.
 env:
   global:
-  - XC_WORKSPACE="VOKMultiImagePicker-iOS.xcworkspace"  # Put your workspace filename (or path relative to the root of the repo) here.
+  - XC_WORKSPACE="Example/VOKMultiImagePicker-iOS.xcworkspace"  # Put your workspace filename (or path relative to the root of the repo) here.
   - XC_SCHEME="VOKMultiImagePicker-iOS"  # Put your primary scheme name here - it should be shared by default.
   - XC_CONFIGURATION="Release"  # Put your build configuration name here.
   - SDK_VERSION=9.1
