@@ -1,10 +1,11 @@
 language: objective-c
+osx_image: xcode7.1
 before_install:
   - brew update
   - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 xcode_workspace: Example/VOKMultiImagePicker-iOS.xcworkspace
 xcode_scheme: VOKMultiImagePicker-iOS
-xcode_sdk: iphonesimulator8.1
+xcode_sdk: iphonesimulator8.3
 podfile: Example/Podfile
 
 # belows are added to fix "The run destination XX is not valid" error
