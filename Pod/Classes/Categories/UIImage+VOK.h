@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An image of a solid color with the specified size.
  */
-+ (UIImage *__nullable)vok_imageOfColor:(UIColor *)color size:(CGSize)size;
++ (nullable UIImage *)vok_imageOfColor:(UIColor *)color size:(CGSize)size;
 
 @end
 

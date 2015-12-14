@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An array of NSIndexPaths of elements in the specified rect.
  */
-- (NSArray<NSIndexPath *> *__nullable)vok_indexPathsForElementsInRect:(CGRect)rect;
+- (nullable NSArray<NSIndexPath *> *)vok_indexPathsForElementsInRect:(CGRect)rect;
 
 @end
 
