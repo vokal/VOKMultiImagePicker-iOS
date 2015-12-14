@@ -1,14 +1,17 @@
 language: objective-c
 osx_image: xcode7.1
 before_install:
-  - brew update
-  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
-xcode_workspace: Example/VOKMultiImagePicker-iOS.xcworkspace
-xcode_scheme: VOKMultiImagePicker-iOS
-xcode_sdk: iphonesimulator8.3
-podfile: Example/Podfile
-
-# belows are added to fix "The run destination XX is not valid" error
-script:
-  - cd Example
-  - xctool -workspace VOKMultiImagePicker-iOS.xcworkspace -scheme VOKMultiImagePicker-iOS -sdk iphonesimulator8.1 test
+  - brew update > /dev/null; if brew outdated | grep -qx xctool; then brew upgrade xctool; fi  # Ensure that xctool is up-to-date
+before_script:
+  - chmod +x travis/*.sh # Ensure that scripts are executable
+script: ./travis/build.sh  # Primary (simulator) build & test.
+podfile: Example/Podfile # TODO: Remove this and just commit pods.
+env:
+  global:
+  - XC_WORKSPACE="VOKMultiImagePicker-iOS.xcworkspace"  # Put your workspace filename (or path relative to the root of the repo) here.
+  - XC_SCHEME="VOKMultiImagePicker-iOS"  # Put your primary scheme name here - it should be shared by default.
+  - XC_CONFIGURATION="Release"  # Put your build configuration name here.
+  - SDK_VERSION=9.1
+  - APPNAME="VOKMultiImagePicker-iOS"  # Put your app name here.
+git:
+  depth: 10000  # For the auto-incrementing build number script to work, we need to clone with a basically-infinite depth.
