@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description      = "A customizable library for selecting assets from the built in Photos app using the Photos framework."
   s.homepage         = "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS"
   s.license          = 'MIT'
-  s.author           = { "Luke" => "luke.quigley@vokalinteractive.com" }
+  s.author           = { "Vokal" => "hello@vokal.io" }
   s.source           = { :git => "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.3'
