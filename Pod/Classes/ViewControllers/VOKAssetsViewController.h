@@ -8,6 +8,8 @@
 
 #import "VOKBaseViewController.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import Photos;
 
 @interface VOKAssetsViewController : VOKBaseViewController
@@ -24,3 +26,5 @@
 - (instancetype)initWithFetchResult:(PHFetchResult *)fetchResult;
 
 @end
+
+NS_ASSUME_NONNULL_END

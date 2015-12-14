@@ -9,8 +9,10 @@
 //  selected assets.
 //
 
-@import Foundation;
 
+NS_ASSUME_NONNULL_BEGIN
+
+@import Foundation;
 @import Photos;
 
 @interface VOKSelectedAssetManager : NSObject
@@ -34,12 +36,18 @@
  *  The class used to display assets with.
  *  You can subclass VOKAssetCollectionViewCell.
  */
-@property (nonatomic) Class assetCollectionViewCellClass;
+@property (nullable, nonatomic) Class assetCollectionViewCellClass;
 
 /**
  *  The number of columns in the asset collection view grid.
  */
 @property (nonatomic) NSInteger assetCollectionViewColumnCount;
+
+/**
+ *  Enforces a maximum number of assets which can be selected if set to anything other than 0.
+ *  Defaults to 0.
+ */
+@property (nonatomic) NSUInteger maxNumberOfAssets;
 
 /**
  *  Adds an asset to the selected assets array IF it matches the media type.
@@ -60,7 +68,8 @@
 /**
  *  @return A list of all the assets that were added as selected.
  */
-- (NSArray *)selectedAssets;
-
+- (NSArray<PHAsset *> *)selectedAssets;
 
 @end
+
+NS_ASSUME_NONNULL_END

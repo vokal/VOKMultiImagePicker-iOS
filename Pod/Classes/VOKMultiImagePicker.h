@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import UIKit;
 
 @import Photos;
@@ -42,7 +44,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  @param multiImagePicker The multi image picker that returned from presenting.
  *  @param assets           An array of PHAsset objects that the user selected.
  */
-- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray *)assets;
+- (void)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker selectedAssets:(NSArray<PHAsset *> *)assets;
 
 //TODO: Create a multiImagePickerDidCancel: delegate call.
 
@@ -60,6 +62,32 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  */
 - (NSString *)multiImagePicker:(VOKMultiImagePicker *)multiImagePicker addButtonLabelForItemCount:(NSUInteger)itemCount;
 
+/**
+ *  Allows the user to customize the default background color of the button for
+ *  the enabled state.
+ *
+ *  If unimplemented AND the button provides no image for the enabled state,
+ *  the default background color is [UIColor greenColor]
+ *
+ *  @param multiImagePicker The multi image picker that is requesting information
+ *
+ *  @return The color you wish to use as the background color when the button is enabled.
+ */
+- (UIColor *)multiImagePickerEnabledBackgroundColor:(VOKMultiImagePicker *)multiImagePicker;
+
+/**
+ *  Allows the user to customize the default background color of the button for
+ *  the enabled state.
+ *
+ *  If unimplemented AND the button provides no image for the disabled state,
+ *  the default background color is [UIColor lightGrayColor]
+ *
+ *  @param multiImagePicker The multi image picker that is requesting information
+ *
+ *  @return The color you wish to use as the background color when the button is disabled.
+ */
+- (UIColor *)multiImagePickerDisabledBackgroundColor:(VOKMultiImagePicker *)multiImagePicker;
+
 @end
 
 @interface VOKMultiImagePicker : UIViewController
@@ -67,7 +95,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 /**
  *  The object that will retrieve the selected objects once finished.
  */
-@property (nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
+@property (nullable, nonatomic, weak) id<VOKMultiImagePickerDelegate> imageDelegate;
 
 /**
  *  The button the user will select to finish selecting assets.
@@ -98,7 +126,7 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
  *  You have to subclass VOKAssetCollectionViewCell.
  *  Default is VOKAssetCollectionViewCell.
  */
-@property (nonatomic) Class assetCollectionViewCellClass;
+@property (nullable, nonatomic) Class assetCollectionViewCellClass;
 
 /**
  *  The number of columns in the asset grid view.
@@ -107,4 +135,12 @@ NS_ENUM(NSInteger, VOKMultiImagePickerStartPosition){
 //TODO: Probably should have the user pass in a subclass of VOKCollectionViewGridLayout for better customization.
 @property (nonatomic) NSInteger assetCollectionViewColumnCount;
 
+/**
+ *  Enforces a maximum number of assets which can be selected if set to anything other than 0.
+ *  Defaults to 0.
+ */
+@property (nonatomic) NSUInteger maxNumberOfAssets;
+
 @end
+
+NS_ASSUME_NONNULL_END

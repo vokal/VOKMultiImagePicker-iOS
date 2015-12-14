@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import Photos;
 
 @interface PHFetchResult (VOK)
@@ -31,3 +33,5 @@
 + (instancetype)vok_fetchResultWithAssetsOfType:(PHAssetMediaType)type;
 
 @end
+
+NS_ASSUME_NONNULL_END

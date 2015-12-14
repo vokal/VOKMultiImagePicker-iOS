@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @import UIKit;
 
 @interface VOKAssetCollectionViewCell : UICollectionViewCell
@@ -16,3 +18,5 @@
 @property (nonatomic) UIImageView *imageView;
 
 @end
+
+NS_ASSUME_NONNULL_END

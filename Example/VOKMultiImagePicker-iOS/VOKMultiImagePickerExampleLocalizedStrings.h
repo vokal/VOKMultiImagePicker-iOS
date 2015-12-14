@@ -18,6 +18,7 @@
 + (NSString *)useCustomCollectionViewCell;
 + (NSString *)oneColumn;
 + (NSString *)fiveColumns;
++ (NSString *)maxTwoPhotos;
 
 //Localized strings referring to images.
 + (NSString *)addXImagesFormat;

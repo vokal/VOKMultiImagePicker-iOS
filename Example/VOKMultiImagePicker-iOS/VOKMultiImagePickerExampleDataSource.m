@@ -66,6 +66,9 @@ static NSString *const VOKMultiImagePickerExampleDataSourceRowIdentifier = @"Exa
         case VOKMultiImagePickerExampleDataSourceRowFiveColumns:
             title = [VOKMultiImagePickerExampleLocalizedStrings fiveColumns];
             break;
+        case VOKMultiImagePickerExampleDataSourceRowMaxTwoPhotos:
+            title = [VOKMultiImagePickerExampleLocalizedStrings maxTwoPhotos];
+            break;
     }
     cell.textLabel.text = title;
     

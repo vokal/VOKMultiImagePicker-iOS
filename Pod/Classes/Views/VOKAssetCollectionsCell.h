@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 VOKAL LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
+
+@import UIKit;
 
 FOUNDATION_EXPORT NSString *const VOKAssetCollectionsCellReuseIdentifier;
 
@@ -15,3 +17,5 @@ FOUNDATION_EXPORT NSString *const VOKAssetCollectionsCellReuseIdentifier;
 + (CGFloat)height;
 
 @end
+
+NS_ASSUME_NONNULL_END

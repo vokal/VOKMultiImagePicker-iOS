@@ -39,11 +39,12 @@
     self.mediaType = PHAssetMediaTypeUnknown;
     self.assetCollectionViewCellClass = [VOKAssetCollectionViewCell class];
     self.assetCollectionViewColumnCount = VOKCollectionViewGridLayoutDefaultColumns;
+    self.maxNumberOfAssets = 0;
 }
 
 - (BOOL)addSelectedAsset:(PHAsset *)asset
 {
-    if ([self assetIsInMediaType:asset]) {
+    if ([self assetIsInMediaType:asset] && [self canAddMoreAssets]) {
         if (![self.selectedAssetsMutableArray containsObject:asset]) {
             [self.selectedAssetsMutableArray addObject:asset];
         }
@@ -52,6 +53,17 @@
         return YES;
     }
     return NO;
+}
+
+- (BOOL)canAddMoreAssets
+{
+    if (self.maxNumberOfAssets == 0) {
+        //Add as many as you want.
+        return YES;
+    } else {
+        //Current count must be less than max.
+        return self.selectedAssetsMutableArray.count < self.maxNumberOfAssets;
+    }
 }
 
 - (void)removeSelectedAsset:(PHAsset *)asset
