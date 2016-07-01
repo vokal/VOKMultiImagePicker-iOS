@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS"
   s.license          = 'MIT'
-  s.author           = { "Luke" => "luke.quigley@vokalinteractive.com" }
+  s.author           = { "Vokal" => "ios@vokal.io" }
   s.source           = { :git => "https://github.com/vokalinteractive/VOKMultiImagePicker-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'

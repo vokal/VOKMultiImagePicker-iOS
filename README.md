@@ -20,10 +20,6 @@ it, simply add the following line to your Podfile:
 
     pod "VOKMultiImagePicker-iOS"
 
-## Author
-
-Luke Quigley, luke.quigley@vokalinteractive.com
-
 ## License
 
 VOKMultiImagePicker-iOS is available under the MIT license. See the LICENSE file for more info.
